@@ -15,7 +15,7 @@
 ## You should have received a copy of the GNU General Public License
 ## along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pkgsrcfststemsdir=$(pkgdatadir)/src/fst/stems/
+pkgsrcfststemsdir=$(datadir)/giella/shared-smi/src/fst/stems/
 pkgsrcfststems_DATA=arabic_roman_digits.lexc \
 					smi-abbreviations.lexc \
 					smi-acronyms.lexc \

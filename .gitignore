@@ -50,4 +50,4 @@ Makefile
 
 build-aux
 
-shared-smi.pc
+giella-shared-smi.pc

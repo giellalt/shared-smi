@@ -14,7 +14,7 @@
 
 ## You should have received a copy of the GNU General Public License
 ## along with this program.  If not, see <http://www.gnu.org/licenses/>.
-AC_INIT([shared-smi], [0.0.1], [bugs@divvun.no], [shared-smi], [http://divvun.no])
+AC_INIT([giella-shared-smi], [0.0.1], [bugs@divvun.no], [giella-shared-smi], [http://divvun.no])
 AC_CONFIG_AUX_DIR([build-aux])
 AM_INIT_AUTOMAKE([1.9 tar-pax -Wall -Werror foreign])
 
