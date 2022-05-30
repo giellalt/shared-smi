@@ -1715,6 +1715,7 @@ Anlaug+OLang/UND:Anlaug9 BERN-fem ;
 Anmærkninger+OLang/NOB:An^mærkninger LONDON-obj ;
 Ann-Bjørg+OLang/NOB:Ann-Bjørg9 BERN-fem ;
 Ann-Britt+OLang/UND:Ann-Britt BERN-fem ;
+Maybritt+OLang/UND:Maybritt BERN-fem ;
 Ann-Carin+OLang/UND:Ann-Carin9 LONDON-fem ;
 Ann-Christin+OLang/UND:Ann-Christin9 LONDON-fem ;
 Ann-Hege+OLang/UND:Ann-Hege ACCRA-fem ;
@@ -33976,3 +33977,5 @@ Roni+OLang/UND:Roni ACCRA-ani ; !barnebok
 Vearlend+OLang/NOB:Vear^lend9 BERN-ani ; !barnebok
 Fjørdis+OLang/UND:Fjørdis LONDON-ani ; !barnebok
 Kamikaze+OLang/UND:Kamikaze ACCRA-ani ; !barnebok
+Teams+OLang/ENG:Teams BERN-obj ;
+
