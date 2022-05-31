@@ -684,6 +684,7 @@ Aanensen+OLang/NOB:Aanensen9 LONDON-sur ;
 Aanerud+OLang/NOB:Aane^rud9 BERN-plc ;
 Fundingsrud+OLang/NOB:Fundings^rud9 BERN-plc ;
 Aanes+OLang/NOB:Aa^nes BERN-sur ;
+Unnes+OLang/NOB:Un^nes BERN-sur ;
 Aanesland+OLang/NOB:Aanes^land9 BERN-sur ;
 Galand+OLang/NOB:Ga^land9 BERN-sur ;
 Aanestad+OLang/NOB:Aane^stad9 BERN-sur ;
@@ -943,6 +944,7 @@ Agneeta+OLang/FIN:Agneeta ACCRA-fem ;
 Agnefest+OLang/UND:Agnefest9 BERN-plc ;
 Agnes+OLang/NOB:Ag^nes LONDON-fem ;
 Agneta+OLang/UND:Agneta ACCRA-fem ;
+Agnetha+OLang/UND:Agnetha ACCRA-fem ;
 Agnete+OLang/UND:Agnete ACCRA-fem ;
 Agnethe+OLang/UND:Agnethe ACCRA-fem ;
 Agni+OLang/UND:Agn PIPPI-fem ;
@@ -33692,6 +33694,7 @@ Winsam+OLang/UND:Winsam9 LONDON-org ;
 Android+OLang/UND:Andro^id9 BERN-obj ;
 AppStore+OLang/ENG:AppStore ACCRA-org ;
 Google% Play+MWE+CmpNP/First+OLang/ENG:Google% Play BERN-org ;
+FairPlay+CmpNP/First+OLang/ENG:FairPlay BERN-obj ;
 Saminet+OLang/ENG:Saminet BERN-org ;
 Rueter+OLang/ENG:Rueter LONDON-sur ;
 Wilbur+OLang/UND:Wilbur LONDON-sur ;
@@ -33978,4 +33981,21 @@ Vearlend+OLang/NOB:Vear^lend9 BERN-ani ; !barnebok
 Fjørdis+OLang/UND:Fjørdis LONDON-ani ; !barnebok
 Kamikaze+OLang/UND:Kamikaze ACCRA-ani ; !barnebok
 Teams+OLang/ENG:Teams BERN-obj ;
-
+Håkegård+OLang/NOB:Håke^gård9 BERN-sur ;
+Jérémie+OLang/NOB:Jérémie ACCRA-mal ;
+McGowan+OLang/UND:McGowan LONDON-sur ;
+McGowan+OLang/UND+Err/Orth:MCGowan LONDON-sur ;
+Pasvikbamsen+OLang/NOB:Pasvikbamsen LONDON-sur ;
+Sombán+OLang/SME:Sombán LONDON-sur ;
+AstraZeneca+OLang/UND:AstraZeneca ACCRA-obj ;
+AstraZeneca+MWE+OLang/UND+Err/Orth:Astra% Zeneca ACCRA-obj ;
+Kneppen+OLang/NOR:Kneppen9 LONDON-sur ;
+Swart+OLang/UND:Swart BERN-sur ;
+Jukke+OLang/UND:Jukke ACCRA-mal ;
+Staysman+OLang/ENG:Staysman LONDON-sur ;
+Econor+OLang/UND:Eco^nor BERN-org ;
+Mohaug+OLang/NOB:Mo^haug9 BERN-sur ; 
+Kreftforeningen+OLang/NOB:Kreft^fore^ningen9 LONDON-org ;
+Yngland+OLang/NOB:Yng^land9 BERN-sur ;
+Moderna+OLang/UND:Moderna ACCRA-obj ;
+Westerås+OLang/NOB:Wester^ås BERN-sur ;

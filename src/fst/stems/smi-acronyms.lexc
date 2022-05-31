@@ -176,6 +176,7 @@ AOF+N+Prop+Sem/Org+ACR:AOF ACRO_cons ;
 APP+N+Prop+Sem/Org+ACR:APP ACRO_cons ;
 App+N+Prop+Sem/Org+ACR:App ACRO_cons ;
 BBS+N+Prop+Sem/Org+ACR:BBS ACRO_cons ;
+UDIR+N+Prop+Sem/Org+ACR:UDIR ACRO_cons ;
 BFD+N+Prop+Sem/Org+ACR:BFD ACRO_cons ;
 BP+N+Prop+Sem/Org+ACR:BP ACRO_cons ;
 BRD+N+Prop+Sem/Org+ACR:BRD ACRO_cons ;
@@ -1200,8 +1201,8 @@ ph+N+Prop+Sem/Measr+ACR:ph ACRO_cons ;
 pm+N+Prop+Sem/Txt+ACR:pm ACRO_cons ;
 pms+N+Prop+Sem/State-sick+ACR:pms ACRO_cons ;
 rna+N+Prop+Sem/Org+ACR:rna ACRO_vow ;
-ro+N+Prop+Sem/Org+ACR:ro ACRO_vow ; ! = fin/smn ry
-ry+N+Prop+Sem/Org+ACR:ry ACRO_vow ; ! = fin/smn ry
+!ro+N+Prop+Sem/Org+ACR:ro ACRO_vow ; ! = fin/smn ry
+!ry+N+Prop+Sem/Org+ACR:ry ACRO_vow ; ! = fin/smn ry
 sff+N+Prop+Sem/Org+ACR:sff ACRO_cons ;
 sjs+N+Prop+Sem/Org+ACR:sjs ACRO_cons ;
 svs+N+Prop+Sem/Org+ACR:svs ACRO_cons ;
