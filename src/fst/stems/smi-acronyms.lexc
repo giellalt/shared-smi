@@ -1218,6 +1218,8 @@ DNB+v2+N+Prop+Sem/Org+ACR:DnB ACRO_cons ;
 Dnd+N+Prop+Sem/Org+ACR:Dnd ACRO_cons ;
 Dssn+N+Prop+Sem/Org+ACR:Dssn9 ACRO_cons ;
 SoL+N+Prop+Sem/Org+ACR:SoL ACRO_cons ;
+SÁB+N+Prop+Sem/Org+ACR:SÁB ACRO_cons ;
+EDL+N+Prop+Sem/Org+ACR:EDL ACRO_cons ;
 EtMk+N+Prop+Sem/Org+ACR:EtMk ACRO_cons ;
 pps+N+Sem/Dummytag+ACR:pps UNIT ;
 ekg+N+Sem/Dummytag+ACR:ekg UNIT ;
