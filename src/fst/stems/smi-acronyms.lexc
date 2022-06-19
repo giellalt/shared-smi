@@ -286,6 +286,7 @@ NAF+N+Prop+Sem/Org+ACR:NAF ACRO_cons ;
 NAV+N+Prop+Sem/Org+ACR:NAV ACRO_BERN ;
 NDS+N+Prop+Sem/Org+ACR:NDS ACRO_cons ;
 NBR+N+Prop+Sem/Org+ACR:NBR ACRO_cons ;
+MSM+N+Prop+Sem/Org+ACR:MSM ACRO_cons ;
 NGO+N+Prop+Sem/Org+ACR:NGO ACRO_vow ;
 NGU+N+Prop+Sem/Org+ACR:NGU ACRO_vow ;
 NHO+N+Prop+Sem/Org+ACR:NHO ACRO_vow ;
