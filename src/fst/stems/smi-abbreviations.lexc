@@ -510,7 +510,7 @@ cf.+V:cf  ab-dot-verb-trab  ;
 cfr.+V:cfr  ab-dot-verb-trab  ;
 d.g+N:d.g ab-dot-noun-trab ;
 d.l+N:d.l ab-dot-noun-trab ;
-dem.+N:dem  ab-dot-noun-trab  ;
+!dem.+N:dem  ab-dot-noun-trab  ; ! dem only adjective.
 dipl.+N:dipl  ab-dot-noun-trab  ;
 dipl.ing+N:dipl.ing ab-dot-noun-trab ;
 dipl.ins+N:dipl.ins ab-dot-noun-trab ;
