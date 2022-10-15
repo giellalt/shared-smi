@@ -14,8 +14,8 @@
 
 
 
-!! This file is copied from the common __giella-shared__ directory
-!! and ''shall not'' be edited in the __langs__ directory.
+!! This file is copied from the common __shared-smi__ directory
+!! and ''shall not'' be edited in the __lang-xxx__ directory.
 
 
 !! !!!General notes
@@ -28,7 +28,7 @@
 
 
 !! This file was originally written for sme, and is copied directly to
-!! the langs/sme catalogue without modification.
+!! the lang-sme catalogue without modification.
 
 !! Documenting (parts of) the lexicon structure for sme:
 
