@@ -1302,35 +1302,35 @@ covid-19+N+Sem/State-sick+ACR:covid9-19 ACRONOUN_vow ; !
 ! where thus moved here.
 
 
-km/t+N+Sem/Dummytag+ACR:km/t UNIT ;
-km/d+N+Sem/Dummytag+ACR:km/d UNIT ;
-km/h+N+Sem/Dummytag+ACR:km/h UNIT ;
-Aut+N+Prop+Sem/Org+ACR:Aut ACRO_cons ;
-Bq+N+Sem/Dummytag+ACR:Bq UNIT ;
-Dj+N+ACR+Sem/Hum+ACR:Dj ACRONOUN_cons ; !disc jockey
-GWh+N+Sem/Dummytag+ACR:GWh UNIT ;
-MWh+N+Sem/Dummytag+ACR:MWh UNIT ;
-Hz+N+Sem/Dummytag+ACR:Hz UNIT ;
-Kbh+N+Sem/Dummytag+ACR:Kbh UNIT ;
-MHz+N+Sem/Dummytag+ACR:MHz UNIT ;
-Mellomvn+N+Prop+Sem/Plc+ACR:Mellomvn ACRO_cons ;
-Od+N+Prop+Sem/Org+ACR:Od9 ACRO_cons ; !Odelstinget
-Rg+N+Prop+Sem/Org+ACR:Rg ACRO_cons ;
-Savkadasv+N+Prop+Sem/Plc+ACR:Savkadasv ACRO_cons ; !Savkadasveien
-Searvg.ped+N+Prop+Sem/Org+ACR:Searvg.ped9 ACRO_cons ;
-Slalomvn+N+Prop+Sem/Plc+ACR:Slalomvn ACRO_cons ;
-alii+N+ACR+Sem/Dummytag+ACR:alii ACRONOUN_vow ;
-inva-wc+N+ACR+Sem/Build-room+ACR:inva-wc ACRONOUN_cons ;
+km/t+N+Sem/Dummytag+ABBR:km/t UNIT ;
+km/d+N+Sem/Dummytag+ABBR:km/d UNIT ;
+km/h+N+Sem/Dummytag+ABBR:km/h UNIT ;
+Aut+N+Prop+Sem/Org+ABBR:Aut ACRO_cons ;
+Bq+N+Sem/Dummytag+ABBR:Bq UNIT ;
+Dj+N+ABBR+Sem/Hum+ABBR:Dj ACRONOUN_cons ; !disc jockey
+GWh+N+Sem/Dummytag+ABBR:GWh UNIT ;
+MWh+N+Sem/Dummytag+ABBR:MWh UNIT ;
+Hz+N+Sem/Dummytag+ABBR:Hz UNIT ;
+Kbh+N+Sem/Dummytag+ABBR:Kbh UNIT ;
+MHz+N+Sem/Dummytag+ABBR:MHz UNIT ;
+Mellomvn+N+Prop+Sem/Plc+ABBR:Mellomvn ACRO_cons ;
+Od+N+Prop+Sem/Org+ABBR:Od9 ACRO_cons ; !Odelstinget
+Rg+N+Prop+Sem/Org+ABBR:Rg ACRO_cons ;
+Savkadasv+N+Prop+Sem/Plc+ABBR:Savkadasv ACRO_cons ; !Savkadasveien
+Searvg.ped+N+Prop+Sem/Org+ABBR:Searvg.ped9 ACRO_cons ;
+Slalomvn+N+Prop+Sem/Plc+ABBR:Slalomvn ACRO_cons ;
+alii+N+ABBR+Sem/Dummytag+ABBR:alii ACRONOUN_vow ;
+inva-wc+N+ABBR+Sem/Build-room+ABBR:inva-wc ACRONOUN_cons ;
 bfr+N+Sem/Dummytag+ABBR:bfr UNIT ; !
 can$+N+Use/Circ+ABBR:can$ UNIT ; ! !
 cg+N+Sem/Dummytag+ABBR:cg UNIT ; !
-cl+N+Sem/Dummytag+ACR:cl UNIT ; !
+cl+N+Sem/Dummytag+ABBR:cl UNIT ; !
 cm+N+Sem/Measr+ABBR:cm UNIT ; !
 cm³+N+Sem/Measr+Err/Orth+ABBR:cm3 UNIT ;
 cm³+N+Sem/Measr+ABBR:cm³ UNIT ;
 co2+N+Sem/Substnc+ABBR:co2 UNIT ;
 cos+N+Sem/Dummytag+ABBR:cos UNIT ; !
-adg+N+Sem/Dummytag+ACR:adg ACRO_cons ;
+adg+N+Sem/Dummytag+ABBR:adg ACRO_cons ;
 cot+N+Sem/Dummytag+ABBR:cot UNIT ; !
 dB+N+Sem/Dummytag+ABBR:dB UNIT ; !
 daa+N+Sem/Dummytag+ABBR:daa UNIT ; !
@@ -1348,16 +1348,16 @@ hg+N+Sem/Measr+ABBR:hg UNIT ; !
 hl+N+Sem/Measr+ABBR:hl UNIT ; !
 id+N+Sem/Obj-ling+ABBR:id9 UNIT ;
 ie+N+Sem/Dummytag+ABBR:ie UNIT ;
-info+N+Sem/Txt+ACR:info ACRONOUN_vow ;
+info+N+Sem/Txt+ABBR:info ACRONOUN_vow ;
 kHz+N+Sem/Measr+ABBR:kHz UNIT ; !
 kV+N+Sem/Measr+ABBR:kV UNIT ;
 kW+N+Sem/Measr+ABBR:kW UNIT ;
 kWh+N+Sem/Measr+ABBR:kWh UNIT ;
-kWh+N+Sem/Measr+Err/Orth+ACR:kwh UNIT ;
+kWh+N+Sem/Measr+Err/Orth+ABBR:kwh UNIT ;
 kb+N+Sem/Measr+ABBR:kb UNIT ; !kilobyte
 kb/s+N+Sem/Measr+ABBR:kb/s UNIT ; !kilobytes per second
-km²+N+Sem/Measr+Err/Orth+ACR:km2 UNIT ;
-km³+N+Sem/Measr+Err/Orth+ACR:km3 UNIT ;
+km²+N+Sem/Measr+Err/Orth+ABBR:km2 UNIT ;
+km³+N+Sem/Measr+Err/Orth+ABBR:km3 UNIT ;
 km²+N+Sem/Measr+ABBR:km² UNIT ;
 km³+N+Sem/Measr+ABBR:km³ UNIT ;
 kvm+N+Sem/Measr+ABBR:kvm UNIT ;
@@ -1369,24 +1369,24 @@ mV+N+Sem/Measr+ABBR:mV UNIT ;
 mW+N+Sem/Measr+ABBR:mW UNIT ;
 mg+N+Sem/Measr+ABBR:mg UNIT ;
 mm+N+Sem/Measr+ABBR:mm UNIT ;
-mm²+N+Err/Orth+Sem/Measr+ACR:mm2 UNIT ;
-mm³+N+Err/Orth+Sem/Measr+ACR:mm3 UNIT ;
+mm²+N+Err/Orth+Sem/Measr+ABBR:mm2 UNIT ;
+mm³+N+Err/Orth+Sem/Measr+ABBR:mm3 UNIT ;
 mm²+N+Sem/Measr+ABBR:mm² UNIT ;
 mm³+N+Sem/Measr+ABBR:mm³ UNIT ;
 mod+N+Sem/Dummytag+ABBR:mod9 UNIT ;
 mp+N+Sem/Org+ABBR:mp UNIT ;
 m²+N+Sem/Measr+ABBR:m² UNIT ;
 m³+N+Sem/Measr+ABBR:m³ UNIT ;
-m²+N+Sem/Measr+Err/Orth+ACR:m2 UNIT ;
-m³+N+Sem/Measr+Err/Orth+ACR:m3 UNIT ;
-ps+N+Sem/Txt+ACR:ps UNIT ;
-pta+N+Sem/Dummytag+ACR:pta UNIT ;
-pvc+N+Sem/Mat+ACR:pvc UNIT ;
-rbl+N+Sem/Dummytag+ACR:rbl UNIT ;
-sch+N+Sem/Dummytag+ACR:sch UNIT ;
-sfr+N+Sem/Dummytag+ACR:sfr UNIT ;
-vt+N+Sem/Dummytag+ACR:vt UNIT ;
-wo+N+Sem/Dummytag+ACR:wo UNIT ;
+m²+N+Sem/Measr+Err/Orth+ABBR:m2 UNIT ;
+m³+N+Sem/Measr+Err/Orth+ABBR:m3 UNIT ;
+ps+N+Sem/Txt+ABBR:ps UNIT ;
+pta+N+Sem/Dummytag+ABBR:pta UNIT ;
+pvc+N+Sem/Mat+ABBR:pvc UNIT ;
+rbl+N+Sem/Dummytag+ABBR:rbl UNIT ;
+sch+N+Sem/Dummytag+ABBR:sch UNIT ;
+sfr+N+Sem/Dummytag+ABBR:sfr UNIT ;
+vt+N+Sem/Dummytag+ABBR:vt UNIT ;
+wo+N+Sem/Dummytag+ABBR:wo UNIT ;
 yd+N+Sem/Measr+ABBR:yd9 UNIT ;
 
 
