@@ -139,6 +139,7 @@ LEXICON NUM-PREFIXES   !!≈ !! __@CODE@__
    %<:%[%<%] ARABIC ; ! <24
    %>:%[%>%] ARABIC ; ! >24
   s%.:s%.    ARABIC ; ! s.24
+             ARABICX ; ! 3x4+Num+Err/Missingspace (should be 3 x 4)
 
 LEXICON ARABICS
             +Use/Circ: REALARABICfirst  ; ! for the arabic numerals
@@ -148,6 +149,7 @@ LEXICON ARABICS
                        ARABICYEAR       ; ! for +Sem/Year
                        ARABICCLOCK      ; ! for +Sem/Time-clock
                        ARABICORD        ; ! for +Ord
+		       ARABICX          ; ! for 3x4 and its like
 
 LEXICON REALARABICfirst !!≈ * __@CODE@__ to avoid 0 as first arabic, except from only 0, or in front of comma
 < [1|2|3|4|5|6|7|8|9] > REALARABIC          ; !no numeral starts with 0 except from in front of comma
@@ -374,12 +376,26 @@ LEXICON REALARABICDELIMITER  !!≈ * __@CODE@__
             %-:∑-    REALARABIC      ; ! 1-2 multipart numbers
             %–:%–    REALARABIC      ; ! 1–2 multipart numbers
             %—:%—    REALARABIC      ; ! 1—2 multipart numbers
-            x+Err/MissingSpace:x    REALARABIC      ; ! 5x55 multipart numbers
-            ×+Err/MissingSpace:×    REALARABIC      ; ! 5x55 multipart numbers
            ,%-:,∑-   NUM-ARABICCASES ; ! 10,-
   ,%-+Err/Orth:.∑-   NUM-ARABICCASES ; ! 10.- It is wrong, but written.
  % %%+Err/Orth:%%    ARABICDELIMITER ; ! 50%. It is wrong, but 75 % of us write "75%".
           % %%:% %%  ARABICDELIMITER ; ! the correct ones as well... 50 % etc.
+
+LEXICON ARABICX
+ < [1|2|3|4|5|6|7|8|9|%0] > ARABICX ; ! Loop more numbers
+ < [1|2|3|4|5|6|7|8|9|%0] > XARABIC ; ! Go to the x
+
+LEXICON XARABIC 
+ x:X  ARABICY ; ! 5x55 multipart numbers 
+ ×:×  ARABICY ; ! 5x55 multipart numbers
+
+LEXICON ARABICY
+ < [1|2|3|4|5|6|7|8|9|%0] > ARABICY ; ! Loop more numbers
+ < [1|2|3|4|5|6|7|8|9|%0] > ARABICXTAG ; ! Go to the tag
+
+LEXICON ARABICXTAG
++Num+Err/MissingSpace: # ;
+
 
 
 LEXICON ARABICLOOP   !!≈ * __@CODE@__
