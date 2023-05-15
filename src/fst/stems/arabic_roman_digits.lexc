@@ -387,6 +387,7 @@ LEXICON ARABICX
 
 LEXICON XARABIC 
  x:X  ARABICY ; ! 5x55 multipart numbers 
+ x:x  ARABICY ; ! 5x55 multipart numbers 
  ×:×  ARABICY ; ! 5x55 multipart numbers
 
 LEXICON ARABICY
