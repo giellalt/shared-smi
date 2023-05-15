@@ -149,7 +149,7 @@ LEXICON ARABICS
                        ARABICYEAR       ; ! for +Sem/Year
                        ARABICCLOCK      ; ! for +Sem/Time-clock
                        ARABICORD        ; ! for +Ord
-		       ARABICX          ; ! for 3x4 and its like
+       ARABICX          ; ! for 3x4 and its like
 
 LEXICON REALARABICfirst !!≈ * __@CODE@__ to avoid 0 as first arabic, except from only 0, or in front of comma
 < [1|2|3|4|5|6|7|8|9] > REALARABIC          ; !no numeral starts with 0 except from in front of comma
