@@ -1015,14 +1015,12 @@ Esk1+N+Prop+Sem/Org+ACR:Esk1 ACRO_cons ;
 ! E24+N+Prop+Sem/Obj+ACR:E24 ACRO_cons ; # Everything with AEI + digit mubst be entered in {}, otherwise e.g. E2 will be read as a multichar for twolc consideration.
 < {E24} "+N":0 "+Prop":0 "+Sem/Obj":0 "+ACR":0 > ACRO_cons ;
 Vg1+N+Prop+Sem/Edu+ACR:Vg1 ACRO_vow ;
-Vg2+N+Prop+Sem/Edu+ACR:Vg2 ACRO_vow ;
-Vg3+N+Prop+Sem/Edu+ACR:Vg3 ACRO_vow ;
+< V g 2 "+N":0 "+Prop":0 "+Sem/Edu":0 "+ACR":0 > ACRO_vow ;
+< V g 3 "+N":0 "+Prop":0 "+Sem/Edu":0 "+ACR":0 > ACRO_vow ;
 Vg1+N+Prop+Sem/Edu+Use/NG+ACR:vg1 ACRO_vow ;
-Vg2+N+Prop+Sem/Edu+Use/NG+ACR:vg2 ACRO_vow ;
-Vg3+N+Prop+Sem/Edu+Use/NG+ACR:vg3 ACRO_vow ;
+< V g 2 "+N":0 "+Prop":0 "+Sem/Edu:0" "+Use/NG":0 +ACR:0" > ACRO_vow ;
+< V g 3 "+N":0 "+Prop":0 "+Sem/Edu:0" "+Use/NG":0 +ACR:0" > ACRO_vow ;
 Vg1+N+Prop+Sem/Edu+Use/NG+ACR:VG1 ACRO_vow ;
-Vg2+N+Prop+Sem/Edu+Use/NG+ACR:VG2 ACRO_vow ;
-Vg3+N+Prop+Sem/Edu+Use/NG+ACR:VG3 ACRO_vow ;
 Topp2%0+N+Prop+Sem/Event+ACR:Topp2%0 ACRO_cons ;
 ILO-169+N+Prop+Sem/Rule+ACR:ILO-169 ACRO_cons ;
 BD9+N+Prop+Sem/Txt+ACR:BD9 ACRO_cons ;
