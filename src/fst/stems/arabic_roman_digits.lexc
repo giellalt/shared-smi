@@ -382,21 +382,14 @@ LEXICON REALARABICDELIMITER  !!≈ * __@CODE@__
           % %%:% %%  ARABICDELIMITER ; ! the correct ones as well... 50 % etc.
 
 LEXICON ARABICX
- < [1|2|3|4|5|6|7|8|9|%0] > ARABICX ; ! Loop more numbers
- < [1|2|3|4|5|6|7|8|9|%0] > XARABIC ; ! Go to the x
+ < [1|2|3|4|5|6|7|8|9|%0]+ [{ x }|{ x }:{ X }|{ × }] [1|2|3|4|5|6|7|8|9|%0]+ > ARABICXNORMTAG ; ! Go to the x
+ < [1|2|3|4|5|6|7|8|9|%0]+ [{ x }:x|{ x }:X|{ × }:×] [1|2|3|4|5|6|7|8|9|%0]+ > ARABICXERRTAG ; ! Go to the x
 
-LEXICON XARABIC 
- x:X  ARABICY ; ! 5x55 multipart numbers 
- x:x  ARABICY ; ! 5x55 multipart numbers 
- ×:×  ARABICY ; ! 5x55 multipart numbers
+LEXICON ARABICXNORMTAG
++Num+Arab: # ;
 
-LEXICON ARABICY
- < [1|2|3|4|5|6|7|8|9|%0] > ARABICY ; ! Loop more numbers
- < [1|2|3|4|5|6|7|8|9|%0] > ARABICXTAG ; ! Go to the tag
-
-LEXICON ARABICXTAG
+LEXICON ARABICXERRTAG
 +Num+Arab+Err/MissingSpace: # ;
-
 
 
 LEXICON ARABICLOOP   !!≈ * __@CODE@__
