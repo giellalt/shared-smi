@@ -86,6 +86,7 @@ LEXICON POSTPROSENT !!≈ * __@CODE@__ % and case suffix
    @D.ErrOrth.ON@@C.ErrOrth@                     ARABICDELIMITER ;
 
 LEXICON MEASUREMENTS
+ °            MEASUREMENTS-tags ;
  <{ km}>      MEASUREMENTS-tags ;
  < { m}>      MEASUREMENTS-tags ;
  <{ dm}>      MEASUREMENTS-tags ;
