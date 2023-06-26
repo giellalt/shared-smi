@@ -1019,7 +1019,6 @@ SET NON-APP = ALLSYNTAG - (@APP);
 MAP:NumHNOUN (@HNOUN) TARGET (ord) (-1 BOS) ;	
 	#$ 4. Álbmotskuvlla ja oahpaheaddjiseminára gaskasaš áigi.
 
-
 #!! !!HABITIVE MAPPING
 
 # Not habitive
@@ -2446,6 +2445,10 @@ MAP:cleanupPr (@ADVL) TARGET Pr (0 Pr);
 MAP:-fsubj> (@-FSUBJ>) TARGET HUMAN + Acc OR Sem/Ani + Acc OR Sem/Org + Acc (*1 (V @<OBJ) BARRIER NOT-ADV-PCLE) ;
 	#$ Divtte bálvaleddjiidat ássat Gosenis!
 	#$ Otne luitet olbmuid ohcat navdon jápmán olbmo.
+
+MAP:-fsubj>coor (@-FSUBJ>) TARGET HUMAN + Acc OR Sem/Ani + Acc OR Sem/Org + Acc (*1 (@-FSUBJ>) BARRIER NOT-NPMOD - CC) ;
+	#$ Son oaidná Ristena ja Máreha stoahkame
+
 
 #!! * __-f<obj__ (@-F<OBJ) for Acc if there is a transitive verb + SYN-V to your left
 MAP:-f<obj (@-F<OBJ) TARGET Acc - Rel (*-1 (V TV) + SYN-V BARRIER REAL-V OR S-BOUNDARY) ;
