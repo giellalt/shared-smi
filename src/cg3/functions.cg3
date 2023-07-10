@@ -2088,7 +2088,7 @@ MAP:-fsubj> (@-FSUBJ>) TARGET HUMAN + Gen (1 (Actio Nom) LINK 1 N) ;
 	# Adverbials - ADVL
 LIST MOVE-VERBS-sme = "báhcit" "beassat" "boahtit" "čuoigat" "fárret" "fierrat" "gahččat" "girdit" "johtit" "sihkkelastit" "sirdit" "vázzát" "vázzit" "viehkat" "viehkalit" "vuodjit" "vuojehit" "vuolgit" "vuolggahit"  ;
 
-LIST ELA-VERBS-NOT-PLC-sme = "árbet" "bálkestit" "báidnit" "čoaggit" "čohkket" "diŋgot" "duvdit" "earránit" "fuollat" "gáibidit" "geassádit" "goaikut" "jearrat" "jorgalit" "logaldallat"  "nákkáhallat" "njammat" "njoammut" "oastit" "oažžut" "rivvet" "sierranit" "suoladit" "suorggidit" "váldit" "válljet" "vuovdit"  ;
+LIST ELA-VERBS-NOT-PLC-sme = "árbet" "bálkestit" "báidnit" "čiehkádit" "čoaggit" "čohkket" "diŋgot" "duvdit" "earránit" "fuollat" "gáibidit" "geassádit" "goaikut" "jearrat" "jorgalit" "logaldallat"  "nákkáhallat" "njammat" "njoammut" "oastit" "oažžut" "rivvet" "sierranit" "suoladit" "suorggidit" "váldit" "válljet" "vuovdit"  ;
 
 LIST OTH-ELA-VERBS-sme = "ballat" "beroštit" "muitalit" "váldit" "viežžat"  ;
 
