@@ -376,9 +376,10 @@ LEXICON REALARABICDELIMITER  !!≈ * __@CODE@__
             %-:∑-    REALARABIC      ; ! 1-2 multipart numbers
              –:–     REALARABIC      ; ! 1–2 multipart numbers, n-dash
              —:—     REALARABIC      ; ! 1—2 multipart numbers, m-dash
-           ,%-:,∑-   NUM-ARABICCASES ; ! 10,-
-  ,%-+Err/Orth:.∑-   NUM-ARABICCASES ; ! 10.- It is wrong, but written.
- % %%+Err/Orth:%%    ARABICDELIMITER ; ! 50%. It is wrong, but 75 % of us write "75%".
+            ,-:,∑-   NUM-ARABICCASES ; ! 10,-
+   ,-+Err/Orth:.∑-   NUM-ARABICCASES ; ! 10.- It is wrong, but written.
+ % %%+Use/-TTS+Err/Orth:%%    ARABICDELIMITER ; ! 50%. It is wrong, but 75 % of us write "75%". Use this in non-TTS, it will flag the error
+ % @P.Pmatch.Loc@%%+Use/TTS:@P.Pmatch.Loc@%%    ARABICDELIMITER ; ! 50%. It is wrong, but 75 % of us write "75%". Use this in TTS, it will split in two tokens
  % %%+Use/-TTS:% %%  ARABICDELIMITER ; ! the correct ones as well... 50 % etc. In TTS, we treat 50 and % as two tokens = easier processing
 
 LEXICON ARABICX

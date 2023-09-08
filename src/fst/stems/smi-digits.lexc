@@ -75,7 +75,8 @@ LEXICON ARABICDELIMITERCOLL   !!≈ * __@CODE@__ collectives
 
 LEXICON PROSENT !!≈ * __@CODE@__ % and case suffix
 !                    POSTPROSENT ; ! case suffix
- % %%+Err/MissingSpace:%%   POSTPROSENT ; ! 50%. It is wrong, but 75 % of us write "75%".
+ % %%+Use/-TTS+Err/MissingSpace:%%   POSTPROSENT ; ! 50%. It is wrong, but 75 % of us write "75%".
+ % @P.Pmatch.Loc@%%+Use/TTS:@P.Pmatch.Loc@%%  POSTPROSENT ; ! 50%. It is wrong, but 75 % of us write "75%".
          % %%+Use/-TTS:% %% POSTPROSENT ; ! the correct ones as well... 50 % etc.
 
 LEXICON POSTPROSENT !!≈ * __@CODE@__ % and case suffix
