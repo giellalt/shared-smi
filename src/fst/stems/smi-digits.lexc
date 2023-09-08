@@ -74,7 +74,7 @@ LEXICON ARABICDELIMITERCOLL   !!≈ * __@CODE@__ collectives
  +Err/Orth:∑- ARABICCASECOLL ; ! This is the 1984-s case.
 
 LEXICON PROSENT !!≈ * __@CODE@__ % and case suffix
-                    POSTPROSENT ; ! case suffix
+!                    POSTPROSENT ; ! case suffix
  % %%+Err/MissingSpace:%%   POSTPROSENT ; ! 50%. It is wrong, but 75 % of us write "75%".
           % %%:% %% POSTPROSENT ; ! the correct ones as well... 50 % etc.
 
