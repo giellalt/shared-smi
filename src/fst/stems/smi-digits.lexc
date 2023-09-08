@@ -90,11 +90,11 @@ LEXICON MEASUREMENTS
  <{ dm}>      MEASUREMENTS-tags ;
  <{ cm}>      MEASUREMENTS-tags ;
  <{ mm}>      MEASUREMENTS-tags ;
- < " ": {km}> MEASUREMENTS-errtags ;
- < " ":  {m}> MEASUREMENTS-errtags ;
- < " ": {dm}> MEASUREMENTS-errtags ;
- < " ": {cm}> MEASUREMENTS-errtags ;
- < " ": {mm}> MEASUREMENTS-errtags ;
+ < " ":0 k m > MEASUREMENTS-errtags ;
+ < " ":0   m > MEASUREMENTS-errtags ;
+ < " ":0 d m > MEASUREMENTS-errtags ;
+ < " ":0 c m > MEASUREMENTS-errtags ;
+ < " ":0 m m > MEASUREMENTS-errtags ;
 
 LEXICON MEASUREMENTS-tags
  +N+Sem/Measr:   # ; ! 50 m. 
