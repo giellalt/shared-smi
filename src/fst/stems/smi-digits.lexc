@@ -100,7 +100,7 @@ LEXICON MEASUREMENTS-tags
  +N+Sem/Measr:   # ; ! 50 m. 
 
 LEXICON MEASUREMENTS-errtags
- +N+Err/Orth+Sem/Measr:    # ; ! 50m. 
+ +N+Err/MissingSpace+Sem/Measr:    # ; ! 50m. 
 
 LEXICON ROMNUMTAG   !!≈ * __@CODE@__
   +Num+Rom+Sg+Nom+Use/Circ:   #            ;
