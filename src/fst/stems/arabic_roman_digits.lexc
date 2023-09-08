@@ -374,8 +374,8 @@ LEXICON REALARABICDELIMITER  !!≈ * __@CODE@__
             %-:∑-    REALARABICDECIM ;
             %–       REALARABICDECIM ;
             %-:∑-    REALARABIC      ; ! 1-2 multipart numbers
-            %–:%–    REALARABIC      ; ! 1–2 multipart numbers
-            %—:%—    REALARABIC      ; ! 1—2 multipart numbers
+             –:–     REALARABIC      ; ! 1–2 multipart numbers, n-dash
+             —:—     REALARABIC      ; ! 1—2 multipart numbers, m-dash
            ,%-:,∑-   NUM-ARABICCASES ; ! 10,-
   ,%-+Err/Orth:.∑-   NUM-ARABICCASES ; ! 10.- It is wrong, but written.
  % %%+Err/Orth:%%    ARABICDELIMITER ; ! 50%. It is wrong, but 75 % of us write "75%".
