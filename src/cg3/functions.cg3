@@ -156,7 +156,7 @@ LIST Sem/Obj-ling =  Sem/Obj-ling  Sem/Obj-ling_Obj-surfc ;
 LIST Sem/Obj-play =  Sem/Act_Obj-play  Sem/Game_Obj-play  Sem/Obj-play Sem/Obj-play_Sport ;
 LIST Sem/Obj-rope =  Sem/Obj-rope ;
 LIST Sem/Obj-surfc =  Sem/Aniprod_Obj-clo Sem/Clth_Obj-clo Sem/Mat_Obj-clo Sem/Obj-clo  ;
-LIST Sem/Org = Sem/Act_Org Sem/Ani_Org Sem/Body_Org Sem/Build-room_Org Sem/Build_Edu_Org Sem/Build_Event_Org Sem/Build_Org Sem/Clth-jewl_Curr_Obj_Org Sem/Clth-jewl_Org Sem/Ctain-abstr_Org Sem/Curr_Org Sem/Dance_Org Sem/Domain_Org Sem/Domain_Org_Plc-abstr Sem/Edu_Org Sem/Event_Org Sem/Group_Hum_Org Sem/Group_Org Sem/Hum_Org Sem/Money_Org Sem/Org Sem/Org_Play Sem/Org_Plc Sem/Org_Prod-audio Sem/Org_Prod-cogn Sem/Org_Prod-vis Sem/Org_Rule Sem/Org_State Sem/Org_Txt Sem/Org_Veh ;
+LIST Sem/Org = sem_org Sem/Act_Org Sem/Ani_Org Sem/Body_Org Sem/Build-room_Org Sem/Build_Edu_Org Sem/Build_Event_Org Sem/Build_Org Sem/Clth-jewl_Curr_Obj_Org Sem/Clth-jewl_Org Sem/Ctain-abstr_Org Sem/Curr_Org Sem/Dance_Org Sem/Domain_Org Sem/Domain_Org_Plc-abstr Sem/Edu_Org Sem/Event_Org Sem/Group_Hum_Org Sem/Group_Org Sem/Hum_Org Sem/Money_Org Sem/Org Sem/Org_Play Sem/Org_Plc Sem/Org_Prod-audio Sem/Org_Prod-cogn Sem/Org_Prod-vis Sem/Org_Rule Sem/Org_State Sem/Org_Txt Sem/Org_Veh ;
 LIST Sem/Part = Sem/Body_Part Sem/Buildpart_Part Sem/Clth_Part Sem/Food_Part Sem/Hum_Part Sem/Mat_Part Sem/Money_Part Sem/Obj_Part_Sign Sem/Part Sem/Part_Plc Sem/Part_Plc_Prod-audio Sem/Part_Prod-cogn Sem/Part_Substnc Sem/Part_Txt ;
 LIST Sem/Perc-cogn = Sem/Perc-cogn ;
 LIST Sem/Perc-emo = Sem/Act_Perc-emo Sem/Domain_Perc-emo Sem/Obj_Perc-emo Sem/Perc-emo Sem/Perc-emo_Plc Sem/Perc-emo_State Sem/Perc-emo_Wthr ;
@@ -1319,7 +1319,8 @@ MAP:>nAttr (@>Num) TARGET Attr OR CURRENCY (1 Num)  ;
 MAP:>nAttr (@>Num) TARGET Attr (1 Dem LINK 1 Num)  ;
 MAP:>nAttr (@>A) TARGET Attr - Dem - Pron (*1 A - Attr OR Ord - Gen BARRIER NOT-NPMOD OR CC OR (N Gen) OR COMMA OR PUNCT)  ;
 MAP:>nAttr (@>A) TARGET ("juohke") (1 (A Ord)) ;
-MAP:>nAttr (@>A) TARGET Num (1 Sem/Measr LINK 1 A OR N)  ;
+MAP:>nAttr (@>A) TARGET Num (1 Sem/Measr LINK 1 A)  ;
+MAP:>nAttr (@>N) TARGET Num (1 Sem/Measr LINK 1 N)  ;
 	#$ Árktalaš parlamentáralaččaid konferánsa lágiduvvo juohke nuppi jagi.
 	#$ 24 mehter guhkkosaš dáidda čájehuvvo doppe.
 
@@ -2042,7 +2043,7 @@ MAP:subj>App (@SUBJ>) TARGET (N Nom) OR (Pron Nom) (1 COMMA LINK *1 @APP-N< OR @
 
 
 # Rules for complements
-MAP:n< (@N<) TARGET N + Loc OR Pron + Loc (*-1 (N @SUBJ>) BARRIER NOT-NPMODADV)(1 VFIN)(0 HUMAN) ; #OBS, for generell, la foreløpig til 0 HUMAN 
+#MAP:n< (@N<) TARGET N + Loc OR Pron + Loc (*-1 (N @SUBJ>) BARRIER NOT-NPMODADV)(1 VFIN)(0 HUMAN) ; #OBS, for generell, la foreløpig til 0 HUMAN 
 MAP:n< (@N<) TARGET N + Loc OR Pron + Loc (-1 @>N LINK -1 ADVLCASE LINK -1 N + @SUBJ>)(1 VFIN)(0 HUMAN) ; #OBS, for generell, la foreløpig til 0 HUMAN 
 MAP:n< (@N<) TARGET N + Loc OR Pron + Loc (-1 N + Gen LINK -1 NUM - Sem/Year)(1 VFIN) ;
 MAP:n< (@Pron<) TARGET N + Loc OR Pron + Loc (-1 Pron + @SUBJ>)(1 VFIN) ;
@@ -2052,6 +2053,7 @@ MAP:Pron< (@Pron<) TARGET Pers + Loc (*-1 Pron + Nom BARRIER NOT-ADV - COMMA LIN
 	#$ Bealli oahpahalliin leat nieiddat.
 	#$ Almmuhusat neahtas eai leat doarvái.
 	#$ Sullii okta goalmmátoassi dutkamuššii searvan ohppiin bohtet Norggas.
+	#% Nrk hoavda lohká ahte sámegielmáhttu Nrk Sámi direktevrras lea okta dain váldoeavttuin
 
 	#$ Ollugat sis dorjot sosialdemokráhtalaš bellodaga ásaheami.
 #MAP:n< (@N<) TARGET (N Loc)(-1 (N Nom) LINK *-1 FMAINV BARRIER SV-BOUNDARY) ;
@@ -2148,7 +2150,7 @@ MAP:f<advl (@-F<ADVL-ela) TARGET N + Loc IF (-1 Num + Attr LINK -1 @<SUBJ + V)(1
 
 MAP:f<advl (@-F<ADVL-ine) TARGET ADVL-INE-ELA - MO - S-BOUNDARY OR TIME-N + Gen OR Gen-Sem/Route (*-1 SYN-V - VGen - VAbess BARRIER SV-BOUNDARY OR CS LINK NOT 0 ELA-VERBS-sme)(NEGATE 0 DUSSE OR EASKKA)(0 (<sme>)) ;
 MAP:f<advl (@-F<ADVL-ine) TARGET Loc + Sem/Lang (*0 ("oahpahus") OR ("oahpahit") BARRIER SV-BOUNDARY)(0 (<sme>)) ;
-MAP:f<advl (@-F<ADVL-ela) TARGET ADVL-INE-ELA - MO - S-BOUNDARY OR TIME-N + Gen OR Gen-Sem/Route (*-1 SYN-V - VGen - VAbess BARRIER SV-BOUNDARY OR CS LINK 0 ELA-VERBS-sme)(NEGATE 0 DUSSE OR EASKKA)(0 (<sme>)) ;
+MAP:f<advl (@-F<ADVL-ela) TARGET ADVL-INE-ELA - MO - S-BOUNDARY OR TIME-N + Gen OR Gen-Sem/Route (*-1 SYN-V - VGen - VAbess BARRIER SV-BOUNDARY OR CS LINK 0 ELA-VERBS-sme)(NEGATE 0 DUSSE OR EASKKA OR Sem/Plc)(0 (<sme>)) ;
 
 
 	#$ Min mielas goit lea veara jurddašit nissongova birra mii boahtá ovdan jearahallamiin.
@@ -2227,7 +2229,7 @@ MAP:ine-timeill (@ADVL-ine>) TARGET N + Loc IF (NOT 0 Sem/Time)(1 N + Ill + Sem/
 MAP:mielas-ela (@ADVL-ela>) TARGET ("miella") + Loc OR ("mielas") IF (-1 Gen)(NEGATE *-1 VFIN BARRIER S-BOUNDARY)(0 (<sme>)) ; #ine for sma, ela for smj
 MAP:mielas-ela (@<ADVL-ela) TARGET ("miella") + Loc OR ("mielas") IF (-1 Gen)(NEGATE *1 VFIN BARRIER S-BOUNDARY)(0 (<sme>)) ; #ine for sma, ela for smj
 MAP:oahppat (@ADVL-ela>) TARGET HUMAN - INE-NOUNS-sme (0 Loc)(NEGATE *-1 FMAINV BARRIER S-BOUNDARY)(*1 FMAINV + ("oahppat") BARRIER SV-BOUNDARY LINK NEGATE 0 OTH-ELA-VERBS-sme)(0 (<sme>)) ;
-MAP:oahppat (@ADVL-ela>) TARGET HUMAN - INE-NOUNS-sme (0 Loc)(*-1 FMAINV + ("oahppat") BARRIER SV-BOUNDARY LINK NEGATE 0 OTH-ELA-VERBS-sme)(0 (<sme>)) ;
+MAP:oahppat (@ADVL-ela>) TARGET Sem/Org OR HUMAN (0 Loc LINK NOT 0 INE-NOUNS-sme)(*-1 FMAINV + ("oahppat") BARRIER SV-BOUNDARY LINK NEGATE 0 OTH-ELA-VERBS-sme)(0 (<sme>)) ;
 MAP:bivdit-ela (@<ADVL-ela) TARGET N + Loc IF (*-1 ("veahkki") BARRIER NOT-NPMOD LINK *-1 FMAINV + ("bivdit") BARRIER SV-BOUNDARY)(0 (<sme>)) ; 
 
 
