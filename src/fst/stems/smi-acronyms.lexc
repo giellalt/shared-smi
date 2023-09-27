@@ -1191,6 +1191,7 @@ dna+N+Prop+Sem/Substnc+ACR:dna ACRO_vow ;
 hd+N+Prop+Sem/Org+ACR:hd ACRO_cons ;
 html+N+Prop+Sem/Txt+ACR:html ACRO_cons ;
 http+N+Prop+Sem/Txt+ACR:http ACRO_cons ;
+hfst+N+Prop+Sem/Obj+ACR:hfst ACRO_cons ;
 iOS+N+Prop+Sem/Tool-it+ACR:iOS ACRO_cons ;
 iq+N+Prop+Sem/Measr+ACR:iq ACRO_cons ;
 mc+N+Prop+Sem/Org+ACR:mc ACRO_vow ;
