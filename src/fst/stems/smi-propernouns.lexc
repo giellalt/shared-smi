@@ -34179,5 +34179,10 @@ Torvhågen+OLang/UND:Torv^hågen LONDON-plc ;
 Loso+OLang/UND:Loso9 ACCRA-sur ;
 Noor+OLang/UND:Noor BERN-org ;
 Rusko+OLang/FIN:Rusko ACCRA-plc ;
-
+7.juni-plassen+MWE+CmpNP/First:7.juni-plassen9 LONDON-org ; 
+Arctic% Cat+MWE+CmpNP/First:Arctic% Cat BERN-obj ;
+Bamse:Bamse ACCRA-ani ;
+HEI% LOLA+MWE+CmpNP/First+OLang/UND:HEI% LOLA ACCRA-obj ;
+HEI% LOLA+MWE+Err/Orth+OLang/UND:Hei% Lola ACCRA-obj ;
+JUO% Master% in% Sámi% Journalism% from% an% Indigenous% Perspective+MWE+CmpNP/First:JUO% Master% in% Sámi% Journalism% from% an% Indigenous% Perspective MARJA-A-obj ;
 
