@@ -2218,6 +2218,10 @@ LIST DADJAT = "čuoččuhit" "dadjat" "jáhkkit" "láhttestit" "lohkat" "muitali
 #!! * __-fsubj__ (@-FSUBJ>) for HUMAN Acc after DADJAT verbs
 MAP:-fsubj> (@-FSUBJ>) TARGET HUMAN + Acc OR Sem/Org + Acc (*1 V + Inf BARRIER NOT-ADV-PCLE)(*-1 DADJAT BARRIER NOT-NPMODADV) ;
 	#$ Sii jáhkket Elin Kåvena vuoitit
+	#$ Goalmmát fas lohká iežas rievtti mielde leat hui movttegis olmmožin.
+MAP:-fsubj> (@-FSUBJ>) TARGET HUMAN + Acc OR Sem/Org + Acc (*1 N + Ess OR A + Ess BARRIER NOT-A-ADV)(*-1 DADJAT BARRIER NOT-NPMODADV) ;
+	#$ Goalmmát fas lohká iežas movttegis olmmožin.
+	#$ Goalmmát fas lohká iežas rievtti mielde hui movttegis olmmožin.
 
 
 	# Infinite object - FOBJ
@@ -2468,7 +2472,7 @@ MAP:cleanupPr (@ADVL) TARGET Pr (0 Pr);
 	# Infinite subjects - FSUBJ
 
 #!! * __-fsubj>asAcc__ (@-FSUBJ>) for HUMAN Acc; if there is a verb @-F<OBJ to your left
-MAP:-fsubj> (@-FSUBJ>) TARGET HUMAN + Acc OR Sem/Ani + Acc OR Sem/Org + Acc (*1 (V @<OBJ) BARRIER NOT-ADV-PCLE) ;
+MAP:-fsubj> (@-FSUBJ>) TARGET HUMAN + Acc OR Sem/Ani + Acc OR Sem/Org + Acc OR ("dat") + Acc (*1 (V @<OBJ) BARRIER NOT-ADV-PCLE) ;
 	#$ Divtte bálvaleddjiidat ássat Gosenis!
 	#$ Otne luitet olbmuid ohcat navdon jápmán olbmo.
 
