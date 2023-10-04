@@ -2160,6 +2160,13 @@ MAP:f<advl (@-F<ADVL-ine) TARGET ADVL-INE-ELA - MO - S-BOUNDARY OR TIME-N + Gen 
 MAP:f<advl (@-F<ADVL-ela) TARGET N + Loc IF (-1 Num + Attr LINK -1 @<SUBJ + V)(1 N + Ill OR DOHKO OR Coll + Ill)(NEGATE *1 FMAINV BARRIER S-BOUNDARY)(0 (<sme>)) ;
 	#$ Man divrras lea lasihit guovtti ráđđeaddis golbmasii?
 
+MAP (@ADVL-ine>) TARGET ADVLCASEAdv (0 Loc OR Adv OR Po)(NEGATE *-1 FMAINV BARRIER S-BOUNDARY)(*1 FMAINV BARRIER SV-BOUNDARY LINK NOT 0 ELA-VERBS-sme)(0 (<sme>)) ;
+	#% – Mii eat leat ožžon makkárge moaitagiid gehččiin eatge vuddjiin, dat lea hui somá.
+MAP (@ADVL-ine>) TARGET Num + Gen (-1 DUSSE) ;
+MAP (@ADVL-ine>) TARGET Sem/Year (0 Loc LINK *1 FMAINV)(NEGATE 1 Sem/Year OR Ill)(0 (<sme>)) ;
+MAP (@<ADVL-ine) TARGET ADVLCASEAdv + Sem/Year (0 Loc)(NEGATE 1 Sem/Year OR Ill)(0 (<sme>)) ;
+	#$ 1964:s bođii Ráisii dálueamitskuvla.
+
 MAP:f<advl (@-F<ADVL-ine) TARGET ADVL-INE-ELA - MO - S-BOUNDARY OR TIME-N + Gen OR Gen-Sem/Route (*-1 SYN-V - VGen - VAbess BARRIER SV-BOUNDARY OR CS LINK NOT 0 ELA-VERBS-sme)(NEGATE 0 DUSSE OR EASKKA)(0 (<sme>)) ;
 MAP:f<advl (@-F<ADVL-ine) TARGET Loc + Sem/Lang (*0 ("oahpahus") OR ("oahpahit") BARRIER SV-BOUNDARY)(0 (<sme>)) ;
 MAP:f<advl (@-F<ADVL-ela) TARGET ADVL-INE-ELA - MO - S-BOUNDARY OR TIME-N + Gen OR Gen-Sem/Route (*-1 SYN-V - VGen - VAbess BARRIER SV-BOUNDARY OR CS LINK 0 ELA-VERBS-sme)(NEGATE 0 DUSSE OR EASKKA OR Sem/Plc)(0 (<sme>)) ;
@@ -2262,12 +2269,6 @@ MAP:ela-ill (@<ADVL-ela) TARGET Dem + Loc IF (1 ("duohko"))(0 (<sme>)) ;
 MAP:gaskkamuttus-ine (@ADVL-ine>) TARGET PREGEN + Loc IF (-1 Sem/Time)(NEGATE *-1 FMAINV BARRIER S-BOUNDARY)(0 (<sme>)) ;
 MAP:gaskkamuttus-ine (@<ADVL-ine) TARGET PREGEN + Loc IF (-1 Sem/Time)(NEGATE *1 FMAINV BARRIER S-BOUNDARY)(0 (<sme>)) ;
 
-MAP (@ADVL-ine>) TARGET ADVLCASEAdv (0 Loc OR Adv OR Po)(NEGATE *-1 FMAINV BARRIER S-BOUNDARY)(*1 FMAINV BARRIER SV-BOUNDARY LINK NOT 0 ELA-VERBS-sme)(0 (<sme>)) ;
-	#% – Mii eat leat ožžon makkárge moaitagiid gehččiin eatge vuddjiin, dat lea hui somá.
-MAP (@ADVL-ine>) TARGET Num + Gen (-1 DUSSE) ;
-MAP (@ADVL-ine>) TARGET Sem/Year (0 Loc LINK *1 FMAINV)(NEGATE 1 Sem/Year OR Ill)(0 (<sme>)) ;
-MAP (@<ADVL-ine) TARGET ADVLCASEAdv + Sem/Year (0 Loc)(NEGATE 1 Sem/Year OR Ill)(0 (<sme>)) ;
-	#$ 1964:s bođii Ráisii dálueamitskuvla.
 MAP:coahkkimis (@ADVL-ine>) TARGET Loc (0 ("čoahkkin"))(NEGATE *-1 FMAINV BARRIER S-BOUNDARY)(*1 FMAINV BARRIER SV-BOUNDARY LINK NOT 0 MOVE-VERBS-sme)(0 (<sme>)) ;
 MAP:coahkkimis (@<ADVL-ine) TARGET Loc (0 ("čoahkkin"))(*-1 FMAINV BARRIER SV-BOUNDARY LINK NOT 0 MOVE-VERBS-sme)(0 (<sme>)) ;
 MAP (@ADVL-ela>) TARGET ADVLCASEAdv - INE-TRIGGER-NOUNS-sme (0 Loc OR Adv OR Po)(NEGATE *-1 FMAINV BARRIER S-BOUNDARY)(*1 FMAINV + ELA-VERBS-sme BARRIER SV-BOUNDARY LINK NOT 0 OTH-ELA-VERBS-sme LINK NEGATE *1 Loc BARRIER SV-BOUNDARY)(0 (<sme>)) ;
@@ -2303,6 +2304,8 @@ MAP:nákkáhallatV<advl-ine (@<ADVL-ine) TARGET Loc (0 Sem/Build LINK *-1 ("nák
 
 MAP:PlcV<advl-ine (@<ADVL-ine) TARGET Loc (0 Sem/Plc + Prop LINK *-1 ELA-VERBS-NOT-PLC-sme BARRIER SV-BOUNDARY)(0 (<sme>)) ;
 	#$ Arctic Gold ožžon ohcanlobi Biedjovákkis.
+MAP:PlcV<advl-ine (@<ADVL-ine) TARGET Loc (0 Sem/Time LINK *-1 FMAINV)(NOT *1 FMAINV OR Ill)(0 (<sme>)) ;
+	#$ Dalle lea digitála logaldallan «Sámi mánáid oahppama ođđa áiggis»
 
 
 MAP:V<advl-ela (@<ADVL-ela) TARGET ADVLCASEAdv - INE-TRIGGER-NOUNS-sme OR Po  (0 Loc OR Adv OR Po LINK NOT 0 ("dii" Adv) OR NOT-INE-ELA) ((*-1 ELA-TRIGGER-NOUNS-sme OR  ELA-VERBS-sme BARRIER NOT-NPMODADV) OR (-1 Po LINK -1 ELA-TRIGGER-NOUNS-sme OR ELA-VERBS-sme))(NEGATE *-1 ("várra") BARRIER NOT-NPMODADV)(NEGATE *-1 ELA-VERBS-sme LINK -1 ("várra") )(0 (<sme>)) ;
