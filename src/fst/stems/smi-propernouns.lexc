@@ -120,6 +120,7 @@ Bad+CmpNP/None+OLang/NOB:Bad9 BERN-sur ;
 Bae+CmpNP/None+OLang/UND:Bae ACCRA-sur ;
 Bao+CmpNP/None+OLang/UND:Bao9 ACCRA-mal ;
 Bay+CmpNP/None+OLang/UND:Bay BERN-plc ;
+Rama% Cay+MWE+CmpNP/First+OLang/UND:Rama% Cay BERN-plc ;
 Ben+CmpNP/None+OLang/UND:Ben9 BERN-mal ;
 Bie+CmpNP/None+OLang/UND:Bie ACCRA-sur ;
 Bo+CmpNP/None+OLang/UND:Bo9 NYSTØ-plc ; !
@@ -15054,6 +15055,7 @@ Koefod+OLang/UND:Koefod9 BERN-sur ;
 Koefoed+OLang/NOB:Koefoed9 BERN-sur ;
 Koenigsegg+OLang/UND:Koenigs^egg9 BERN-obj ;
 Koestler+OLang/UND:Koestler LONDON-sur ;
+Butler+OLang/UND:Butler LONDON-sur ;
 Koffka+OLang/UND:Koffka ACCRA-sur ;
 Kofi+OLang/UND:Kof PIPPI-mal ;
 Kofod+OLang/UND:Kofod9 BERN-sur ;
