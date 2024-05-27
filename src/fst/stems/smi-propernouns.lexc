@@ -640,7 +640,7 @@ LEXICON ProperNoun-smi !!= * __@CODE@__ Propernouns
 !Östergötlands+N+Prop+Attr:Öster^göt^lands ENDLEX ; !XXX
 22-Pistepirkko+OLang/FIN:22-Pistepirkko9 ACCRA-org ;
 4-TEC+OLang/UND:4-TEC BERN-obj ;
-7.juni-plassen+MWE+CmpNP/First:7.juni-plassen9 LONDON-org ; 
+7.juni-plassen+MWE+CmpNP/First+OLang/NOB:7.juni-plassen9 LONDON-org ; 
 ABCG% heritage+MWE+CmpNP/First+OLang/UND:ABCG% heritage ACCRA-org ;
 ABCG% heritage+MWE+Err/Orth+OLang/UND:ABCG% Heritage ACCRA-org ;
 ABCGheritage+OLang/UND:ABCGheritage ACCRA-org ;
@@ -1934,7 +1934,7 @@ Archie+OLang/UND:Archie ACCRA-mal ; ! CHECK!!!
 Archimedes+OLang/UND:Archimedes LONDON-obj ;
 Arctander+OLang/UND:Arctander LONDON-sur ;
 Arctandria+OLang/NOB:Arctandria ACCRA-obj ;
-Arctic% Cat+MWE+CmpNP/First:Arctic% Cat BERN-obj ;
+Arctic% Cat+MWE+CmpNP/First+OLang/ENG:Arctic% Cat BERN-obj ;
 Arctic% Femme+MWE+CmpNP/First+OLang/UND:Arctic% Femme ACCRA-org ;
 Arctic% Frontiers+MWE+CmpNP/First+OLang/ENG:Arctic% Frontiers LONDON-org ;
 Arctic% Gold% AB+MWE+CmpNP/First+OLang/UND:Arctic% Gold% AB BERN-org ;
@@ -2226,7 +2226,7 @@ Asphaugen+OLang/NOB:Asp^haugen9 LONDON-plc ;
 Asplan% Viak+MWE+CmpNP/First+OLang/UND:Asplan% Viak LONDON-org ;
 Aspoestrand+OLang/NOB:Asp^oe^strand9 BERN-plc ;
 Asponn+OLang/UND:Asponn9 BERN-plc ;
-Aspsjön:Asp^sjön9 BERN-plc ; ! from sma
+Aspsjön+OLang/SWE:Asp^sjön9 BERN-plc ; ! from sma
 Aspås+OLang/NOB:Asp^ås BERN-plc ;
 Assab+OLang/UND:Assab9 LONDON-plc ;
 Assam+OLang/UND:Assam9 LONDON-plc ;
@@ -2446,7 +2446,7 @@ Auvergne+OLang/UND:Auvergne ACCRA-plc ;
 Auvinen+OLang/FIN:Auvi C-FI-NEN-sur ;
 Avaldsnes+OLang/NOB:Avalds^nes BERN-plc ;
 Avanersuaq+OLang/UND:Avanersu^aq BERN-plc ;
-Avasjön:Ava^sjön9 BERN-plc ; ! from sma
+Avasjön+OLang/SWE:Ava^sjön9 BERN-plc ; ! from sma
 Avaskari+OLang/UND:Avas^kar PIPPI-sur ;
 Avdeev+OLang/UND:Avde^ev LONDON-sur ;
 Avdeeva+OLang/UND:Avde^eva ACCRA-sur ;
@@ -2656,7 +2656,7 @@ Bamako+OLang/UND:Bamako9 ACCRA-plc ;
 Bamberg+OLang/NOB:Bam^berg9 BERN-sur ;
 Bamble+OLang/UND:Bamble ACCRA-plc ;
 Bamrud+OLang/NOB:Bam^rud9 BERN-sur ;
-Bamse:Bamse ACCRA-ani ;
+Bamse+OLang/NOB:Bamse ACCRA-ani ;
 Banaba+OLang/UND:Banaba ACCRA-plc ;
 Banak+OLang/UND+Err/Orth:Bannak LONDON-plc ;
 Banak+OLang/UND:Banak LONDON-plc ;
@@ -3348,7 +3348,7 @@ Birres+OLang/UND:Birres BERN-sur ;
 Birskeby+OLang/NOB:Birske^by NYSTØ-org ;
 Birte+OLang/UND:Birte ACCRA-fem ;
 Birthe+OLang/UND:Birthe ACCRA-fem ;
-Biru% Baby+MWE+CmpNP/First:Biru% Baby ACCRA-Y-org ;
+Biru% Baby+MWE+CmpNP/First+OLang/ENG:Biru% Baby ACCRA-Y-org ;
 Biscaya+OLang/UND:Bisca^ya ACCRA-plc ;
 Biscayabukten+Err/Lex+OLang/UND:Bisca^ya^bukten9 LONDON-plc ;
 Bisgaard+OLang/NOB:Bis^gaard9 BERN-sur ;
@@ -3883,9 +3883,9 @@ Bosberg+OLang/NOB:Bos^berg9 BERN-sur ;
 Bosettingen+OLang/NOB:Bosettingen9 LONDON-obj ;
 Bosettingsråd+OLang/UND:Bo^settings^råd9 BERN-sur ;
 Bosnia+OLang/NOB:Bosni ACCRA-A-plc ;
-Bosnia-Hercegovina+Err/Orth:Bosnia% ja% Hercegovina ACCRA_MWE-plc ;
-Bosnia-Hercegovina+Err/Orth:Bosnia% ja% Hertsegovina ACCRA_MWE-plc ;
-Bosnia-Hercegovina+Err/Orth:Bosnia% ja% Hertzegovina ACCRA_MWE-plc ;
+Bosnia-Hercegovina+Err/Orth+OLang/UND:Bosnia% ja% Hercegovina ACCRA_MWE-plc ;
+Bosnia-Hercegovina+Err/Orth+OLang/UND:Bosnia% ja% Hertsegovina ACCRA_MWE-plc ;
+Bosnia-Hercegovina+Err/Orth+OLang/UND:Bosnia% ja% Hertzegovina ACCRA_MWE-plc ;
 Bosnia-Hercegovina+OLang/NOB:Bosnia-Hercegovina ACCRA-plc ;
 Bosora+OLang/UND:Bosora ACCRA-plc ;
 Bosporos+OLang/UND:Bosporos LONDON-plc ;
@@ -4825,7 +4825,7 @@ Cesare+OLang/UND:Cesare ACCRA-sur ;
 Cesilie+OLang/UND:Cesilie ACCRA-fem ;
 Ceuta+OLang/UND:Ceuta ACCRA-plc ;
 Ceyhan+OLang/UND:Ceyhan9 LONDON-plc ;
-Ceylon+Err/Orth:Ceylovn LONDON-plc ;
+Ceylon+Err/Orth+OLang/UND:Ceylovn LONDON-plc ;
 Ceylon+OLang/UND:Ceylon9 LONDON-plc ;
 Chablis+OLang/UND:Chablis BERN-plc ;
 Chaco+OLang/UND:Chaco9 ACCRA-plc ;
@@ -8146,8 +8146,8 @@ Froland+OLang/NOB:Fro^land9 BERN-plc ;
 From+OLang/UND:From9 BERN-sur ;
 Fromreide+OLang/UND:Fromreide ACCRA-plc ;
 Fronter+OLang/NOB:Fronter LONDON-obj ;
-Frost% 2+MWE+N+Prop+Sem/Obj:Frost% 2 acroconnector_vow ; !
-Frost+OLang/UND:Frost9 BERN-sur ;
+Frost% 2+MWE+N+Prop+Sem/Obj+OLang/NOB:Frost% 2 acroconnector_vow ; !
+Frost+OLang/NOB:Frost9 BERN-sur ;
 Frosta+OLang/NOB:Fro^sta ACCRA-plc ;
 Frostad+OLang/NOB:Fro^stad9 BERN-plc ;
 Frostadheia+OLang/NOB:Fro^stad^he^i ACCRA-A-plc ;
@@ -10136,7 +10136,7 @@ Harriet+OLang/UND:Harri^et BERN-fem ;
 Harrieth+OLang/NOB:Harrieth9 BERN-fem ;
 Harrisburg+OLang/UND:Harris^burg9 BERN-plc ;
 Harrison+OLang/UND:Harrison9 BERN-sur ;
-Harrsjön:Harr^sjön9 BERN-plc ; ! from sma
+Harrsjön+OLang/SWE:Harr^sjön9 BERN-plc ; ! from sma
 Harry+OLang/UND:Harry ACCRA-Y-mal ;
 Harsha+OLang/UND:Harsha ACCRA-plc ;
 Harsia+OLang/NOB:Harsi ACCRA-A-plc ;
@@ -12012,7 +12012,7 @@ Høydalsmo+OLang/NOB:Høy^dals^mo9 NYSTØ-plc ;
 Høye+OLang/NOB:Hø^ye ACCRA-sur ;
 Høyem+OLang/NOB:Hø^yem9 LONDON-sur ;
 Høyer+OLang/NOB:Hø^yer LONDON-sur ;
-Høyesterett+Err/Orth:Høgste^rett BERN-obj ;
+Høyesterett+OLang/NOB+Err/Orth:Høgste^rett BERN-obj ;
 Høyesterett+OLang/NOB:Hø^yesterett BERN-obj ;
 Høyfjellskommisjonen+OLang/NOB:Høy^fjells^kommi^sjonen9 LONDON-obj ;
 Høygaard+OLang/NOB:Høy^gaard9 BERN-sur ;
@@ -12590,7 +12590,7 @@ Izvatas+OLang/UND:Izvatas LONDON-org ;
 Izzat+OLang/UND:Izzat LONDON-obj ;
 J%:son+OLang/UND:J%:son9 LONDON-sur ;
 JAY-Z+OLang/UND:JAY-Z LONDON-mal ;
-JUO% Master% in% Sámi% Journalism% from% an% Indigenous% Perspective+MWE+CmpNP/First:JUO% Master% in% Sámi% Journalism% from% an% Indigenous% Perspective ACCRA-obj ;
+JUO% Master% in% Sámi% Journalism% from% an% Indigenous% Perspective+MWE+CmpNP/First+OLang/ENG:JUO% Master% in% Sámi% Journalism% from% an% Indigenous% Perspective ACCRA-obj ;
 Jaakko+OLang/FIN:Jaakko9 ACCRA-mal ;
 Jaakkola+OLang/FIN:Jaakkol HANNOLA-sur ; ! ERVASTI? Ihvertfall ODD på sma: Jaakkolasse -Jaakkolisnie
 Jaakkonen+OLang/FIN:Jaakko C-FI-NEN-sur ;
@@ -12952,7 +12952,7 @@ Jiangxi+OLang/UND:Ji^angx PIPPI-plc ;
 Jidda+OLang/NOB:Jidda ACCRA-plc ;
 Jiddah+OLang/UND:Jiddah9 LONDON-plc ;
 Jidlaf+OLang/UND:Jidlaf LONDON-mal ;
-Jikŋon% 2+MWE+N+Prop+Sem/Obj:Jikŋon% 2 acroconnector_vow ; !
+Jikŋon% 2+MWE+N+Prop+Sem/Obj+OLang/ENG:Jikŋon% 2 acroconnector_vow ; !
 Jilin+OLang/UND:Jilin9 LONDON-plc ;
 Jill+OLang/UND:Jill BERN-fem ;
 Jimmi+OLang/UND:Jimm PIPPI-mal ;
@@ -18471,7 +18471,7 @@ Malerbua+OLang/NOB:Maler^bua ACCRA-plc ;
 Maleser+OLang/UND:Maleser LONDON-sur ;
 Malesia+OLang/NOB:Malesi ACCRA-A-plc ;
 Malfrid+OLang/NOB:Mal^frid9 BERN-fem ;
-Malgomajsjön:Malgomaj^sjön9 BERN-plc ; ! from sma
+Malgomajsjön+OLang/SWE:Malgomaj^sjön9 BERN-plc ; ! from sma
 Mali+OLang/UND:Mal MALAWI-plc ;
 Malibu+OLang/NOB:Malibu ACCRA-plc ;
 Malik+OLang/UND:Malik LONDON-mal ;
@@ -23114,8 +23114,8 @@ Pikol+OLang/UND:Pikol LONDON-sur ;
 Pila+OLang/UND:Pila ACCRA-plc ;
 Pilatus+OLang/UND:Pilatus LONDON-sur ;
 Pilcomayo+OLang/UND:Pilcoma^yo9 ACCRA-plc ;
-Pile% o'Sápmi+MWE+CmpNP/First+OLang/UND:Pile% o'Sápmi ACCRA-obj ;
-Pile% o'Sápmi+MWE+Err/Orth:Pile% O'Sápmi ACCRA-obj ;
+Pile% o'Sápmi+MWE+CmpNP/First+OLang/ENG:Pile% o'Sápmi ACCRA-obj ;
+Pile% o'Sápmi+MWE+OLang/ENG+Err/Orth:Pile% O'Sápmi ACCRA-obj ;
 Pile% of% Sápmi+MWE+CmpNP/First+OLang/UND:Pile% of% Sápmi ACCRA-obj ;
 Pilli+OLang/UND:Pill PIPPI-sur ;
 Pilmark+OLang/NOB:Pilmark BERN-plc ;
@@ -30412,8 +30412,8 @@ Tonteri+OLang/UND:Tonter ERVASTI-sur ; ! sma-ERVASTI, sme:ERVASTI?
 Tontti+OLang/UND:Tontt PIPPI-sur ;
 Tonttila+OLang/FIN:Tonttila ACCRA-sur ;
 Tony+OLang/UND:Tony ACCRA-Y-mal ;
-Top% Model+MWE+CmpNP/First:Top% Model LONDON-obj ;
-Top% ozero+MWE+CmpNP/First+OLang/UND:Top% ozero9 ACCRA_MWE-plc ;
+Top% Model+MWE+OLang/ENG+CmpNP/First:Top% Model LONDON-obj ;
+Top% ozero+MWE+CmpNP/First+OLang/ENG:Top% ozero9 ACCRA_MWE-plc ;
 Topdön+OLang/UND:Topdön9 BERN-plc ; !XXX Word-boundary?
 Topeka+OLang/UND:Topeka ACCRA-plc ;
 Topelius+OLang/UND:Topeli^us BERN-sur ;
@@ -32839,16 +32839,16 @@ Värnamo+OLang/SWE:Värna^mo9 NYSTØ-plc ;
 Värri+OLang/UND:Värr PIPPI-sur ;
 Värtinen+OLang/FIN:Värti C-FI-NEN-sur ;
 Värtö+OLang/UND:Värt^ö ACCRA-plc ;
-Västerbotten+Err/Orth:Váster^botten LONDON-orgplc ;
-Västerbotten+OLang/UND:Väster^botten9 LONDON-plc ;
-Västerbottenkysten+OLang/NOB:Västerbotten^kysten LONDON-plc ;
-Västergötland+OLang/NOB:Väster^göt^land9 BERN-LOAN-plc ;
-Västernorrlands+Err/Lex+OLang/UND:Väster^norr^lands BERN-plc ;
+Västerbotten+OLang/SWE+Err/Orth:Váster^botten LONDON-orgplc ;
+Västerbotten+OLang/SWE:Väster^botten9 LONDON-plc ;
+Västerbottenkysten+OLang/SWE:Västerbotten^kysten LONDON-plc ;
+Västergötland+OLang/SWE:Väster^göt^land9 BERN-LOAN-plc ;
+Västernorrlands+Err/Lex+OLang/SWE:Väster^norr^lands BERN-plc ;
 Västervik+OLang/NOB:Väster^vik BERN-plc ;
 Västerås+OLang/NOB:Väster^ås BERN-plc ;
 Västi+OLang/FIN:Västi ACCRA-sur ;
 Västilä+OLang/FIN:Västilä ACCRA-sur ;
-Västmanland+OLang/NOB:Väst^man^land9 BERN-LOAN-plc ;
+Västmanland+OLang/SWE:Väst^man^land9 BERN-LOAN-plc ;
 Västra+OLang/UND:Västra ACCRA-plc ;
 Vätseri+OLang/FIN:Vätser PIPPI-plc ;
 Vättern+OLang/UND:Vättern9 LONDON-plc ;
