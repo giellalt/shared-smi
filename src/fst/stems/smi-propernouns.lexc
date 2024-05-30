@@ -2331,7 +2331,7 @@ Augga+OLang/NOB:Augga ACCRA-plc ;
 Augias+OLang/UND:Augi^as LONDON-mal ;
 Augland+OLang/NOB:Augland9 BERN-sur ;
 Augsburg+OLang/UND:Augs^burg9 BERN-plc ;
-August+OLang/UND:August9 BERN-sur ;
+August+OLang/UND:August9 BERN-surmal ;
 Augusta+OLang/NOB:Augusta ACCRA-fem ;
 Augustana+OLang/UND:Augustana ACCRA-obj ; ! Confessio Augustana
 Augustenborg+OLang/NOB:Augusten^borg9 BERN-plc ;
@@ -26357,7 +26357,8 @@ Schütz+OLang/UND:Schütz BERN-sur ;
 Scion+OLang/UND:Scion9 LONDON-obj ;
 Scipio+OLang/UND:Scipio9 ACCRA-mal ;
 Scirocco+OLang/UND:Scirocco9 ACCRA-obj ;
-Scleimann+OLang/NOB:Sclei^mann9 BERN-sur ;
+Scleimann+OLang/UND:Sclei^mann9 BERN-sur ;
+Brinkmann+OLang/NOB:Brink^mann9 BERN-sur ;
 Scnitler+OLang/UND:Scnitler LONDON-sur ;
 Scolasticum+OLang/UND:Scolasticum9 BERN-org ;
 Scorcese+OLang/UND:Scorcese ACCRA-sur ;
