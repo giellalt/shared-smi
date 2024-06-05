@@ -104,6 +104,9 @@ DYN_ACRO_cons ; ! same tag as the acronyms
 
 LEXICON Acronym-list
 
+
+BICS+N+Sem/Cat+ACR:BICS ACRONOUN_cons ;
+CALP+N+Sem/Cat+ACR:CALP ACRONOUN_cons ;
 CG+N+Sem/Dummytag+ACR:CG ACRONOUN_cons ;
 ATV+N+Sem/Veh+ACR:ATV ACRONOUN_cons ;
 DJ+N+Sem/Hum+ACR:DJ ACRONOUN_cons ;
