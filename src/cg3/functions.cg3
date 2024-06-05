@@ -1529,7 +1529,7 @@ MAP:r287 (@APP-N<) TARGET (N Nom) IF (*-1 COMMA BARRIER APP-BOUNDARY OR CC LINK 
 MAP:r288 (@APP-Pron<) TARGET (N Nom) IF (*-1 COMMA BARRIER APP-BOUNDARY OR CC LINK -1 (Pron Nom))(1 EOS) ;
 MAP:r289 (@APP-Pron<) TARGET (N Nom) IF (*-1 COMMA BARRIER APP-BOUNDARY OR CC LINK -1 (Pron Nom))(1 COMMA LINK 1 S-BOUNDARY) ;
 	#$ Mon lean Will Turner, Sáppatbátti Turnera bárdni!
-MAP:app-pron< (@APP-Pron<) TARGET $$CASE - Gen (0 N LINK -1 $$CASE + Pers)(1 VFIN) ;
+MAP:app-pron< (@APP-Pron<) TARGET $$CASE - Gen (0 N LINK NOT 0 (<sma>) LINK -1 $$CASE + Pers)(1 VFIN) ;
 	#$ Ja moai boazodoalloáirasat áigguime vaikko guovttá joatkit barggu.
 
 MAP:r290 (@APP-N<) TARGET (N Acc) - TIME-N IF (*-1 (N Acc) - @>N OR (A Acc) - @>N BARRIER APP-BOUNDARY OR CC OR (N Nom) LINK NEGATE *-1 COMMA BARRIER APP-BOUNDARY OR CC)(1 EOS) ;
