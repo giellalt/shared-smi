@@ -167,7 +167,7 @@ LEXICON REALARABICpunct !!≈ * __@CODE@__ to get number after
    %+:%+     REALARABICfirst ; ! <plus>24
 
 LEXICON REALARABIC   !!≈ * __@CODE@__ 1-4 arabics
-< [1|2|3|4|5|6|7|8|9|%0|0] [1|2|3|4|5|6|7|8|9|%0|0] [1 "@U.number.one@"|2 @U.number.two@"|3 "@U.number.three@"|4 "@U.number.four@"|5 "@U.number.five@"|6 "@U.number.six@"|7 "@U.number.seven@"|8 "@U.number.eight@"|9 "@U.number.nine@"|%0  "@U.number.ten@"]  > REALARABICDELIMITER ; ! hyph, %, casesuffix
+< [1|2|3|4|5|6|7|8|9|%0|0] [1|2|3|4|5|6|7|8|9|%0|0] [1 "@U.number.one@"|2 "@U.number.two@"|3 "@U.number.three@"|4 "@U.number.four@"|5 "@U.number.five@"|6 "@U.number.six@"|7 "@U.number.seven@"|8 "@U.number.eight@"|9 "@U.number.nine@"|%0  "@U.number.ten@"]  > REALARABICDELIMITER ; ! hyph, %, casesuffix
 
 LEXICON REALARABICfirstpart !!≈ * __@CODE@__ numbers like 199 878, 199.878, 199,878, 12000-13000
 < [1|2|3|4|5|6|7|8|9|%0|0] [1|2|3|4|5|6|7|8|9|%0|0]  > REALARABICsecondpart ; ! 199 878 and 199.878
