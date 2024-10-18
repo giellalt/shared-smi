@@ -153,7 +153,7 @@ LEXICON ARABICS
 
 LEXICON REALARABICfirst !!≈ * __@CODE@__ to avoid 0 as first arabic, except from only 0, or in front of comma
 < [1|2|3|4|5|6|7|8|9] > REALARABIC          ; ! 2-4 digits
-< [1 "@U.number.one@"|2 "@U.number.two@"|3 "@U.number.three@"|4 "@U.number.four@"|5 "@U.number.five@"|6 "@U.number.six@"|7 "@U.number.seven@"|8 "@U.number.eight@"|9 "@U.number.nine@"|%0  "@U.number.ten@"]  > REALARABICDELIMITER ; ! 1 digit only
+< [1 "@P.number.one@"|2 "@P.number.two@"|3 "@P.number.three@"|4 "@P.number.four@"|5 "@P.number.five@"|6 "@P.number.six@"|7 "@P.number.seven@"|8 "@P.number.eight@"|9 "@P.number.nine@"|%0  "@P.number.ten@"]  > REALARABICDELIMITER ; ! 1 digit only
                   %0    ARABICDELIMITER     ; ! 0 is a number
 < [1|2|3|4|5|6|7|8|9] > REALARABICfirstpart ; !first arabic in numbers like 199 878 and 199.878 (no 0)
                   %0    REALARABICDELIMITER ; ! 0, and 0-
@@ -168,7 +168,7 @@ LEXICON REALARABICpunct !!≈ * __@CODE@__ to get number after
    %+:%+     REALARABICfirst ; ! <plus>24
 
 LEXICON REALARABIC   !!≈ * __@CODE@__ 1-4 arabics
-< (1|2|3|4|5|6|7|8|9|%0) (1|2|3|4|5|6|7|8|9|%0) [1 "@U.number.one@"|2 "@U.number.two@"|3 "@U.number.three@"|4 "@U.number.four@"|5 "@U.number.five@"|6 "@U.number.six@"|7 "@U.number.seven@"|8 "@U.number.eight@"|9 "@U.number.nine@"|%0  "@U.number.ten@"]  > REALARABICDELIMITER ; ! hyph, %, casesuffix
+< (1|2|3|4|5|6|7|8|9|%0) (1|2|3|4|5|6|7|8|9|%0) [1 "@P.number.one@"|2 "@P.number.two@"|3 "@P.number.three@"|4 "@P.number.four@"|5 "@P.number.five@"|6 "@P.number.six@"|7 "@P.number.seven@"|8 "@P.number.eight@"|9 "@P.number.nine@"|%0  "@P.number.ten@"]  > REALARABICDELIMITER ; ! hyph, %, casesuffix
 
 LEXICON REALARABICfirstpart !!≈ * __@CODE@__ numbers like 199 878, 199.878, 199,878, 12000-13000
 < [1|2|3|4|5|6|7|8|9|%0|0] [1|2|3|4|5|6|7|8|9|%0|0]  > REALARABICsecondpart ; ! 199 878 and 199.878
@@ -204,7 +204,7 @@ LEXICON REALARABICDECIM !!≈ * __@CODE@__ loop and to % and case suffix
 
 
 LEXICON ARABIC   !!≈ * __@CODE@__ +Sem/ID, +Ord
-< [1|2|3|4|5|6|7|8|9|%0] > ARABICLOOPS ;
+< [1 "@P.number.one@"|2 "@P.number.two@"|3 "@P.number.three@"|4 "@P.number.four@"|5 "@P.number.five@"|6 "@P.number.six@"|7 "@P.number.seven@"|8 "@P.number.eight@"|9 "@P.number.nine@"|%0  "@P.number.ten@"]  > ARABICLOOPS ; ! hyph, %, casesuffix
 
 
 LEXICON ARABICLOOPS !!≈ * __@CODE@__
