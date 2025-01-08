@@ -1318,7 +1318,7 @@ km/d+N+Sem/Dummytag+ABBR:km/d UNIT ;
 km/h+N+Sem/Dummytag+ABBR:km/h UNIT ;
 Aut+N+Prop+Sem/Org+ABBR:Aut ACRO_cons ;
 Bq+N+Sem/Dummytag+ABBR:Bq UNIT ;
-Dj+N+ABBR+Sem/Hum+ABBR:Dj ACRONOUN_cons ; !disc jockey
+Dj+N+Sem/Hum+ABBR:Dj ACRONOUN_cons ; !disc jockey
 GWh+N+Sem/Dummytag+ABBR:GWh UNIT ;
 MWh+N+Sem/Dummytag+ABBR:MWh UNIT ;
 Hz+N+Sem/Dummytag+ABBR:Hz UNIT ;
@@ -1330,8 +1330,8 @@ Rg+N+Prop+Sem/Org+ABBR:Rg ACRO_cons ;
 Savkadasv+N+Prop+Sem/Plc+ABBR:Savkadasv ACRO_cons ; !Savkadasveien
 Searvg.ped+N+Prop+Sem/Org+ABBR:Searvg.ped9 ACRO_cons ;
 Slalomvn+N+Prop+Sem/Plc+ABBR:Slalomvn ACRO_cons ;
-alii+N+ABBR+Sem/Dummytag+ABBR:alii ACRONOUN_vow ;
-inva-wc+N+ABBR+Sem/Build-room+ABBR:inva-wc ACRONOUN_cons ;
+alii+N+Sem/Dummytag+ABBR:alii ACRONOUN_vow ;
+inva-wc+N+Sem/Build-room+ABBR:inva-wc ACRONOUN_cons ;
 bfr+N+Sem/Dummytag+ABBR:bfr UNIT ; !
 can$+N+Use/Circ+ABBR:can$ UNIT ; ! !
 cg+N+Sem/Dummytag+ABBR:cg UNIT ; !
