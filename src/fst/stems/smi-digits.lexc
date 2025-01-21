@@ -83,6 +83,10 @@ LEXICON POSTPROSENT !!≈ * __@CODE@__ % and case suffix
 < "@R.ErrOrth.ON@" "+Err/Orth":0 "@C.ErrOrth@" > ARABICDELIMITER ;
    @D.ErrOrth.ON@@C.ErrOrth@                     ARABICDELIMITER ;
 
+LEXICON DECIMALCASES !! * __@CODE@__ case suffixes for decimals
+
++Num:  ARABICCASE0  ;
+
 LEXICON MEASUREMENTS
  °            MEASUREMENTS-tags ;
  <{ km}>      MEASUREMENTS-tags ;
