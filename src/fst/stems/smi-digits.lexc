@@ -85,7 +85,7 @@ LEXICON POSTPROSENT !!≈ * __@CODE@__ % and case suffix
 
 LEXICON DECIMALCASES !! * __@CODE@__ case suffixes for decimals
 
-+Num:  ARABICCASE0  ;
++Num:  ARABICCASES  ;
 
 LEXICON MEASUREMENTS
  °            MEASUREMENTS-tags ;
