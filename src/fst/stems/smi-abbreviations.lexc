@@ -47,7 +47,6 @@ A.A+N+Sem/Hum:A.A ab-dot-noun-itrab ;
 A.S+N+Sem/Org:A.S ab-dot-noun-itrab ;
 Eftf+N+Sem/Org:Eftf ab-noun-itrab ;
 Gastrolab+N+Prop+Sem/Org:Gastrolab ab-dot-noun-itrab ; ! Org Gastrolaboratoria
-Gess:Gess ab-dot-verb-itrab ; ! Gessojuvvon (ruovttoluotta)
 H.O+N:H.O ab-dot-noun-itrab ;
 Hedm+N+Prop+Sem/Plc:Hedm ab-dot-noun-itrab ; ! Plc Hedmark
 ID+N+Sem/Obj-ling:ID ab-dot-noun-itrab ;
