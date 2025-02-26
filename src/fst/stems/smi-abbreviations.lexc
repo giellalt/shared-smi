@@ -549,7 +549,7 @@ Hab+N+Prop+Sem/Obj:Hab9 ab-noun-trab ; ! Habakkuk
 Hag+N+Prop+Sem/Obj:Hag ab-noun-trab ; ! Haggai	sma
 Hebr+N+Prop+Sem/Obj:Hebr ab-noun-trab ; ! Girji hebrealaččaide
 Hos+N+Prop+Sem/Obj:Hos ab-noun-trab ; ! Hosea sma:Hosj
-Jak+N++Prop+Sem/Obj:Jak9 ab-noun-trab ; ! Jakoba girji	sma:Jaah
+Jak+N+Prop+Sem/Obj:Jak9 ab-noun-trab ; ! Jakoba girji	sma:Jaah
 Jer+N+Prop+Sem/Obj:Jer ab-noun-trab ; ! Jeremia	sma
 Jes+N+Prop+Sem/Obj:Jes ab-noun-trab ; ! Jesaja	sma
 Job+N+Prop+Sem/Obj:Job9 ab-noun-trab ; ! Job girji sma
@@ -577,7 +577,7 @@ Kr+N+Prop+Sem/Obj:Kr ab-dot-noun-trab ; ! Kristian, Kristin, Kristus
 Luk+N+Prop+Sem/Obj:Luk ab-noun-trab ; ! Lukas
 Rom+N+Prop+Sem/Obj:Rom9 ab-noun-trab ; ! Girje romalaččaide
 Seb+N+Prop+Sem/Obj:Seb ab-dot-noun-trab ; ! Sebastian, Sebedeus
-Th+Prop+Sem/Mal:Th ab-dot-noun-trab ;
+Th+N+Prop+Sem/Mal:Th ab-dot-noun-trab ;
 
 H.K.H+A+Sem/Hum:H.K.H ab-dot-adj-trab ; ! Hans/hennes kongelige høyhet
 H.M+A+Sem/Hum:H.M ab-dot-adj-trab ; ! Hans/hennes majestet
@@ -615,6 +615,7 @@ avd.dir+N+Sem/Hum:avd.dir ab-dot-noun-trab ;
 bd+N:bd ab-dot-noun-trab ;
 bto+N+Sem/Amount:bto ab-nodot-noun-trab ;
 c/o+Adv+Use/Circ:c/o ab-nodot-adv ; !
+ad-hoc+Adv:ad-hoc ab-nodot-adv ;
 ca+Adv:ca ab-dot-adv-trab ;
 cand+N+Sem/Hum:cand ab-dot-noun-trab ;
 cand.jur+N+Sem/Edu_Hum:cand.jur ab-noun-trab ;
