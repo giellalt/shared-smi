@@ -615,7 +615,7 @@ avd.dir+N+Sem/Hum:avd.dir ab-dot-noun-trab ;
 bd+N:bd ab-dot-noun-trab ;
 bto+N+Sem/Amount:bto ab-nodot-noun-trab ;
 c/o+Adv+Use/Circ:c/o ab-nodot-adv ; !
-ad-hoc+Adv:ad-hoc ab-nodot-adv ;
+ad-hoc+Adv:ad9-hoc ab-nodot-adv ;
 ca+Adv:ca ab-dot-adv-trab ;
 cand+N+Sem/Hum:cand ab-dot-noun-trab ;
 cand.jur+N+Sem/Edu_Hum:cand.jur ab-noun-trab ;
