@@ -27063,6 +27063,8 @@ Sjølshagen+OLang/NOB:Sjøls^hagen9 LONDON-sur ;
 Sjølvik+OLang/NOB:Sjøl^vik BERN-plc ;
 Sjømannsbyen+OLang/NOB:Sjø^manns^by^en9 LONDON-plc ;
 Sjøsamisk% kompetansesenter+MWE+CmpNP/First+OLang/NOB:Sjøsamisk% kompetanse^senter LONDON-LOAN-org ;
+Nordens% velferdssenter+MWE+CmpNP/First+OLang/NOB:Nordens% velferds^senter LONDON-LOAN-org ;
+Nordens% velferdssenter+MWE+Err/Orth+OLang/NOB:Nordens% Velferds^senter LONDON-LOAN-org ;
 Sjøseth+OLang/NOB:Sjø^seth9 BERN-sur ;
 Sjøstrand+OLang/NOB:Sjø^strand9 BERN-plc ;
 Sjøsund+OLang/NOB:Sjø^sund9 SUND-plc ;
