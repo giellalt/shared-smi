@@ -42,8 +42,6 @@ LEXICON ACASETAG   !!≈ * __@CODE@__  is for 1e+Num+Sg+Num:1e
 +Num: ARABICCASE0 ;
 +Num:%: ARABICCASE ;
 
-LEXICON ARABICLOOPCOLL   !!≈ * __@CODE@__ collectives
- +N+Coll+Arab+Use/Circ: ARABICDELIMITERCOLL ;
 
 
 LEXICON ARABICDELIMITER   !!≈ * __@CODE@__  blank + 3 delim, what does the lg counc prefer?
@@ -57,6 +55,7 @@ LEXICON ARABICDELIMITER   !!≈ * __@CODE@__  blank + 3 delim, what does the lg 
  +Num:            ARABICCOMPOUNDS  ; ! 6-jáhkasaš, 
  +Use/GC:         MEASUREMENTS     ;
 
+
 LEXICON ARABICDELIMITERORD   !!≈ * __@CODE@__ ordinals
 !               ARABICCASE0       ; ! This is the 1984 case, ie NGA
            :%:  ARABICCASEORD     ; ! This is the 16:dis case.
@@ -66,12 +65,7 @@ LEXICON ARABICDELIMITERORD   !!≈ * __@CODE@__ ordinals
   +Err/Orth:∑-  ARABICCASEORD     ; ! This is the 16-dis case.
   +Err/Orth:.%: ARABICCASEORD-ERR ; ! This is the 16.:is case.
 
-LEXICON ARABICDELIMITERCOLL   !!≈ * __@CODE@__ collectives
-!             ARABICCASE0    ; ! This is the 1984 case, ie NGA
-          :%: ARABICCASECOLL ; ! This is the 1984:s case.
- +Err/Orth:   ARABICCASECOLL ; ! This is the 1984s case.
- +Err/Orth:'  ARABICCASECOLL ; ! This is the 1984's case.
- +Err/Orth:∑- ARABICCASECOLL ; ! This is the 1984-s case.
+
 
 LEXICON PROSENT !!≈ * __@CODE@__ % and case suffix
 !                    POSTPROSENT ; ! case suffix
