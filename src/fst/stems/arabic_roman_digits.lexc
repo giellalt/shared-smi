@@ -293,10 +293,11 @@ LEXICON ARABICCLOCK !!≈ * __@CODE@__ is a regex for clock time.
  <          [1|2|3|4|5|6|7|8|9|%0] %: [1|2|3|4|5|%0] [1|2|3|4|5|6|7|8|9|%0] > CLOCK-sep ;
 
 LEXICON CLOCK-sep !!≈ * __@CODE@__ different separators for intervals, or one clock time only
- %–        ARABICCLOCK2        ; ! en dash
            numclock            ; ! one clock time indication only
- %,:%,     ARABICCLOCKDECIMALS ; ! clock time with fractional seconds (e.g. sports)
  %-:∑-     ARABICCLOCK2        ; ! 12.00-12.30   = no space
+ %–        ARABICCLOCK2        ; ! en dash
+ %,:%,     ARABICCLOCKDECIMALS ; ! clock time with fractional seconds (e.g. sports)
+
  %-:% ∑-%  ARABICCLOCK2x       ; ! 12.00 - 12.30 = space (common)
  %-:∑-%    ARABICCLOCK2x       ; ! 12.00- 12.30  = inconcistent space (found in corpus)
  %-:% ∑-   ARABICCLOCK2x       ; ! 12.00 -12.30  = inconcistent space (found in corpus)
