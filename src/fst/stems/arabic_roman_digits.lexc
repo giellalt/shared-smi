@@ -324,17 +324,16 @@ LEXICON ARABICYEAR !!≈ * __@CODE@__
  < [1|2] [1|2|3|4|5|6|7|8|9|%0] [1|2|3|4|5|6|7|8|9|%0] [1|2|3|4|5|6|7|8|9|%0] > numyear ;
 
 LEXICON numyear !!≈ * __@CODE@__
-          yeartag   ;
- /:/      moreyear  ;
- -:∑-     moreyear  ;
- –:–      moreyear  ;
- -:∑-     moreyearx ;
- –:% –%   moreyearx ;
- -:% ∑-%  moreyearx ;
- –:% –    moreyearx ;
- -:% ∑-   moreyearx ;
- –:–%     moreyearx ;
- -:∑-%    moreyearx ;
+          yeartag   ; !!≈ `@CODE@` = regular, plain year
+ /:/      moreyear  ; !!≈ `@CODE@` = slash as year alternative separator
+ -:∑-     moreyear  ; !!≈ `@CODE@` = regular hyphen
+ –:–      moreyear  ; !!≈ `@CODE@` = EN DASH
+ –:% –%   moreyearx ; !!≈ `@CODE@` = EN DASH with space in front and after 
+ -:% ∑-%  moreyearx ; !!≈ `@CODE@` = regular hyphen with space in front and after
+ –:% –    moreyearx ; !!≈ `@CODE@` = EN DASH with space in front
+ -:% ∑-   moreyearx ; !!≈ `@CODE@` = regular hyphen with space in front
+ –:–%     moreyearx ; !!≈ `@CODE@` = EN DASH with space after 
+ -:∑-%    moreyearx ; !!≈ `@CODE@` = regular hyphen with space after
 
 
 LEXICON moreyear !!≈ * __@CODE@__
