@@ -328,6 +328,8 @@ LEXICON numyear !!≈ * __@CODE@__
  /:/      moreyear  ; !!≈ `@CODE@` = slash as year alternative separator
  -:∑-     moreyear  ; !!≈ `@CODE@` = regular hyphen
  –:–      moreyear  ; !!≈ `@CODE@` = EN DASH
+
+!! Variants with spaces on either side, are tagged as Err/Orth:
  –:% –%   moreyearx ; !!≈ `@CODE@` = EN DASH with space in front and after 
  -:% ∑-%  moreyearx ; !!≈ `@CODE@` = regular hyphen with space in front and after
  –:% –    moreyearx ; !!≈ `@CODE@` = EN DASH with space in front
@@ -346,7 +348,7 @@ LEXICON moreyearx !!≈ * __@CODE@__
 
 
 LEXICON yeartagplx !!≈ * __@CODE@__
-+Use/NG:  yeartagpl ;
++Err/Orth:  yeartagpl ;
 
 LEXICON ARABICORD !!≈ * __@CODE@__
  < [1|2|3|4|5|6|7|8|9|%0] [1|2|3|4|5|6|7|8|9|%0] > ARABICLOOPORD ;
