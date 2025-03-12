@@ -11,6 +11,9 @@ LEXICON dateyearcase_fullsuff_tag
  +Num+Sem/Date:  dateyearcase_fullsuff ;
 
 
+LEXICON numclock_nospan
+ +Num+Sem/Time-clock: dateyearcase ; !foreløpig
+
 LEXICON numclock
  +Num+Sem/Time-clock+Span: dateyearcase ; !foreløpig
 
