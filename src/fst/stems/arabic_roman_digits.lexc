@@ -224,9 +224,12 @@ LEXICON ARABICSabcdef !!≈ * __@CODE@__
 
 LEXICON ARABICDATE !!≈ * __@CODE@__
                                     ARABICDATENUM ;
-< (1|2|%0) [1|2|3|4|5|6|7|8|9   ] > ARABICDATEHYPH ;
-< [1|2]                       %0  > ARABICDATEHYPH ;
-< [3]      [1|                %0] > ARABICDATEHYPH ;
+< (1|2|%0) [1|2|3|4|5|6|7|8|9   ] > ARABICDATEHYPH_TAG ;
+< [1|2]                       %0  > ARABICDATEHYPH_TAG ;
+< [3]      [1|                %0] > ARABICDATEHYPH_TAG ;
+
+LEXICON ARABICDATEHYPH_TAG !!≈ * __@CODE@__
+ +Use/-TTS: ARABICDATEHYPH   ; !!≈ `@CODE@` = clock time spans - skip this one in TTS text processing
 
 LEXICON ARABICDATEHYPH !!≈ * __@CODE@__
  %.%-:%.∑- ARABICDATENUM ;
@@ -293,7 +296,10 @@ LEXICON ARABICCLOCK !!≈ * __@CODE@__ is a regex for clock time.
  <          [1|2|3|4|5|6|7|8|9|%0] %: [1|2|3|4|5|%0] [1|2|3|4|5|6|7|8|9|%0] > CLOCK-sep ;
 
 LEXICON CLOCK-sep !!≈ * __@CODE@__ different separators for intervals, or one clock time only
-          numclock_nospan     ; ! one clock time indication only
+            numclock_nospan ; !!≈ `@CODE@` = one clock time indication only
+ +Use/-TTS: numclock_span   ; !!≈ `@CODE@` = clock time spans - skip this one in TTS text processing
+
+LEXICON numclock_span !!≈ * __@CODE@__
  -:∑-     ARABICCLOCK2        ; ! 12.00-12.30   = no space
  –        ARABICCLOCK2        ; ! en dash
  ,:,      ARABICCLOCKDECIMALS ; ! clock time with fractional seconds (e.g. sports)
@@ -325,7 +331,10 @@ LEXICON ARABICYEAR !!≈ * __@CODE@__
  < [1|2] [1|2|3|4|5|6|7|8|9|%0] [1|2|3|4|5|6|7|8|9|%0] [1|2|3|4|5|6|7|8|9|%0] > numyear ;
 
 LEXICON numyear !!≈ * __@CODE@__
-          yeartag   ; !!≈ `@CODE@` = regular, plain year
+            yeartag          ; !!≈ `@CODE@` = regular, plain year
+ +Use/-TTS: numyearseparator ; !!≈ `@CODE@` = year spans - skip this one in TTS text processing
+
+LEXICON numyearseparator !!≈ * __@CODE@__
  /:/      moreyear  ; !!≈ `@CODE@` = slash as year alternative separator
  -:∑-     moreyear  ; !!≈ `@CODE@` = regular hyphen
  –:–      moreyear  ; !!≈ `@CODE@` = EN DASH
