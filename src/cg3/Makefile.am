@@ -16,6 +16,6 @@
 ## along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 pkgsrccg3dir=$(datadir)/giella/shared-smi/src/cg3/
-pkgsrccg3_DATA=dependency.cg3 functions.cg3 konteaksta.cg3 korp.cg3
+pkgsrccg3_DATA=dependency.cg3 functions.cg3 konteaksta.cg3
 
 
