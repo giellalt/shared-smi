@@ -325,18 +325,18 @@ LEXICON ARABICYEAR !!≈ * __@CODE@__
  < [1|2] [1|2|3|4|5|6|7|8|9|%0] [1|2|3|4|5|6|7|8|9|%0] [1|2|3|4|5|6|7|8|9|%0] > numyear ;
 
 LEXICON numyear !!≈ * __@CODE@__
-          yeartag   ; !!≈ `@CODE@` = regular, plain year
- /:/      moreyear  ; !!≈ `@CODE@` = slash as year alternative separator
- -:∑-     moreyear  ; !!≈ `@CODE@` = regular hyphen
- –:–      moreyear  ; !!≈ `@CODE@` = EN DASH
+      yeartag  ; !!≈ `@CODE@` = regular, plain year
+ /:/  moreyear ; !!≈ `@CODE@` = slash as year alternative separator
+ -:∑- moreyear ; !!≈ `@CODE@` = regular hyphen
+ –:–  moreyear ; !!≈ `@CODE@` = EN DASH
 
 !! Variants with spaces on either side, are tagged as Err/Orth:
- –:% –%   moreyearx ; !!≈ `@CODE@` = EN DASH with space in front and after 
+                              –:% –%   moreyearx ; !!≈ `@CODE@` = EN DASH with space in front and after
  -+Use/-PMatch+Use/-GC+Use/-TTS:% ∑-%  moreyearx ; !!≈ `@CODE@` = regular hyphen with space in front and after
- –:% –    moreyearx ; !!≈ `@CODE@` = EN DASH with space in front
- -:% ∑-   moreyearx ; !!≈ `@CODE@` = regular hyphen with space in front
- –:–%     moreyearx ; !!≈ `@CODE@` = EN DASH with space after 
- -:∑-%    moreyearx ; !!≈ `@CODE@` = regular hyphen with space after
+                              –:% –    moreyearx ; !!≈ `@CODE@` = EN DASH with space in front
+                              -:% ∑-   moreyearx ; !!≈ `@CODE@` = regular hyphen with space in front
+                              –:–%     moreyearx ; !!≈ `@CODE@` = EN DASH with space after
+                              -:∑-%    moreyearx ; !!≈ `@CODE@` = regular hyphen with space after
 
 
 LEXICON moreyear !!≈ * __@CODE@__
@@ -400,45 +400,45 @@ LEXICON ARABICXERRTAG
 
 
 LEXICON ARABICLOOP   !!≈ * __@CODE@__
-                           ARABIC          ;
-             %.%-:%.∑-     ARABIC          ; ! 1.-2 multipart numbers ! !
-             %.%–:%.%–     ARABIC          ; ! 1.–2 multipart numbers ! !
-             %.%—:%.%—     ARABIC          ; ! 1.—2 multipart numbers ! !
-             %.%-:%.% ∑-   ARABICORD       ; ! 1. -2. multipart numbers ! !
-             %.%-:%.%-%    ARABICORD       ; ! 1. - 2. multipart numbers ! !
-             %.%-:%.% ∑-%  ARABICORD       ; ! 1. - 2. multipart numbers ! !
-             %.%–:%.% %–%  ARABICORD       ; ! 1. – 2. multipart numbers ! !
-             %.%-:%.∑-     ARABICORD       ; ! 1.-2. multipart numbers ! !
-             %.%–:%.%–     ARABICORD       ; ! 1.–2. multipart numbers ! !
-             %.%—:%.%—     ARABICORD       ; ! 1.—2. multipart numbers ! !
-             %-% :∑-%      ARABIC          ; ! 1- 2 multipart numbers
-             %–% :%–%      ARABIC          ; ! 1– 2 multipart numbers
-             %—% :%—%      ARABIC          ; ! 1— 2 multipart numbers
-             % %-:% ∑-     ARABIC          ; ! 1 -2 multipart numbers
-             % %–:% %–     ARABIC          ; ! 1 –2 multipart numbers
-             % %—:% %—     ARABIC          ; ! 1 —2 multipart numbers
-           % %-% +Use/-PMatch+Use/-GC+Use/-TTS:% ∑-%    ARABIC          ; ! 1 - 2 multipart numbers
-           % %–% :% %–%    ARABIC          ; ! 1 – 2 multipart numbers
-           % %—% :% %—%    ARABIC          ; ! 1 — 2 multipart numbers
-         % %-%-% :% ∑-∑-%  ARABIC          ; ! 1 -- 2 multipart numbers
-         % %–%–% :% %–%–%  ARABIC          ; ! 1 –– 2 multipart numbers
-         % %—%—% :% %—%—%  ARABIC          ; ! 1 —— 2 multipart numbers
-               %.:%.       ARABIC          ;
-               %::%:       ARABIC          ;
-!              %,:%,       ARABIC          ;
-                 :         ARABIC          ; ! Allowing for "23 500" w/nbsp (init char = alt-space)
-!               %:%        ARABIC          ; ! Allowing for "23 500". Lene: Denne er plagsom og bør forbedres. F.eks. 2017 30 vil vi ikke ha om ett tall.
-               %/:%/       ARABIC          ; ! 24/12
-              %/%:%/%      ARABIC          ; ! 24/ 12
-             % %/:% %/     ARABIC          ; ! 24 /12
-                ':'        ARABIC          ;
+                                               ARABIC          ;
+                                 %.%-:%.∑-     ARABIC          ; ! 1.-2 multipart numbers ! !
+                                 %.%–:%.%–     ARABIC          ; ! 1.–2 multipart numbers ! !
+                                 %.%—:%.%—     ARABIC          ; ! 1.—2 multipart numbers ! !
+                                 %.%-:%.% ∑-   ARABICORD       ; ! 1. -2. multipart numbers ! !
+                                 %.%-:%.%-%    ARABICORD       ; ! 1. - 2. multipart numbers ! !
+                                 %.%-:%.% ∑-%  ARABICORD       ; ! 1. - 2. multipart numbers ! !
+                                 %.%–:%.% %–%  ARABICORD       ; ! 1. – 2. multipart numbers ! !
+                                 %.%-:%.∑-     ARABICORD       ; ! 1.-2. multipart numbers ! !
+                                 %.%–:%.%–     ARABICORD       ; ! 1.–2. multipart numbers ! !
+                                 %.%—:%.%—     ARABICORD       ; ! 1.—2. multipart numbers ! !
+                                 %-% :∑-%      ARABIC          ; ! 1- 2 multipart numbers
+                                 %–% :%–%      ARABIC          ; ! 1– 2 multipart numbers
+                                 %—% :%—%      ARABIC          ; ! 1— 2 multipart numbers
+                                 % %-:% ∑-     ARABIC          ; ! 1 -2 multipart numbers
+                                 % %–:% %–     ARABIC          ; ! 1 –2 multipart numbers
+                                 % %—:% %—     ARABIC          ; ! 1 —2 multipart numbers
+  % %-% +Use/-PMatch+Use/-GC+Use/-TTS:% ∑-%    ARABIC          ; ! 1 - 2 multipart numbers
+                               % %–% :% %–%    ARABIC          ; ! 1 – 2 multipart numbers
+                               % %—% :% %—%    ARABIC          ; ! 1 — 2 multipart numbers
+                             % %-%-% :% ∑-∑-%  ARABIC          ; ! 1 -- 2 multipart numbers
+                             % %–%–% :% %–%–%  ARABIC          ; ! 1 –– 2 multipart numbers
+                             % %—%—% :% %—%—%  ARABIC          ; ! 1 —— 2 multipart numbers
+                                   %.:%.       ARABIC          ;
+                                   %::%:       ARABIC          ;
+!                                  %,:%,       ARABIC          ;
+                                     :         ARABIC          ; ! Allowing for "23 500" w/nbsp (init char = alt-space)
+!                                  % :%        ARABIC          ; ! Allowing for "23 500". Lene: Denne er plagsom og bør forbedres. F.eks. 2017 30 vil vi ikke ha om ett tall.
+                                   %/:%/       ARABIC          ; ! 24/12
+                                 %/% :%/%      ARABIC          ; ! 24/ 12
+                                 % %/:% %/     ARABIC          ; ! 24 /12
+                                    ':'        ARABIC          ;
 
-             +Num:         RNum            ; ! Num Cmp Noun, with hyphen
+                                 +Num:         RNum            ; ! Num Cmp Noun, with hyphen
 
-!   % %-+Err/Orth:% ∑-     ARABICDELIMITER ; ! 1 - multipart numbers - "1 -:s"?
-! % %-%-+Err/Orth:% ∑-∑-   ARABICDELIMITER ; ! 1 -- multipart numbers
-!                          ARABICDELIMITER ; ! list of number-case delimiters
-                           ID-ARABIC       ;
+!                       % %-+Err/Orth:% ∑-     ARABICDELIMITER ; ! 1 - multipart numbers - "1 -:s"?
+!                     % %-%-+Err/Orth:% ∑-∑-   ARABICDELIMITER ; ! 1 -- multipart numbers
+!                                              ARABICDELIMITER ; ! list of number-case delimiters
+                                               ID-ARABIC       ;
 
 
 LEXICON MARKDOT !!≈ * __@CODE@__
