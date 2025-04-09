@@ -332,7 +332,7 @@ LEXICON numyear !!≈ * __@CODE@__
 
 !! Variants with spaces on either side, are tagged as Err/Orth:
  –:% –%   moreyearx ; !!≈ `@CODE@` = EN DASH with space in front and after 
- -:% ∑-%  moreyearx ; !!≈ `@CODE@` = regular hyphen with space in front and after
+ -+Use/-PMatch+Use/-GC+Use/-TTS:% ∑-%  moreyearx ; !!≈ `@CODE@` = regular hyphen with space in front and after
  –:% –    moreyearx ; !!≈ `@CODE@` = EN DASH with space in front
  -:% ∑-   moreyearx ; !!≈ `@CODE@` = regular hyphen with space in front
  –:–%     moreyearx ; !!≈ `@CODE@` = EN DASH with space after 
@@ -417,7 +417,7 @@ LEXICON ARABICLOOP   !!≈ * __@CODE@__
              % %-:% ∑-     ARABIC          ; ! 1 -2 multipart numbers
              % %–:% %–     ARABIC          ; ! 1 –2 multipart numbers
              % %—:% %—     ARABIC          ; ! 1 —2 multipart numbers
-           % %-% :% ∑-%    ARABIC          ; ! 1 - 2 multipart numbers
+           % %-% +Use/-PMatch+Use/-GC+Use/-TTS:% ∑-%    ARABIC          ; ! 1 - 2 multipart numbers
            % %–% :% %–%    ARABIC          ; ! 1 – 2 multipart numbers
            % %—% :% %—%    ARABIC          ; ! 1 — 2 multipart numbers
          % %-%-% :% ∑-∑-%  ARABIC          ; ! 1 -- 2 multipart numbers
