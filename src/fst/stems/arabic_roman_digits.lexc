@@ -433,7 +433,7 @@ LEXICON ARABICLOOP   !!≈ * __@CODE@__
                                  % %/:% %/     ARABIC          ; ! 24 /12
                                     ':'        ARABIC          ;
 
-                                 +Num:         RNum            ; ! Num Cmp Noun, with hyphen
+                            +Num+Arab:         RNum            ; ! Num Cmp Noun, with hyphen
 
 !                       % %-+Err/Orth:% ∑-     ARABICDELIMITER ; ! 1 - multipart numbers - "1 -:s"?
 !                     % %-%-+Err/Orth:% ∑-∑-   ARABICDELIMITER ; ! 1 -- multipart numbers
