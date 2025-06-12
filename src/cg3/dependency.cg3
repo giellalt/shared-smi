@@ -1138,14 +1138,14 @@ SUBSTITUTE:faoctjHead (@IOBJ>) (<ctjHead> @IOBJ>) TARGET @IOBJ> (NEGATE *-1 @CNP
 SETPARENT:Coord $$COORD TO (*-1 COMMA OR @CNP BARRIER @V OR S-BOUNDARY OR $$COORD LINK *-1 $$COORD + <ctjHead>);
 	## Maahtoe jïh skuvle lea dellie mubpie vihkeles tsiehkiem daennie orre våaroemisnie.
 
-# coordinatin of @>N
+# coordination of @>N
 SETPARENT:>NCoord @>N TO (*-1 COMMA OR CC BARRIER @CLAUSE LINK *-1C @>N + <ctjHead> BARRIER @CLAUSE);
 	## Dát leat luohtehahtti ja duohta sánit .
 	#$ Niegadan su birra go oainnán David Beckham ja Manchester United!
 SETPARENT:Not>NCoord @>N TO (1 (N @>N));
 	## Dát lea Dávveda bártni ja Abrahama bártni sohka.
 
-### verbcoordination
+### verb coordination
 
 # verbcoordination - mainclauses
 #SUBSTITUTE:ctjHead (V) (<ctjHead> V) TARGET VFIN (NEGATE *-1 CC OR COMMA BARRIER CS OR ADVL-COMP OR MCL-CONJ LINK *-1 VFIN BARRIER CS OR ADVL-COMP)(0 @MCLV)(NEGATE 0 Neg LINK 1 ("ge"))(*1 COMMA OR CC BARRIER Rel OR CS OR (":") LINK **1 VFIN LINK 0 @MCLV) ; # Added (CS @CVP) barrier (next line) tt.
@@ -1154,7 +1154,7 @@ SUBSTITUTE:ctjHead (V) (<ctjHead> V) TARGET VFIN (NEGATE *-1 CC OR COMMA BARRIER
 SUBSTITUTE:ctjHead (V) (<ctjHead> V) TARGET VFIN (NEGATE *-1 CC OR COMMA BARRIER CS OR ADVL-COMP LINK *-1 VFIN BARRIER CS OR ADVL-COMP)(0 @MCLV)(NEGATE 0 Neg LINK 1 ("ge"))(*1 Rel BARRIER @V LINK *1 COMMA OR @CVP BARRIER Rel OR CS LINK *1 @SUBJ> BARRIER @V LINK **1 VFIN LINK 0 @MCLV) ; # a relative clause in between
 	## Lea vuosttaš CD maid Sámi Jienat almmuha ja CD galgá leat válmmas geassemánu 10. beaivvi 2005.
 
-# verbcoordination - subclauses
+# verb coordination - subclauses
 SUBSTITUTE:ctjHead (V) (<ctjHead> V) TARGET VFIN (NEGATE *-1 CC OR COMMA BARRIER CS OR ADVL-COMP OR Rel LINK *-1 VFIN BARRIER CS OR ADVL-COMP)(0 @SCLV)(NEGATE *-1 CS BARRIER @V OR ADVL-COMP LINK *1 @SCLV LINK *1 ADVL-COMP BARRIER @V) (NEGATE 0 Neg LINK 1 ("ge"))(*1 COMMA OR CC LINK *1 VFIN BARRIER ADVL-COMP OR CS OR Rel LINK 0 @SCLV) ;
 	## Go bassat lihtiid dahje málestit siiddas, de sáhttit seammás guldalit radio.
 
