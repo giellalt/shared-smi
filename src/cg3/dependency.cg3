@@ -1098,6 +1098,8 @@ SETPARENT:FMVToRoot @CVP (NONE p (*)) TO (@0 (*));
 
 ### coordinator
 SETPARENT:SetCNPToWord @CNP TO (*-1 WORD) ;
+SETPARENT:SetCNPToWordBegS @CNP (-1 BOS) TO (*1 VFIN) ;
+	## Jïh dam manne edtjem åestedh.
 SETPARENT:SetCVPToWord @CVP + CC TO (*-1 VFIN) ;
 SETPARENT:SetCVPToWord @CVP + CC TO (-1 BOS LINK 3 CS LINK -1 WORD) ;
 SETPARENT:SetCVPToWord @CVP + CC TO (1 CS) ;
@@ -1135,8 +1137,9 @@ SUBSTITUTE:faoctjHead (@IOBJ>) (<ctjHead> @IOBJ>) TARGET @IOBJ> (NEGATE *-1 @CNP
 
 
 # coordination - not verbs
-SETPARENT:Coord $$COORD TO (*-1 COMMA OR @CNP BARRIER @V OR S-BOUNDARY OR $$COORD LINK *-1 $$COORD + <ctjHead>);
+SETPARENT:Coord $$COORD TO (*-1 COMMA OR @CNP BARRIER @V OR S-BOUNDARY OR $$COORD LINK *-1 $$COORD + <ctjHead> BARRIER COORD);
 	## Maahtoe jïh skuvle lea dellie mubpie vihkeles tsiehkiem daennie orre våaroemisnie.
+	#$ Måanta Daen biejjien Manne jih Janne vuelkebe Afrikese, eejehtimmesne Daelie {tsåahka} lea 05.30, jih mijjien feeleme lea 06.00.
 
 # coordination of @>N
 SETPARENT:>NCoord @>N TO (*-1 COMMA OR CC BARRIER @CLAUSE LINK *-1C @>N + <ctjHead> BARRIER @CLAUSE);
