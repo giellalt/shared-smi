@@ -791,9 +791,10 @@ SUBSTITUTE (@FAUX) (@FS-VFIN<) TARGET V (0 (Neg Ind) LINK *-1 @FS-VFIN< BARRIER 
 
 
 # in relative clauses:
-SUBSTITUTE:SubV=FS-Nmv (@FMV) (@FS-N<) TARGET V (*-1 Rel BARRIER VFIN OR COMMA) ;
+SUBSTITUTE:SubV=FS-Nmv (@FMV) (@FS-N<) TARGET V (*-1 Rel BARRIER VFIN OR COMMA OR Inf OR Ger) ;
 	## Ökonomihke tsiehkieh hov mieriedieh mejtie buektiehtibie daejtie ulmide illedh.
 	#$ - Maid don dainna dieđuin, vástidii Liná ja áiggui vázzát viidáseappot.
+	#$ Almetjh gieh dasenie barkeminie {lea} tryjjes.
 
 SUBSTITUTE:SubV=FSN-IMV (@IMV) (@FS-N<IMV) TARGET V (*-1 (<aux>) BARRIER @MV LINK *-1 Rel BARRIER COMMA OR CS OR @V) ;
 SUBSTITUTE:SubV=FSN-IMV (@IMV) (@FS-N<IMV) TARGET V (0 PrfPrc LINK *-1 Rel BARRIER @MV OR COMMA OR CS OR @V) ; # no copula
@@ -911,6 +912,7 @@ SETPARENT:SetAttrToLeftNum @Num< OR @APP-Num< TO (*-1 Num BARRIER @CLAUSE) ;
 # If there is no antecedent, then the mainv is the parent:
 SETPARENT:SetFS-NtoMV @FS-N< TO (*-1 (<mv>) BARRIER CS OR ADVL-COMP) ; ##BARRIER?
 	## Ökonomihke tsiehkieh hov mieriedieh mejtie buektiehtibie daejtie ulmide illedh.
+	#$ Almethj gieh daesnie barkeminie lea tryjjes.
 
 # the antecedent is N or Pron:
 SETPARENT:SetFS-NtoN @FS-N< TO (*-1 Rel OR ("gos") OR ("gosa") OR COMMA BARRIER @V LINK **-1 N OR Pron OR A OR Indef OR Num BARRIER @V LINK NOT 0 @HNOUN OR @APP-N< OR (Attr)) ;
