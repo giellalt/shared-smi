@@ -1912,6 +1912,9 @@ MAP:spredSgMII> (@SPRED>) TARGET MII + (Sg Nom) IF (*1 (Sg Nom) BARRIER NOT-NPMO
 #!! * __spredšaddat>__ (@SPRED>)
 MAP:spredSgMII> (@SPRED>) TARGET Ess IF (1 ("šaddat") + FMAINV) ;
 
+#!! * __spredsjidtedh>__ (@SPRED>)
+MAP:spredMII> (@SPRED>) TARGET Ess OR (A Nom) IF (1 ("sjïdtedh")) ;
+
 
 #!! * __r492>__ (@SPRED>) for Interr Gen; consisting only of negations. You are not allowed to be MII. You are not allowed to have an adjective or noun to yor right. You are not allowed to have a verb to your right; the exception beeing an aux.
 MAP:r492 (@SPRED>) TARGET (Interr Gen) IF (NEGATE 0 MII)(NEGATE *1 A OR N BARRIER NOT-NPMOD) (NEGATE *1 V - FAUXV BARRIER S-BOUNDARY);
@@ -2535,8 +2538,9 @@ MAP:<opredAAcc (@<OPRED) TARGET (A Acc) IF ((*-1 Acc BARRIER NOT-ADV-PCLE LINK *
 	#$ Gáhkuid son ráhkada hui buriid.
 
 #!! * __TV<obj__ (@<OBJ) for Acc; if there is a transitive mainverb to the left in the clause. Not for Rel. Not if you are a numeral followed by a measure-noun
-MAP:TV<obj (@<OBJ) TARGET Acc - Rel - Interr (*-1 FMAINV + TV BARRIER SV-BOUNDARY)(NEGATE -1 COMMA LINK *2 TRANS-V + FMAINV BARRIER SV-BOUNDARY)(NEGATE 0 Num LINK 1 MEASR-N) ;
+MAP:TV<obj (@<OBJ) TARGET Acc - Rel - Interr (*-1 FMAINV + TV BARRIER SV-BOUNDARY OR IV)(NEGATE -1 COMMA LINK *2 TRANS-V + FMAINV BARRIER SV-BOUNDARY)(NEGATE 0 Num LINK 1 MEASR-N) ;
 	#$ Stueng háliidii ge oažžut johtui buoret oktavuođa sámi ja Bolivia eamiálbmot nuoraid gaskkas, go nuorat leat eamiálbmogiid boahtteáigi, mahkáš nuoraid lonuhanprográmma.
+	#% Daelie manna gærjam Afrikan bïjre lohkeme, Janne lea dam lohkeme.
 
 
 
@@ -2642,8 +2646,9 @@ MAP:>advl (@<ADVL) TARGET Arab IF (*-1 FMAINV BARRIER S-BOUNDARY) ;
 	#$ Stáhtabušeahta rámmat leat lassánan 5 % .
 
 #!!	* __NInfheadliner__	
-MAP:NInfheadliner (@HNOUN) TARGET Nom (NEGATE 0 VFIN)(1 Inf LINK NEGATE *1 WORD) ;	
+MAP:NInfheadliner (@HNOUN) TARGET Nom (NEGATE 0 VFIN)(1 Inf LINK NEGATE *1 WORD)(NEGATE *-1 VFIN) ;	
 	#$ Áigi soabadit.
+	#% Mijjeh sijhtebe provnh sjidtedh.
 
 #!!	* __Superlheadliner__	
 MAP:Superlheadliner (@HNOUN) TARGET Superl (NEGATE 0 VFIN)(*-1 BOS BARRIER WORD)(1 Rel LINK 1 VFIN LINK NEGATE *1 VFIN) ;	
