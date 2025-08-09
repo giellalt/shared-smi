@@ -235,10 +235,18 @@ LEXICON ARABICDATENUM1
  < %. ([1|%0]) [1|2|3|4|5|6|7|8|9|%0] > ARABICDATEHYPH ; ! 29.09.-...
 
 LEXICON ARABICDATEHYPH !!≈ * __@CODE@__
- %.%-:%.∑- ARABICDATENUM ;
-   %-:∑-   ARABICDATENUM ;
- %.%–      ARABICDATENUM ; ! en dash
-   %–      ARABICDATENUM ; ! en dash
+!! This lexicon covers date range constructions: the first part of the range is pointing here,
+!! and then it continues after the hyphen to the second part.
+ %.%-+Use/-TTS:%.∑- ARABICDATENUM ;
+   %-+Use/-TTS:∑-   ARABICDATENUM ;
+ %.%–+Use/-TTS:%.%– ARABICDATENUM ; ! en dash
+   %–+Use/-TTS:%–   ARABICDATENUM ; ! en dash
+!! The following two lines cover the TTS use case, where we force the FST to split before and after the hyphen,
+!! to create separate analyses for each part, and with the hyphen as a separate token in between.
+!! This makes it much easier to convert the digits to text, and lay the ground for changing the case of the numbers
+!! in each part of the range.
+ %.@P.Pmatch.Loc@%-@P.Pmatch.Loc@+Use/TTS:%.∑@P.Pmatch.Loc@-@P.Pmatch.Loc@ ARABICDATENUM ;
+ %.@P.Pmatch.Loc@%–@P.Pmatch.Loc@+Use/TTS:%.%@P.Pmatch.Loc@–@P.Pmatch.Loc@ ARABICDATENUM ; ! en dash
 
 LEXICON ARABICDATENUM !!≈ * __@CODE@__
  < [1|2|%0] [1|2|3|4|5|6|7|8|9|%0] %. [%0] [1|2|3|4|5|6|7|8|9] > ARABICDATENUM2 ; !29.09
