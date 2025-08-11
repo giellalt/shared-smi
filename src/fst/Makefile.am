@@ -17,3 +17,14 @@
 
 SUBDIRS = stems
 
+if CAN_HFST_LEXC
+check-local:
+	$(HFST_LEXC) --Werror -v testroot.lexc \
+		stems/arabic_roman_digits.lexc \
+		stems/smi-abbreviations.lexc \
+		stems/smi-acronyms.lexc \
+		stems/smi-digits.lexc \
+		stems/smi-propernouns.lexc \
+		-o /dev/null
+endif
+
