@@ -245,8 +245,8 @@ LEXICON ARABICDATEHYPH !!≈ * __@CODE@__
 !! to create separate analyses for each part, and with the hyphen as a separate token in between.
 !! This makes it much easier to convert the digits to text, and lay the ground for changing the case of the numbers
 !! in each part of the range.
- %.@P.Pmatch.Backtrack@%-@P.Pmatch.Backtrack@+Use/TTS:%.∑@P.Pmatch.Backtrack@-@P.Pmatch.Backtrack@ ARABICDATENUM ;
- %.@P.Pmatch.Backtrack@%–@P.Pmatch.Backtrack@+Use/TTS:%.%@P.Pmatch.Backtrack@–@P.Pmatch.Backtrack@ ARABICDATENUM ; ! en dash
+ %.@P.Pmatch.Backtrack@%-@P.Pmatch.Backtrack@+Use/TTS:%.@P.Pmatch.Backtrack@∑-@P.Pmatch.Backtrack@ ARABICDATENUM ;
+ %.@P.Pmatch.Backtrack@%–@P.Pmatch.Backtrack@+Use/TTS:%.@P.Pmatch.Backtrack@%–@P.Pmatch.Backtrack@ ARABICDATENUM ; ! en dash
 
 LEXICON ARABICDATENUM !!≈ * __@CODE@__
  < [1|2|%0] [1|2|3|4|5|6|7|8|9|%0] %. [%0] [1|2|3|4|5|6|7|8|9] > ARABICDATENUM2 ; !29.09
