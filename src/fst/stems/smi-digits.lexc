@@ -48,14 +48,14 @@ LEXICON ACASETAG   !!≈ * __@CODE@__  is for 1e+Num+Sg+Num:1e
 
 
 LEXICON ARABICDELIMITER   !!≈ * __@CODE@__  blank + 3 delim, what does the lg counc prefer?
- +Num:            ARABICCASE0      ; ! This is the 1984 case, ie NGA
- +Num:%:          ARABICCASE       ; ! This is the 1984:s case.
- +Num+Err/Orth:   ARABICCASE       ; ! This is the 1984s case.
- +Num+Err/Orth:'  ARABICCASE       ; ! This is the 1984's case.
- +Num+Err/Orth:’  ARABICCASE       ; ! optio-B07 = ’
- +Num+Err/Orth:∑- ARABICCASE       ; ! This is the 1984-s case.
- +Num+Err/Orth:´  ARABICCASE       ; ! This is the 1984´s case.
- +Num:            ARABICCOMPOUNDS  ; ! 6-jáhkasaš, 
+ +Num+Arab:            ARABICCASE0      ; ! This is the 1984 case, ie NGA
+ +Num+Arab:%:          ARABICCASE       ; ! This is the 1984:s case.
+ +Num+Arab+Err/Orth:   ARABICCASE       ; ! This is the 1984s case.
+ +Num+Arab+Err/Orth:'  ARABICCASE       ; ! This is the 1984's case.
+ +Num+Arab+Err/Orth:’  ARABICCASE       ; ! optio-B07 = ’
+ +Num+Arab+Err/Orth:∑- ARABICCASE       ; ! This is the 1984-s case.
+ +Num+Arab+Err/Orth:´  ARABICCASE       ; ! This is the 1984´s case.
+ +Num+Arab:            ARABICCOMPOUNDS  ; ! 6-jáhkasaš, 
  +Use/GC:         MEASUREMENTS     ;
 
 
