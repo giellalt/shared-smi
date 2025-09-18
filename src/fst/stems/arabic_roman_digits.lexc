@@ -323,6 +323,13 @@ LEXICON CLOCK-sep !!≈ * __@CODE@__ different separators for intervals, or one 
  –:% –    ARABICCLOCK2x       ; ! en dash
  –:–%     ARABICCLOCK2x       ; ! en dash
 
+!! The following lines cover the TTS use case, where we force the FST to split before and after the hyphen,
+!! to create separate analyses for each part, and with the hyphen as a separate token in between.
+!! This makes it much easier to convert the digits to text, and lay the ground for changing the case of the numbers
+!! in each part of the range.
+ @P.Pmatch.Backtrack@%-@P.Pmatch.Backtrack@+Use/TTS:@P.Pmatch.Backtrack@∑-@P.Pmatch.Backtrack@ ARABICCLOCK2 ;
+ @P.Pmatch.Backtrack@%–@P.Pmatch.Backtrack@+Use/TTS:@P.Pmatch.Backtrack@%–@P.Pmatch.Backtrack@ ARABICCLOCK2 ; ! en dash
+
 
 LEXICON ARABICCLOCK2 !!≈ * __@CODE@__ is the second component of intervals, identical to ARABICCLOCK
  < [1|2|%0] [1|2|3|4|5|6|7|8|9|%0] > numclock ;
