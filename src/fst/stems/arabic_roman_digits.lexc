@@ -215,7 +215,16 @@ LEXICON REALARABICDECIM !!≈ * __@CODE@__ loop and to % and case suffix
 
 
 LEXICON ARABIC   !!≈ * __@CODE@__ +Sem/ID, +Ord
-< [1 "@P.number.one@"|2 "@P.number.two@"|3 "@P.number.three@"|4 "@P.number.four@"|5 "@P.number.five@"|6 "@P.number.six@"|7 "@P.number.seven@"|8 "@P.number.eight@"|9 "@P.number.nine@"|%0  "@P.number.ten@"]  > ARABICLOOPS ; ! hyph, %, casesuffix
+< [ 1 "@P.number.one@"
+  | 2 "@P.number.two@"
+  | 3 "@P.number.three@"
+  | 4 "@P.number.four@"
+  | 5 "@P.number.five@"
+  | 6 "@P.number.six@"
+  | 7 "@P.number.seven@"
+  | 8 "@P.number.eight@"
+  | 9 "@P.number.nine@"
+  |%0 "@P.number.ten@"]  > ARABICLOOPS ; ! hyph, %, casesuffix
 
 
 LEXICON ARABICLOOPS !!≈ * __@CODE@__
