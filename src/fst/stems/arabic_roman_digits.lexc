@@ -300,6 +300,10 @@ LEXICON ARABICCLOCK !!≈ * __@CODE@__ is a regex for clock time.
  < 2  2 [%-|–|—] 2     [3|4] > numclock ;
  < 2  3 [%-|–|—] 2        4  > numclock ;
 
+! 2-digit clock time, first part:
+ < [1|2|%0] [1|2|3|4|5|6|7|8|9|%0] > CLOCK-sep ;
+ <          [1|2|3|4|5|6|7|8|9|%0] > CLOCK-sep ;
+
 ! 4-digit clock time, first part:
  < [1|2|%0] [1|2|3|4|5|6|7|8|9|%0] %. [1|2|3|4|5|%0] [1|2|3|4|5|6|7|8|9|%0] > CLOCK-sep ;
  < [1|2|%0] [1|2|3|4|5|6|7|8|9|%0] %: [1|2|3|4|5|%0] [1|2|3|4|5|6|7|8|9|%0] > CLOCK-sep ;
@@ -321,6 +325,9 @@ LEXICON CLOCK-sep !!≈ * __@CODE@__ different separators for intervals, or one 
 
 
 LEXICON ARABICCLOCK2 !!≈ * __@CODE@__ is the second component of intervals, identical to ARABICCLOCK
+ < [1|2|%0] [1|2|3|4|5|6|7|8|9|%0] > numclock ;
+ <          [1|2|3|4|5|6|7|8|9|%0] > numclock ;
+
  < [1|2|%0] [1|2|3|4|5|6|7|8|9|%0] %. [1|2|3|4|5|%0] [1|2|3|4|5|6|7|8|9|%0] > numclock ;
  < [1|2|%0] [1|2|3|4|5|6|7|8|9|%0] %: [1|2|3|4|5|%0] [1|2|3|4|5|6|7|8|9|%0] > numclock ;
  <          [1|2|3|4|5|6|7|8|9|%0] %. [1|2|3|4|5|%0] [1|2|3|4|5|6|7|8|9|%0] > numclock ;
