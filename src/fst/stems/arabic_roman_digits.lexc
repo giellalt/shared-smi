@@ -333,7 +333,7 @@ LEXICON ARABICCLOCK2x !!≈ * __@CODE@__ is the second component of intervals,
  <          [1|2|3|4|5|6|7|8|9|%0] %: [1|2|3|4|5|%0] [1|2|3|4|5|6|7|8|9|%0] > numclockx ;
 
 LEXICON ARABICCLOCKDECIMALS !!≈ * __@CODE@__ is fractional seconds
- <  [1|2|3|4|5|6|7|8|9|%0]+ > numclock ;
+ <  [1|2|3|4|5|6|7|8|9|%0]+ > numclock_nospan ;
 
 LEXICON ARABICYEAR !!≈ * __@CODE@__
  < [1|2] [1|2|3|4|5|6|7|8|9|%0] [1|2|3|4|5|6|7|8|9|%0] [1|2|3|4|5|6|7|8|9|%0] > numyear ;
