@@ -81,7 +81,6 @@ LEXICON POSTPROSENT !!≈ * __@CODE@__ % and case suffix
    @D.ErrOrth.ON@@C.ErrOrth@                     ARABICDELIMITER ;
 
 LEXICON DECIMALCASES !! * __@CODE@__ case suffixes for decimals
-
 +Num:  ARABICCASES  ;
 
 LEXICON MEASUREMENTS
