@@ -85,6 +85,7 @@ LEXICON DECIMALCASES !! * __@CODE@__ case suffixes for decimals
 +Num:  ARABICCASES  ;
 
 LEXICON MEASUREMENTS
+              MEASUREMENTS-tags ; ! when the measurement is not an abbreviation listed below
  °            MEASUREMENTS-tags ;
  <{ km}>      MEASUREMENTS-tags ;
  < { m}>      MEASUREMENTS-tags ;
