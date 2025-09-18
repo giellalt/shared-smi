@@ -285,14 +285,15 @@ LEXICON CLOCK-sep !!≈ * __@CODE@__ different separators for intervals, or one 
           numclock_nospan     ; ! one clock time indication only
  -:∑-     ARABICCLOCK2        ; ! 12.00-12.30   = no space
  –        ARABICCLOCK2        ; ! en dash
- ,:,      ARABICCLOCKDECIMALS ; ! clock time with fractional seconds (e.g. sports)
 
- -:% ∑-%  ARABICCLOCK2x       ; ! 12.00 - 12.30 = space (common)
- -:∑-%    ARABICCLOCK2x       ; ! 12.00- 12.30  = inconcistent space (found in corpus)
- -:% ∑-   ARABICCLOCK2x       ; ! 12.00 -12.30  = inconcistent space (found in corpus)
- –:% –%   ARABICCLOCK2x       ; ! en dash, spaces as above
- –:% –    ARABICCLOCK2x       ; ! en dash
- –:–%     ARABICCLOCK2x       ; ! en dash
+  +Use/-PMatch+Use/-GC+Use/-TTS-:% ∑-%  ARABICCLOCK2x       ; ! 12.00 - 12.30 = space (common)
+                      +Use/-TTS-:∑-%    ARABICCLOCK2x       ; ! 12.00- 12.30  = inconcistent space (found in corpus)
+                      +Use/-TTS-:% ∑-   ARABICCLOCK2x       ; ! 12.00 -12.30  = inconcistent space (found in corpus)
+                      +Use/-TTS–:% –%   ARABICCLOCK2x       ; ! en dash, spaces as above
+                      +Use/-TTS–:% –    ARABICCLOCK2x       ; ! en dash
+                      +Use/-TTS–:–%     ARABICCLOCK2x       ; ! en dash
+
+ ,:,      ARABICCLOCKDECIMALS ; ! clock time with fractional seconds (e.g. sports)
 
 !! The following lines cover the TTS use case, where we force the FST to split before and after the hyphen,
 !! to create separate analyses for each part, and with the hyphen as a separate token in between.
