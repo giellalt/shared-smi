@@ -1,21 +1,21 @@
 LEXICON datetag
- +Num+Sem/Date:  dateyearcase ;
+ +Num+Arab+Sem/Date:  dateyearcase ;
 
 LEXICON dateyearcase_nullsuff_w_dot_tag
- +Num+Sem/Date:  dateyearcase_nullsuff_w_dot ;
+ +Num+Arab+Sem/Date:  dateyearcase_nullsuff_w_dot ;
 
 LEXICON dateyearcase_fullsuff_tag
- +Num+Sem/Date:  dateyearcase_fullsuff ;
+ +Num+Arab+Sem/Date:  dateyearcase_fullsuff ;
 
 
 LEXICON numclock_nospan
- +Num+Sem/Time-clock: dateyearcase ; !foreløpig
+ +Num+Arab+Sem/Time-clock: dateyearcase ; !foreløpig
 
 LEXICON numclock
- +Num+Sem/Time-clock+Span: dateyearcase ; !foreløpig
+ +Num+Arab+Sem/Time-clock+Span: dateyearcase ; !foreløpig
 
 LEXICON numclockx
- +Num+Sem/Time-clock+Span+Err/Orth: dateyearcase ;  
+ +Num+Arab+Sem/Time-clock+Span+Err/Orth: dateyearcase ;  
 
 !LEXICON ARABICCASEphone  
 ! +Num+Sem/Phonenr+Sg+Nom: # ;
@@ -89,10 +89,10 @@ LEXICON NUM_MEASUREMENTS-tags
  +Num+Arab+Sem/Measr:   # ; ! 50 m. 
 
 LEXICON MEASUREMENTS-tags
- +N+Sem/Measr:   # ; ! 50 m. 
+ +N+Arab+Sem/Measr:   # ; ! 50 m. 
 
 LEXICON MEASUREMENTS-errtags
- +N+Err/MissingSpace+Sem/Measr:    # ; ! 50m. 
+ +N+Arab+Err/MissingSpace+Sem/Measr:    # ; ! 50m. 
 
 LEXICON ROMNUMTAG   !!≈ * __@CODE@__
   +Num+Rom+Sg+Nom+Use/Circ:   #            ;
