@@ -47,47 +47,175 @@ LEXICON Acronym-smi   !!= * __@CODE@__ divides the acros in the 3 types just men
 
 !! !!The acro generator
 
-LEXICON FIRSTLETTER	   !!= * __@CODE@__  instead of regex, a 4-letter loop for random acronyms
- B SCND ; C SCND ; Č SCND ; D SCND ; Đ SCND ; F SCND ; G SCND ; 	
- H SCND ; J SCND ; K SCND ; L SCND ; M SCND ; N SCND ; Ŋ SCND ; 	
- P SCND ; Q SCND ; R SCND ; S SCND ; Š SCND ; T SCND ; Ŧ SCND ; V SCND ; 	
- W SCND ; X SCND ; Z SCND ; Ž SCND ; 								
- A SCND ; Á SCND ; E SCND ; I SCND ; O SCND ; U SCND ; 				
- Æ SCND ; Ø SCND ; Y SCND ; Ä SCND ; Ö SCND ; Å SCND ; 				
+LEXICON FIRSTLETTER   !!= * __@CODE@__  instead of regex, a 4-letter loop for random acronyms
+ B SCND ;
+ C SCND ;
+ Č SCND ;
+ D SCND ;
+ Đ SCND ;
+ F SCND ;
+ G SCND ;
+ H SCND ;
+ J SCND ;
+ K SCND ;
+ L SCND ;
+ M SCND ;
+ N SCND ;
+ Ŋ SCND ;
+ P SCND ;
+ Q SCND ;
+ R SCND ;
+ S SCND ;
+ Š SCND ;
+ T SCND ;
+ Ŧ SCND ;
+ V SCND ;
+ W SCND ;
+ X SCND ;
+ Z SCND ;
+ Ž SCND ;
+ A SCND ;
+ Á SCND ;
+ E SCND ;
+ I SCND ;
+ O SCND ;
+ U SCND ;
+ Æ SCND ;
+ Ø SCND ;
+ Y SCND ;
+ Ä SCND ;
+ Ö SCND ;
+ Å SCND ;
 
 
 
-LEXICON SCND													   !!= * __@CODE@__ second part of loop
- B THRD ; C THRD ; Č THRD ; D THRD ; Đ THRD ; F THRD ; G THRD ;	
- H THRD ; J THRD ; K THRD ; L THRD ; M THRD ; N THRD ; Ŋ THRD ;	
- P THRD ; Q THRD ; R THRD ; S THRD ; Š THRD ; T THRD ; Ŧ THRD ; V THRD ;
- W THRD ; X THRD ; Z THRD ; Ž THRD ; 							
- A THRD ; Á THRD ; E THRD ; I THRD ; O THRD ; U THRD ; 			
- Æ THRD ; Ø THRD ; Y THRD ; Ä THRD ; Ö THRD ; Å THRD ; 			
- %-+Use/Circ+Use/SpellNoSugg:∑- IDNUMBER ; 											           ! N-9520 Kárášjohka
+LEXICON SCND   !!= * __@CODE@__ second part of loop
+ B THRD ;
+ C THRD ;
+ Č THRD ;
+ D THRD ;
+ Đ THRD ;
+ F THRD ;
+ G THRD ;
+ H THRD ;
+ J THRD ;
+ K THRD ;
+ L THRD ;
+ M THRD ;
+ N THRD ;
+ Ŋ THRD ;
+ P THRD ;
+ Q THRD ;
+ R THRD ;
+ S THRD ;
+ Š THRD ;
+ T THRD ;
+ Ŧ THRD ;
+ V THRD ;
+ W THRD ;
+ X THRD ;
+ Z THRD ;
+ Ž THRD ;
+ A THRD ;
+ Á THRD ;
+ E THRD ;
+ I THRD ;
+ O THRD ;
+ U THRD ;
+ Æ THRD ;
+ Ø THRD ;
+ Y THRD ;
+ Ä THRD ;
+ Ö THRD ;
+ Å THRD ;
+ %-+Use/Circ+Use/SpellNoSugg:∑- IDNUMBER ;         ! N-9520 Kárášjohka
  +Use/-Spell: IDNUMBER ;
 
-LEXICON THRD													   !!= * __@CODE@__ third part of loop
- B FRTH ; C FRTH ; Č FRTH ; D FRTH ; Đ FRTH ; F FRTH ; G FRTH ;	
- H FRTH ; J FRTH ; K FRTH ; L FRTH ; M FRTH ; N FRTH ; Ŋ FRTH ;	
- P FRTH ; Q FRTH ; R FRTH ; S FRTH ; Š FRTH ; T FRTH ; Ŧ FRTH ; V FRTH ;	
- W FRTH ; X FRTH ; Z FRTH ; Ž FRTH ; 							
- A FRTH ; Á FRTH ; E FRTH ; I FRTH ; O FRTH ; U FRTH ;			
- Æ FRTH ; Ø FRTH ; Y FRTH ; Ä FRTH ; Ö FRTH ; Å FRTH ;			
- %-+Use/Circ+Use/SpellNoSugg:∑- IDNUMBER ; 											           ! N-9520 Kárášjohka
+LEXICON THRD   !!= * __@CODE@__ third part of loop
+ B FRTH ;
+ C FRTH ;
+ Č FRTH ;
+ D FRTH ;
+ Đ FRTH ;
+ F FRTH ;
+ G FRTH ;
+ H FRTH ;
+ J FRTH ;
+ K FRTH ;
+ L FRTH ;
+ M FRTH ;
+ N FRTH ;
+ Ŋ FRTH ;
+ P FRTH ;
+ Q FRTH ;
+ R FRTH ;
+ S FRTH ;
+ Š FRTH ;
+ T FRTH ;
+ Ŧ FRTH ;
+ V FRTH ;
+ W FRTH ;
+ X FRTH ;
+ Z FRTH ;
+ Ž FRTH ;
+ A FRTH ;
+ Á FRTH ;
+ E FRTH ;
+ I FRTH ;
+ O FRTH ;
+ U FRTH ;
+ Æ FRTH ;
+ Ø FRTH ;
+ Y FRTH ;
+ Ä FRTH ;
+ Ö FRTH ;
+ Å FRTH ;
+ %-+Use/Circ+Use/SpellNoSugg:∑- IDNUMBER ;           ! N-9520 Kárášjohka
  +Use/-Spell: IDNUMBER ;
-  DYN_ACRO_vow ;														
+  DYN_ACRO_vow ;
 
-LEXICON FRTH													   !!= * __@CODE@__ fourth part of loop
- B DYN_ACRO_cons ; C DYN_ACRO_cons ; Č DYN_ACRO_cons ; D DYN_ACRO_cons ; Đ DYN_ACRO_cons ; F DYN_ACRO_cons ; G DYN_ACRO_cons ;
- H DYN_ACRO_cons ; J DYN_ACRO_cons ; K DYN_ACRO_cons ; L DYN_ACRO_cons ; M DYN_ACRO_cons ; N DYN_ACRO_cons ; Ŋ DYN_ACRO_cons ;
- P DYN_ACRO_cons ; Q DYN_ACRO_cons ; R DYN_ACRO_cons ; S DYN_ACRO_cons ; Š DYN_ACRO_cons ; T DYN_ACRO_cons ; Ŧ DYN_ACRO_cons ; V DYN_ACRO_cons ;
- W DYN_ACRO_cons ; X DYN_ACRO_cons ; Z DYN_ACRO_cons ; Ž DYN_ACRO_cons ; 							
- A DYN_ACRO_vow ; Á DYN_ACRO_vow ; E DYN_ACRO_vow ; I DYN_ACRO_vow ; O DYN_ACRO_vow ; U DYN_ACRO_vow ; 			
- Æ DYN_ACRO_vow ; Ø DYN_ACRO_vow ; Y DYN_ACRO_vow ; Ä DYN_ACRO_vow ; Ö DYN_ACRO_vow ; Å DYN_ACRO_vow ;			
- %-+Use/Circ+Use/SpellNoSugg:∑- IDNUMBER ; 											           ! N-9520 Kárášjohka
+LEXICON FRTH   !!= * __@CODE@__ fourth part of loop
+ B DYN_ACRO_cons ;
+ C DYN_ACRO_cons ;
+ Č DYN_ACRO_cons ;
+ D DYN_ACRO_cons ;
+ Đ DYN_ACRO_cons ;
+ F DYN_ACRO_cons ;
+ G DYN_ACRO_cons ;
+ H DYN_ACRO_cons ;
+ J DYN_ACRO_cons ;
+ K DYN_ACRO_cons ;
+ L DYN_ACRO_cons ;
+ M DYN_ACRO_cons ;
+ N DYN_ACRO_cons ;
+ Ŋ DYN_ACRO_cons ;
+ P DYN_ACRO_cons ;
+ Q DYN_ACRO_cons ;
+ R DYN_ACRO_cons ;
+ S DYN_ACRO_cons ;
+ Š DYN_ACRO_cons ;
+ T DYN_ACRO_cons ;
+ Ŧ DYN_ACRO_cons ;
+ V DYN_ACRO_cons ;
+ W DYN_ACRO_cons ;
+ X DYN_ACRO_cons ;
+ Z DYN_ACRO_cons ;
+ Ž DYN_ACRO_cons ;
+ A DYN_ACRO_vow ;
+ Á DYN_ACRO_vow ;
+ E DYN_ACRO_vow ;
+ I DYN_ACRO_vow ;
+ O DYN_ACRO_vow ;
+ U DYN_ACRO_vow ;
+ Æ DYN_ACRO_vow ;
+ Ø DYN_ACRO_vow ;
+ Y DYN_ACRO_vow ;
+ Ä DYN_ACRO_vow ;
+ Ö DYN_ACRO_vow ;
+ Å DYN_ACRO_vow ;
+ %-+Use/Circ+Use/SpellNoSugg:∑- IDNUMBER ; 	           ! N-9520 Kárášjohka
  +Use/-Spell: IDNUMBER ;
- DYN_ACRO_cons ;															
+ DYN_ACRO_cons ;
 ! # ; !To prevent cases like :as, `as and as. But this gives tagless 3-letter ACR.
 
 LEXICON IDNUMBER
