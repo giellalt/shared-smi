@@ -232,6 +232,43 @@ DYN_ACRO_cons ; ! same tag as the acronyms
 
 LEXICON Acronym-list
 
+!! accept all single letters as name acronyms: "Isak M Hætta"
+!! (no inflection, no compounding)
+A+N+Prop+Sem/Hum+ACR:A    #   ;
+B+N+Prop+Sem/Hum+ACR:B    #   ;
+C+N+Prop+Sem/Hum+ACR:C    #   ;
+D+N+Prop+Sem/Hum+ACR:D    #   ;
+E+N+Prop+Sem/Hum+ACR:E    #   ;
+F+N+Prop+Sem/Hum+ACR:F    #   ;
+G+N+Prop+Sem/Hum+ACR:G    #   ;
+H+N+Prop+Sem/Hum+ACR:H    #   ;
+I+N+Prop+Sem/Hum+ACR:I    #   ;
+J+N+Prop+Sem/Hum+ACR:J    #   ;
+K+N+Prop+Sem/Hum+ACR:K    #   ;
+L+N+Prop+Sem/Hum+ACR:L    #   ;
+M+N+Prop+Sem/Hum+ACR:M    #   ;
+N+N+Prop+Sem/Hum+ACR:N    #   ;
+O+N+Prop+Sem/Hum+ACR:O    #   ;
+P+N+Prop+Sem/Hum+ACR:P    #   ;
+Q+N+Prop+Sem/Hum+ACR:Q    #   ;
+R+N+Prop+Sem/Hum+ACR:R    #   ;
+S+N+Prop+Sem/Hum+ACR:S    #   ;
+T+N+Prop+Sem/Hum+ACR:T    #   ;
+U+N+Prop+Sem/Hum+ACR:U    #   ;
+V+N+Prop+Sem/Hum+ACR:V    #   ;
+W+N+Prop+Sem/Hum+ACR:W    #   ;
+X+N+Prop+Sem/Hum+ACR:X    #   ;
+Y+N+Prop+Sem/Hum+ACR:Y    #   ;
+Z+N+Prop+Sem/Hum+ACR:Z    #   ;
+Å+N+Prop+Sem/Hum+ACR:Å    #   ;
+Ä+N+Prop+Sem/Hum+ACR:Ä    #   ;
+Æ+N+Prop+Sem/Hum+ACR:Ö    #   ;
+Ø+N+Prop+Sem/Hum+ACR:Æ    #   ;
+A+N+Prop+Sem/Hum+ACR:Ø    #   ;
+Š+N+Prop+Sem/Hum+ACR:Š    #   ;
+Á+N+Prop+Sem/Hum+ACR:Á    #   ;
+Ž+N+Prop+Sem/Hum+ACR:Ž    #   ;
+
 
 BICS+N+Sem/Cat+ACR:BICS ACRONOUN_cons ;
 CALP+N+Sem/Cat+ACR:CALP ACRONOUN_cons ;
