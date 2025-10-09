@@ -285,6 +285,10 @@ LIST EOS = (<<<) (</s>);
 
 LIST WORD = N A Adv V Pron CS CC Po Pr Interj Pcle Num ABBR ACR  \? ;
 
+LIST ALL-CITATION = "«" "“" "\"" "„" "‟" "'" "‹" "‘" "‚" "‛" "❛" "❝" "❮" "〝" "〟" "»" "“" "\"" "'" "›" "’" "❜" "❞" "❯" "〞" "＂" ; 
+LIST LEFT-QUOT = "«" "“" "„"  "‟" "‹" "‘" "‚" "‛" "❛" "❝" "❮" "〝" "〟"; 
+LIST RIGHT-QUOT = "\"" "＂" "»" "“" ""»" ;
+
 
 
 # Some subsets of the VFIN sets
@@ -645,13 +649,14 @@ SET VFIN = @FMV OR @FMVdic OR @FAUX OR @FS-VFIN< OR @FS-N< OR @FS->N OR @FS-P< O
 SET NONVFIN = V - VFIN ;
 
 # citations - the verb is marked so it will be handled differently from other verbs if it is in the end of the sentence
-SUBSTITUTE:utt (@FMV)(@FMVdic) TARGET (<vdic>) (-1 COMMA LINK 1 VFIN LINK *1 @<SUBJ BARRIER @V) ;
+SUBSTITUTE:utt (@FMV)(@FMVdic) TARGET (<vdic>) (-1 COMMA  OR RIGHT-QUOT LINK 1 VFIN LINK *1 @<SUBJ BARRIER @V) ;
 	## Mii fertet maiddái geahčadit makkár lassi guoimmuhemiid galgat fállat vai bohtet vel eanet olbmot boahtte jagi, loahpaha duhtavaš beaivválaš jođiheaddji Eriksen.
 
-SUBSTITUTE:utt (@FMV)(@FMVdic) TARGET (<vdic>) (*1 (":") BARRIER @V LINK 1 CITATION) ;
+SUBSTITUTE:utt (@FMV)(@FMVdic) TARGET (<vdic>) (*1 (":") BARRIER @V LINK 1 ALL-CITATION) ;
 	## Ja go stállu álggii nohkkat, de son fas čuorvvui moarsis: "Boađe nohkkat!"
-SUBSTITUTE:utt (@FMV)(@FMVdic) TARGET (<vdic>) (0 VFIN LINK -1 @SUBJ> LINK *-1 COMMA BARRIER @V) ;
-SUBSTITUTE:utt (@IMV)(@IMVdic) TARGET (<vdic>) (*1 (":") BARRIER @V LINK 1 CITATION) ;
+SUBSTITUTE:utt (@FMV)(@FMVdic) TARGET (<vdic>) (0 VFIN LINK -1 @SUBJ> LINK *-1 COMMA OR ALL-CITATION BARRIER @V) ;
+	## «Manne dan aavosne juhkoe giesie lea,» tjidtjebe jeahta.
+SUBSTITUTE:utt (@IMV)(@IMVdic) TARGET (<vdic>) (*1 (":") BARRIER @V LINK 1 ALL-CITATION) ;
 	## Ja lea dadjan: "Ale nohka mu nalde!"
 
 # Only verbs in the predicate gets <mv> and <aux>
@@ -1455,3 +1460,5 @@ SUBSTITUTE:ctjHeadRemove (<ctjHead>) (*) TARGET (<ctjHead>) ;
 # 1. kjøring - kun SUBSTITUTE:fao_sum_id=Rel (CS) (<cs> Rel) TARGET ("sum" CS) OR ("ið" CS) ;
 # 2. kjøring - dessuten faospectagrules
 # 3. kjøring - både faospectagrules og faospecsynrules
+
+SUBSTITUTE (<vdic>) (*) TARGET (<vdic>) ;

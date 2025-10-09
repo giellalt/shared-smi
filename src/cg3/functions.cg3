@@ -953,7 +953,7 @@ SET NOT-INITIAL-CC = WORD - INITIAL - CC ;
 
 SET CP = (Pron Interr) OR  Rel OR MO ;
 
-LIST BOUNDARYSYMBOLS =  "\;" ":" "-" "–" ;
+LIST BOUNDARYSYMBOLS =  "\;" ":" "-" "–" "»" ;
 
 SET S-BOUNDARY = CP OR BOUNDARYSYMBOLS OR ("muhto") OR ("de" Adv) OR (Neg Sup) OR @CVP OR ("vel" Adv Qst) OR Rel ;
 	# does not include CS, because of "go" in questions, before it is disambugated.
