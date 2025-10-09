@@ -656,8 +656,14 @@ SUBSTITUTE:utt (@FMV)(@FMVdic) TARGET (<vdic>) (*1 (":") BARRIER @V LINK 1 ALL-C
 	## Ja go stállu álggii nohkkat, de son fas čuorvvui moarsis: "Boađe nohkkat!"
 SUBSTITUTE:utt (@FMV)(@FMVdic) TARGET (<vdic>) (0 VFIN LINK -1 @SUBJ> LINK *-1 COMMA OR ALL-CITATION BARRIER @V) ;
 	## «Manne dan aavosne juhkoe giesie lea,» tjidtjebe jeahta.
+	
+SUBSTITUTE:utt (@FMV)(@FMVdic) TARGET (<vdic>) (0 VFIN LINK -1 COMMA OR ALL-CITATION LINK 2 EOS) ;	
+	## «Manne ien gaavhtan, mohte juktie daarpesjien dam», buerkiestægan.
+	
 SUBSTITUTE:utt (@IMV)(@IMVdic) TARGET (<vdic>) (*1 (":") BARRIER @V LINK 1 ALL-CITATION) ;
 	## Ja lea dadjan: "Ale nohka mu nalde!"
+	
+
 
 # Only verbs in the predicate gets <mv> and <aux>
 # -----------------------------------------------
