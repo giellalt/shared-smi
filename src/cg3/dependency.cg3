@@ -590,6 +590,15 @@ LIST MUITALIT = "árvalit" "bivdit" "boagustit" "cealkit" "cuoigut" "čilget" "�
 #!! * __muitalit__
 SUBSTITUTE:muitalit (V) (<vdic> V) TARGET MUITALIT (0 @FMAINV) ;
 
+# sma-rules
+
+LIST JIEHTEDH = "boejhkelidh" "buerkiestidh" "bæjhkoehtidh" "föörhkedidh" "gæljadidh" "gæljodh" "jiehtedh" "låasedh" "praahkedh" "sjoehkesjidh" "stilledh" "tjaalasovvedh" "tjïertestidh" "tjåarvodh" "onterdidh" "ussjedidh" "vaestiedidh" ;
+	##  «Manne dan aavosne juhkoe giesie lea,» tjidtjebe jeahta.
+	## ”Ean månnoeh miehtjesne mïnnh lustestallemen jallh haarjanimmien gaavhtan, mohte juktie daarpesjien dam”, buerkiestægan.
+
+#!! * __muitalit__
+SUBSTITUTE:jiehtedh-dep (V) (<vdic> V) TARGET JIEHTEDH (0 @FMAINV) ;
+
 # eus-rules
 
 #!! * __XX__
@@ -659,6 +668,7 @@ SUBSTITUTE:utt (@FMV)(@FMVdic) TARGET (<vdic>) (0 VFIN LINK -1 @SUBJ> LINK *-1 C
 	
 SUBSTITUTE:utt (@FMV)(@FMVdic) TARGET (<vdic>) (0 VFIN LINK -1 COMMA OR ALL-CITATION LINK 2 EOS) ;	
 	## «Manne ien gaavhtan, mohte juktie daarpesjien dam», buerkiestægan.
+	## «Manne ien gaavhtan, mohte juktie daarpesjien dam» buerkiestægan.
 	
 SUBSTITUTE:utt (@IMV)(@IMVdic) TARGET (<vdic>) (*1 (":") BARRIER @V LINK 1 ALL-CITATION) ;
 	## Ja lea dadjan: "Ale nohka mu nalde!"
