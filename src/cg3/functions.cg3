@@ -2754,9 +2754,11 @@ MAP:leftoversX (@X) TARGET WORD ;
 
 
 #!! !!For Apertium:
-#!! The analysis give double analysis because of optional semtags. We go for the one with semtag.
+#!! The analysis gives double analysis because of optional semtags. We go for the one with semtag.
 
-SELECT SEMTAGS + N ;
+SELECT SEMTAGS + N IF (NEGATE 0 (*) - N);
+	#$ Hov lean byjjenamme daejnie. 
+	# The last condition is necessary to make sure this is only about nouns and no PoS ambiguity is left as in the previous sentence where Hov is Pcle and N
 SELECT SUB:1 SEMTAGS + N ; #For Apertium
 SELECT SUB:2 SEMTAGS + N ; #For Apertium
 SELECT (cog) OR (top) OR (ant) ; #For Apertium
