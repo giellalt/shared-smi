@@ -987,9 +987,10 @@ SETPARENT:SetModToCC @>CC TO (*1 CC) ;
 	## - Gea, juhkki vel liema vai liegganeahppi sihke siskkáldasat ja olgguldasat.
 
 ### ellipse
-SETPARENT:SetSubjtoLeftVfin @<SUBJ TO (*-1 @CVP OR COMMA BARRIER @V LINK *-1 VFIN) ;
+SETPARENT:SetSubjtoLeftVfin @<SUBJ TO (NOT 0 @>N LINK *-1 @CVP OR COMMA BARRIER @V LINK *-1 VFIN) ;
 	## Ovdal buorida son dálkkiidis go neavrres olmmoš dábiidis.
 	## Veahá áiggi maŋŋá Ánne lea juo oađđimin duljiid alde Muhtinlágan Stálu goađis gos nu meahcis, rátnu vel alde.
+	#$ Eajsa jïh Inger Anne lægan gellien jaepien Mierojaevrien gaedtiebealesne orreme, naan gille mïjlh Goevtegeajnoen noerhtelen.
 SETPARENT:SetSubjtoRightVfin @SUBJ> TO (*1 @CVP BARRIER @V LINK *1 VFIN) ;
 	## Mađe losit siivu, dađe njoazebut manná mátki.
 
@@ -1075,7 +1076,7 @@ SETPARENT @-FADVL> TO (*1 NONVFIN BARRIER S-BOUNDARY LINK NOT 0 @MV) ;
 
 SETPARENT:SetSubjToRightMv SUBJ> TO (*1 (<mv>) BARRIER S-BOUNDARY) ;
 SETPARENT:SetSubjToRightVfin SUBJ> TO (*1 VFIN BARRIER S-BOUNDARY) ;
-SETPARENT:SetSubjToLeftVfin <SUBJ TO (*-1 VFIN BARRIER S-BOUNDARY) ;
+SETPARENT:SetSubjToLeftVfin <SUBJ TO (NOT 0 @>N LINK *-1 VFIN BARRIER S-BOUNDARY) ;
 SETPARENT:SetSubjToLeftVfin F<SUBJ TO (*-1 NONVFIN BARRIER S-BOUNDARY) ;
 SETPARENT:SetRelSubjToRight (Rel @SUBJ>) TO (*1 @FS-N< BARRIER S-BOUNDARY) ;
 
