@@ -2053,7 +2053,9 @@ MAP:<subjNum (@<SUBJ) TARGET  Num + Nom  (*1 (N Sg Gen) BARRIER NOT-A)(*-1 VFIN 
 MAP:subj>Rel (@SUBJ>) TARGET (Nom Pl) OR (Nom Pl3) IF (1 Rel LINK *1 FMAINV LINK *1 VFIN + Pl3) ;
 	#$ Dat mat sáhttet háhkkojuvvot, leat ovdalis juo namuhuvvon.
 MAP:subj>App (@SUBJ>) TARGET Nom IF (1 COMMA LINK **1 @APP-N< OR @APP-Pron< LINK 1 COMMA LINK 1 VFIN) ;
-MAP:subj>Rel (@SUBJ>) TARGET (N Nom) OR (Pron Nom) OR (A Nom) IF (*1 Rel BARRIER WORD LINK *1 FMAINV LINK *1 VFIN + Sg3 OR VFIN + Pl3) ;
+
+MAP:subj>Rel (@SUBJ>) TARGET (N Nom) OR (Pron Nom) OR (A Nom) IF (*1 Rel BARRIER WORD LINK *1 FMAINV LINK *1 VFIN + Sg3 OR VFIN + Pl3)(NEGATE 0 Pl + <sma> LINK *-1 TV BARRIER NOT-NPMOD) ;
+	#$ ”miehtjeste lean åådtjeme {daeverh} mejgujmie lean maahteme åesiestidh”, Eajsa buerkeste.
 MAP:subj>App (@SUBJ>) TARGET (N Nom) OR (Pron Nom) (1 COMMA LINK *1 @APP-N< OR @APP-Pron< BARRIER NOT-NPMOD LINK *1 FMAINV) ;
 	#$ Jovsset, su irgi, gii lei rehálaš olmmái ii ge hálidan heahppašuhttit su, áiggui earránit sus suoli.
 
