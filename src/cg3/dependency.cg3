@@ -1121,7 +1121,7 @@ SETPARENT:SetKonjToV KONJ + @CVP TO (*1 VFIN OR NONVFIN BARRIER S-BOUNDARY) ;
 SETPARENT:FMVToRoot @CVP (NONE p (*)) TO (@0 (*));
 
 ### coordinator
-SETPARENT:SetCNPToWord @CNP TO (*-1 WORD) ;
+SETPARENT:SetCNPToWord @CNP TO (NEGATE c @COMP-CS<)(*-1 WORD) ;
 SETPARENT:SetCNPToWordBegS @CNP (-1 BOS) TO (*1 VFIN) ;
 	## Jïh dam manne edtjem åestedh.
 SETPARENT:SetCVPToWord @CVP + CC TO (*-1 VFIN) ;
