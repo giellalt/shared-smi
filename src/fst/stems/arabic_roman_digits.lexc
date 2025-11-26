@@ -215,7 +215,7 @@ LEXICON REALARABICDECIM !!≈ * __@CODE@__ loop and to % and case suffix
 < [1|2|3|4|5|6|7|8|9|%0]+ > DECIMALCASES ; ! to case suffix
 
 LEXICON REALARABICSPAN !!≈ * __@CODE@__ loop and to % and case suffix
-< [1|2|3|4|5|6|7|8|9|%0]+ %+Use/GC:0 >        MEASUREMENTS     ; ! gc needs measurements after arabic loops
+< [1|2|3|4|5|6|7|8|9|%0]+ %+Use%/GC:0 >        MEASUREMENTS     ; ! gc needs measurements after arabic loops
 
 
 LEXICON ARABIC   !!≈ * __@CODE@__ +Sem/ID, +Ord
