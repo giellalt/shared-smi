@@ -71,6 +71,7 @@
 !! (and thereafter 31000 similar lines follow):
 
 LEXICON ProperNoun-smi-nocomp !!= * __@CODE@__ Propernouns: no compounding without hyph. Add also +CmpNP/None
+Kentucky% Fried% ChickenCmpNP/Nome+OLang/ENG:Kentucky% Fried% Chicken9 LONDON-org ;
 A-ha+CmpNP/None+OLang/NOB:A-ha ACCRA-org ; !!= @CODE@ \\
 ABC-Company+CmpNP/None+OLang/UND:ABC-Company ACCRA-Y-org ;
 ABC-Company+OLang/UND+Err/Orth:ABC-company ACCRA-Y-org ;
@@ -24526,6 +24527,7 @@ Reppe+OLang/UND:Reppe ACCRA-plc ;
 Reppen+Err/Orth+OLang/UND:Ræppen9 LONDON-plc ;
 Reppen+OLang/UND:Reppen9 LONDON-plc ;
 Repperud+OLang/NOB:Reppe^rud9 BERN-sur ;
+Rikerud+OLang/NOB:Rike^rud9 BERN-sur ;
 Reppkleiv+OLang/UND:Repp^kleiv BERN-sur ;
 Repstad+OLang/NOB:Rep^stad9 BERN-plc ;
 Republiken+OLang/UND:Republiken9 LONDON-org ;
@@ -28026,6 +28028,7 @@ Spaun+OLang/UND:Spa^un9 LONDON-sur ;
 Spears+OLang/UND:Spears BERN-sur ;
 Speciel+OLang/UND:Speci^el LONDON-org ;
 Speculum+OLang/UND:Speculum9 BERN-obj ;
+Speer+OLang/UND:Speer BERN-sur ;
 Speedy+OLang/UND:Speedy ACCRA-Y-mal ;
 Speight+OLang/UND:Speight BERN-plc ;
 Spein+OLang/UND:Spein9 BERN-sur ;
@@ -28583,6 +28586,7 @@ Strange+OLang/UND:Strange ACCRA-sur ;
 Stranger+OLang/UND:Stranger LONDON-plc ;
 Strasbourg+OLang/UND:Stras^bourg9 BERN-plc ;
 Stratford-on-Avon+OLang/UND:Strat^ford9-on-Avon9 LONDON-plc ;
+Stratford+OLang/UND:Strat^ford9 BERN-plc ;
 Strathern+OLang/UND:Strat^hern9 BERN-sur ;
 Strauman+OLang/NOB:Strauman9 LONDON-plc ;
 Straumbu+OLang/NOB:Straum^bu NYSTØ-plc ;
