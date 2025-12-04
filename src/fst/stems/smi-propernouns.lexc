@@ -71,7 +71,7 @@
 !! (and thereafter 31000 similar lines follow):
 
 LEXICON ProperNoun-smi-nocomp !!= * __@CODE@__ Propernouns: no compounding without hyph. Add also +CmpNP/None
-Kentucky% Fried% ChickenCmpNP/Nome+OLang/ENG:Kentucky% Fried% Chicken9 LONDON-org ;
+Kentucky% Fried% Chicken+CmpNP/None+OLang/ENG:Kentucky% Fried% Chicken9 LONDON-org ;
 A-ha+CmpNP/None+OLang/NOB:A-ha ACCRA-org ; !!= @CODE@ \\
 ABC-Company+CmpNP/None+OLang/UND:ABC-Company ACCRA-Y-org ;
 ABC-Company+OLang/UND+Err/Orth:ABC-company ACCRA-Y-org ;
