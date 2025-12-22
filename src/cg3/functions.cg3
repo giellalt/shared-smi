@@ -1791,6 +1791,9 @@ MAP:extQst3> (<ext> @SUBJ>) TARGET Nom IF (1 <hab> + <sma>) ;
 #!! * __<extsubjcoor__ (<ext> @<SUBJ) for Nom. Coordination
 MAP:<extsubjcoor (<ext> @<SUBJ) TARGET Nom - NOT-EXT - Pron (*-1 (CC @CNP) OR Neg OR COMMA BARRIER NOT-NPMOD LINK *-1 <ext> BARRIER WORD)(NEGATE 1 REAL-V) ;
 	#$ Eai lean boraspiret, eai ealggat, eaige nu ollu bohccot dain duovdagiin go dál.
+	
+#!! * __<smaSecSubj__ (@SUBJ>) for Nom. i <sma> in a second main or subclause where the copula is dropped
+MAP:<smaSecSubj (@SUBJ>) TARGET (N Sg Nom) (*-1 CC OR COMMA BARRIER NOT-NPMOD)(*1 ("dellie") LINK *1 (Sg Nom) LINK 1 EOS)(0 <sma>) ;
 
 #!! * Sem/Year
 MAP:Year (@N<) TARGET (Sem/Year Nom) (-1 (Sem/Sur Nom)) ;
