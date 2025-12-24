@@ -261,6 +261,7 @@ LIST @GOAL> = @GOAL> ;
 
 LIST <kal> = <kal> ;
 LIST <fao> = <fao> ;
+LIST <sma> = <sma> ←sma→ ;
 
 
 
@@ -1083,8 +1084,9 @@ SETPARENT:SetRelSubjToRight (Rel @SUBJ>) TO (*1 @FS-N< BARRIER S-BOUNDARY) ;
 
 SETPARENT @<SPRED TO (*-1 @SUBJ> BARRIER @V);
 	## Sápmelaččaid historjá álbmogin lea duháhiid jagiid boaris, muhto dálá ássanguovlluin sápmelaččat eai leat ássan nu guhká.
+	## Guelieh lea åejviejielege, tjoevtje dellie joekoen.
 SETPARENT @SPRED> TO (*1 @SUBJ> LINK NOT 0 Rel);
-SETPARENT @<SPRED TO (*-1 (<mv>) OR @HNOUN OR @SUBJ);
+SETPARENT @<SPRED TO (*-1 (<mv>) OR @HNOUN OR @SUBJ BARRIER @<SPRED);
 	## Mov mænngan båata dihte gie manneste veaksahkåbpoe.
 SETPARENT @SPRED> TO (*1 (<mv>) OR @HNOUN BARRIER Rel OR S-BOUNDARY);
 SETPARENT @-FSPRED> TO (*1 NONVFIN BARRIER Rel OR S-BOUNDARY);
@@ -1365,6 +1367,11 @@ SETPARENT @SUBJ TO (*-1 VFIN) ; # @SUBJ - there is no vfin for the subj
 SETPARENT @SUBJ TO (-1 Rel LINK *-1 N OR Indef OR A OR Num) ; # @SPRED - there is no mainv for the spred
 SETPARENT (Rel @SUBJ) TO (*-1 N OR Pers OR Indef OR A) ; # @SUBJ - there is no vfin for the subj
 	## Mov mænngan båata dihte gie manneste veaksahkåbpoe.
+	
+SETPARENT (@SUBJ>) (NONE p (*)) TO  (*-1 (<mv>));
+	# Maybe only for (0 <sma>)
+	## Guelieh lea åejviejielege tjoevtje dellie joekoen.
+
 SETPARENT SUBJ (NONE p (*)) TO (@0 (*));
 	## Dennie synnagovgesne jis akte ålma maam doenh-aajmoe doerelamme.
 SETPARENT SPRED (NONE p (*)) TO (@0 (*));
