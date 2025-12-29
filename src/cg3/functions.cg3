@@ -2293,6 +2293,7 @@ MAP (@ADVL-ela>) TARGET ADVLCASEAdv - INE-TRIGGER-NOUNS-sme (0 Loc OR Adv OR Po)
 MAP:advl>mainV (@ADVL>) TARGET ADVLCASEAdv (NEGATE *-1 FMAINV BARRIER S-BOUNDARY)(*1 FMAINV BARRIER SV-BOUNDARY) ;
 	#$ Dál de viimmat asttan lohkat reivve.
 	#$ Jos ja go suodjalus ii šat dárbbaš guovllu, dat galgá máhcahuvvot sámi geavahussii, Skum cealká.
+	## Inger Anne gïetigujmie vuesehte man onn’ohtje lij goh satne voestes aejkien aehtjiebinie ektesne lij viermieh jadtehteminie, jïh eevre dan {mænngan} viermieh vaaksjodh lea biehkie sov jieliemisnie.
 
 MAP:V<advl-ine (@<ADVL-ine) TARGET ADVLCASEAdv OR Sem/Year OR (".*lohku"r)  (0 Loc OR Adv OR Po) (*-1 ("oidnosii")  BARRIER SV-BOUNDARY - (":") LINK -1 FMAINV + ("boahtit"))(NEGATE -1 COMMA LINK *1 FMAINV BARRIER S-BOUNDARY)(0 (<sme>)) ;
 	#$ ... nu ahte dat bohtet oidnosii sihke politihkas, lágain ja geavatlaččat.
