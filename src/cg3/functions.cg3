@@ -2290,7 +2290,7 @@ MAP (@ADVL-ela>) TARGET ADVLCASEAdv - INE-TRIGGER-NOUNS-sme (0 Loc OR Adv OR Po)
 	#% Giellabargu mánáidgárddis gáibida ollu barggu sihke bargiin ja vánhemiin.
 
 #!! * __advl>mainV__ (@ADVL>) if; finite mainverb not found to the left, but the finite mainverb is found to the right.
-MAP:advl>mainV (@ADVL>) TARGET ADVLCASEAdv (NEGATE *-1 FMAINV BARRIER S-BOUNDARY)(*1 FMAINV BARRIER SV-BOUNDARY) ;
+MAP:advl>mainV (@ADVL>) TARGET ADVLCASEAdv (NEGATE *-1 FMAINV BARRIER S-BOUNDARY OR (Adv Subqst))(*1 FMAINV BARRIER SV-BOUNDARY) ;
 	#$ Dál de viimmat asttan lohkat reivve.
 	#$ Jos ja go suodjalus ii šat dárbbaš guovllu, dat galgá máhcahuvvot sámi geavahussii, Skum cealká.
 	## Inger Anne gïetigujmie vuesehte man onn’ohtje lij goh satne voestes aejkien aehtjiebinie ektesne lij viermieh jadtehteminie, jïh eevre dan {mænngan} viermieh vaaksjodh lea biehkie sov jieliemisnie.
