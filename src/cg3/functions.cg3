@@ -1934,8 +1934,9 @@ MAP:AdjSpredSg> (@SPRED>) TARGET (A Sg Nom) IF (*1 COPULAS + FMAINV BARRIER SV-B
 	#$ Divrras ii leat gal barggu ektui.
 	#% Dási ferte árvvoštallat daláš gáibádusaid ektui, ja internáhtat ledje buorebut go priváhta olbmuid luhtte orrut.
 
-MAP:AdjSpredSg> (@SPRED>) TARGET (A Sg Nom) IF (1 Ill LINK *1 Inf)(*-1 BOS BARRIER NOT-ADV)(0 <sma>);
+MAP:AdjSpredSg> (@SPRED>) TARGET (A Sg Nom) IF (*1 Ill OR Acc BARRIER NOT-ADV-PCLE LINK *1 Inf)(*-1 BOS BARRIER NOT-ADV)(0 <sma>);
 	#$ Buerebe Læjsese guvvieh darjodh.
+	#$ Aelhkie badth åarjelsaemiengïelem lïeredh. 
 
 #!! * __AdjSpredSg__ (@<SPRED) for South Sámi in the case of copula drop; A Sg Nom; if there is a subject to the left
 MAP:AdjSpredSg (@<SPRED) TARGET (A Sg Nom) IF (-1 Adv OR Pcle LINK -1 (N Sg Nom) LINK *-1 BOS OR COMMA OR (";") BARRIER NOT-NPMOD)(0 <sma>)(*1 EOS BARRIER NOT-ADV) ;
