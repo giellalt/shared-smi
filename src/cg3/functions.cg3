@@ -1928,11 +1928,14 @@ MAP:r492 (@SPRED>) TARGET (Interr Gen) IF (NEGATE 0 MII)(NEGATE *1 A OR N BARRIE
 MAP:spredSg> (@SPRED>) TARGET (Sg Nom) IF (1 (Sg Nom) OR SGPRON + Nom OR (Indef Nom) LINK 1 COPULAS) ;
 	#$ Mii mun lean?
 
-#!! * __AdjSpredSg>__ (@SPRED>) for A Sg Nom; if copulas to the right, but not if A or @<SPRED are found to the right of copulas
+#!! * __AdjSpredSg>__ (@SPRED>) for A Sg Nom; if copulas to the right, but not if A or @<SPRED are found to the right of copulas. For sma there is a copula-less version of this.
 MAP:AdjSpredSg> (@SPRED>) TARGET (A Sg Nom) IF (*1 COPULAS + FMAINV BARRIER SV-BOUNDARY OR COMMA OR CC LINK NEGATE *1 A OR @<SPRED BARRIER NOT-NPMOD);
 	#$ Buorre lea oažžut su boahtit deike.
 	#$ Divrras ii leat gal barggu ektui.
 	#% Dási ferte árvvoštallat daláš gáibádusaid ektui, ja internáhtat ledje buorebut go priváhta olbmuid luhtte orrut.
+	
+MAP:AdjSpredSgsma> (@SPRED>) TARGET (A Sg Nom) IF (*-1 BOS BARRIER NOT-ADV-PCLE)(*1 SUBJ LINK NEGATE *1 A OR @<SPRED BARRIER NOT-NPMOD)(0 <sma>);
+	#$ Man aelhkie dellie vaalmerdidh.
 
 MAP:AdjSpredSg> (@SPRED>) TARGET (A Sg Nom) IF (*1 Ill OR Acc BARRIER NOT-ADV-PCLE LINK *1 Inf)(*-1 BOS BARRIER NOT-ADV)(0 <sma>);
 	#$ Buerebe Læjsese guvvieh darjodh.
