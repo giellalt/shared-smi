@@ -107,7 +107,7 @@ LEXICON ROMNUMTAG   !!≈ * __@CODE@__
 !                     +Num:   ROMNUMTAGOBL ;
 
 LEXICON yeartag
- +Num+Sem/Year: dateyearcase ;
+ +Num+Arab+Sem/Year: dateyearcase ;
 
 LEXICON NUMTAG
 +Num+Arab:  # ;
