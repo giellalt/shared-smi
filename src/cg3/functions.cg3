@@ -1977,16 +1977,19 @@ MAP:subj>Pers (@SUBJ>) TARGET (Sg1 Nom) (1 CC LINK *1 (N Pl) BARRIER NOT-NPMOD L
 	#% Lea go son Máret boahtán?
 
 LIST OASSI = "bealli" "oassi" "kapihtal" "paragráfa" "proseanta" ;
+LIST BIEHKIE = "biehkie" ;
 
-MAP:n< (@N<) TARGET Loc - Rel (*-1 OASSI BARRIER NOT-NPMOD OR LEFT) ;
+MAP:n< (@N<) TARGET Loc - Rel OR Ine - Rel (*-1 OASSI OR BIEHKIE BARRIER NOT-NPMOD OR LEFT) ;
 	#$ Dat lea oassin giellaprográmmas.
 	#$ Go guorahallat guovttegielat olbmuid giellageavaheami, de okta dehálaš oassi olbmo gielalaš resurssain lea čálamáhttu
+	#$ Miehtjie lea biehkie monnen identiteetine.
+	#$ eevre dan mænngan viermieh vaaksjodh lea biehkie sov jieliemisnie.
 
-MAP:n< (@Num<) TARGET Loc - Rel (-1 Num + Nom OR LEFT)(0 Pron OR N + Pl) ;
+MAP:n< (@Num<) TARGET Loc - Rel OR Ine - Rel (-1 Num + Nom OR LEFT)(0 Pron OR N + Pl) ;
 	#$ son lea okta sis gii lea čalmmustahttán ášši
 	#% Silje lea náittosdilis leamaš 20 jagi ja sudnos isidiin leat guokte máná.
 
-MAP:n< (@N<) TARGET Loc (-1 Coll + Nom)(0 Dem OR Pers) ;
+MAP:n< (@N<) TARGET Loc OR Ine (-1 Coll + Nom)(0 Dem OR Pers) ;
 	#$ Golmmas dain leat ge gulahallanoahpaheaddjit
 
 MAP:n< (@N<) TARGET Arab (-1 ("kapihtal") OR ("paragráfa")) ;
