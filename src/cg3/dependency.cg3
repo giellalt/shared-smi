@@ -1,5 +1,5 @@
 # Divvun & Giellatekno - open source grammars for Sámi and other languages
-# Copyright © 2000-2025 The University of Tromsø & the Norwegian Sámi Parliament
+# Copyright © 2000-2026 The University of Tromsø & the Norwegian Sámi Parliament
 # http://giellatekno.uit.no & http://divvun.no
 #
 # This program is free software; you can redistribute and/or modify
@@ -1144,6 +1144,7 @@ SUBSTITUTE:ctjHead (@>N) (<ctjHead> @>N) TARGET @>N (NEGATE *-1 @CNP OR COMMA BA
 SUBSTITUTE:ctjHead (@SUBJ>) (<ctjHead> @SUBJ>) TARGET @SUBJ> (NEGATE *-1 @CNP OR COMMA BARRIER @V LINK -1 @SUBJ>)(1 COMMA OR @CNP LINK *1 @SUBJ> BARRIER @ARG OR @V OR S-BOUNDARY LINK NOT 0 Rel) ;
 SUBSTITUTE:ctjHead (@<SUBJ) (<ctjHead> @<SUBJ) TARGET @<SUBJ (NEGATE *-1 @CNP OR COMMA BARRIER @V OR @ARG LINK -1 @<SUBJ)(1 COMMA OR @CNP LINK *1 @<SUBJ BARRIER @ARG OR @V OR S-BOUNDARY) ;
 SUBSTITUTE:ctjHead (@<OBJ) (<ctjHead> @<OBJ) TARGET @<OBJ (NEGATE *-1 @CNP OR COMMA BARRIER @ARG OR (<mv>) LINK -1 @<OBJ)(1 COMMA OR @CNP LINK *1 @<OBJ BARRIER @V OR @ARG OR S-BOUNDARY) ;
+SUBSTITUTE:ctjHeadRelAfter (@<OBJ) (<ctjHead> @<OBJ) TARGET @<OBJ (NEGATE *-1 @CNP OR COMMA BARRIER @ARG OR (<mv>) LINK -1 @<OBJ)(1 Rel LINK 1 @FS-N< LINK *1 COMMA OR @CNP LINK *1 @<OBJ BARRIER @V OR @ARG - Adv OR S-BOUNDARY) ;
 SUBSTITUTE:ctjHead (@<OBJ) (<ctjHead> @<OBJ) TARGET @<OBJ (NEGATE *-1 @CNP OR COMMA BARRIER @ARG OR (<mv>) OR S-BOUNDARY LINK *-1 @<OBJ BARRIER @V OR @ARG)(0 Num LINK *1 (N Gen) BARRIER NOT-ADJ LINK 1 COMMA OR @CNP LINK *1 @<OBJ BARRIER @V OR @ARG) ;
 SUBSTITUTE:ctjHead (@OBJ>) (<ctjHead> @OBJ>) TARGET @OBJ> (NEGATE *-1 @CNP OR COMMA BARRIER @ARG OR (<mv>) OR S-BOUNDARY LINK -1 @OBJ>)(1 COMMA OR @CNP LINK *1 @OBJ> BARRIER @ARG OR @V) ;
 SUBSTITUTE:ctjHead (@-F<OBJ) (<ctjHead> @-F<OBJ) TARGET @-F<OBJ (NEGATE *-1 @CNP OR COMMA BARRIER @ARG OR @V LINK -1 @-F<OBJ)(1 COMMA OR @CNP LINK *1 @-F<OBJ BARRIER @ARG OR @V OR S-BOUNDARY) ;
@@ -1168,6 +1169,12 @@ SUBSTITUTE:faoctjHead (@IOBJ>) (<ctjHead> @IOBJ>) TARGET @IOBJ> (NEGATE *-1 @CNP
 SETPARENT:Coord $$COORD TO (*-1 COMMA OR @CNP BARRIER @V OR S-BOUNDARY OR $$COORD LINK *-1 $$COORD + <ctjHead> BARRIER COORD);
 	## Maahtoe jïh skuvle lea dellie mubpie vihkeles tsiehkiem daennie orre våaroemisnie.
 	#$ Måanta Daen biejjien Manne jih Janne vuelkebe Afrikese, eejehtimmesne Daelie {tsåahka} lea 05.30, jih mijjien feeleme lea 06.00.
+
+	# A relative clause inbetween	
+SETPARENT:Coord $$COORD TO (*-1 COMMA OR @CNP BARRIER @V OR S-BOUNDARY OR $$COORD LINK *-1 @FS-N< LINK *-1 Rel LINK -1 $$COORD + <ctjHead> BARRIER COORD);
+	## Mænngan jïjtsh maanah åadtjoejigan, dellie lægan veele gïehtjedamme ahte maanah aaj galkin lïeredh ovmessie barkoem mij lea miehtjesne, jïh nimhtie aaj {maahtoem} mij daase govlesåvva.
+
+
 	# three (nominal) coordinates
 SETPARENT:Coord $$COORD TO (*-1 COMMA OR @CNP BARRIER @V OR S-BOUNDARY OR $$COORD LINK *-1 $$COORD BARRIER COORD LINK *-1 COMMA OR @CNP BARRIER @V OR S-BOUNDARY LINK *-1 $$COORD + <ctjHead> BARRIER COORD);
 	## Isak Marc Hætta, Æjsa jïh altese gåmma Inger Anne lægan eadtjohke gosse miehtjien bïjre soptsesteminie.
