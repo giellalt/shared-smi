@@ -953,7 +953,8 @@ SETPARENT:SetFS-NtoHum @FS-N< TO (*-1 RELHUM BARRIER @V OR Rel LINK **-1 N OR Pr
 # the parent of an infinite mainverb is the aux
 SETPARENT:SetMVtoAUX NONVFIN TO (0 (<mv>) LINK *1 <aux> BARRIER OBJ-COMP OR ADVL-COMP OR Rel OR @CVP) ;
 SETPARENT:SetMVtoV NONVFIN TO (0 (<mv>) LINK *-1 V) ;  # infinite vfin
-SETPARENT:SetMVtoAUX NONVFIN TO (0 (<mv>) LINK *-1 <aux>) ;
+	## Miehtjesne hov lægan maanide ööhpehtamme guktie {barkedh} jïh tjöönghkedh.
+SETPARENT:SetMVtoAUX NONVFIN TO (0 (<mv>) LINK *-1 <aux> BARRIER (<mv>)) ;
 SETPARENT:SetAUXtoAUX NONVFIN + <aux> TO (*-1 <aux>) ; # the parents of an infinite aux is the finite aux
 SETPARENT:SetMVToRoot @IMV + COPULAS (-1 COMMA LINK NOT *-1 <aux> BARRIER <mv>) TO (@0 (*)) ;  # leamaš 
 
