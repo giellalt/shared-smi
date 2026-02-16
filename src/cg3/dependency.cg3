@@ -1053,7 +1053,7 @@ SETPARENT:SetAdvlToRightMv @ADVL> TO (*1 S-BOUNDARY BARRIER (<mv>) LINK *1 COMMA
 ## problem:Eará guovlluin gos leat vel unnit sámit go Finnmárkkus, leamaš dákkár ákkain vel stuorát deaddu almmolaš ságastallamis. - guovlluin is not hit because of vfin ellipsis
 SETPARENT:SetAdvlToRightMv @ADVL> TO (*1 (<mv>) BARRIER @-FSUBJ> OR S-BOUNDARY) ;
 SETPARENT:SetAdvlToRightSubj @ADVL> TO (*1 @SUBJ BARRIER @V) ;
-# a ralativeclause in between:
+# a relative clause in between:
 SETPARENT:SetAdvlToMcMv @ADVL> TO (*1 Rel OR OBJ-COMP BARRIER @V LINK *1 COMMA OR MCL-CONJ LINK *1 (<mv>)) ;
 
 SETPARENT:SetAdvlToCompCS @<ADVL TO (*-1 @COMP-CS< BARRIER S-BOUNDARY OR @V) ;
@@ -1175,7 +1175,7 @@ SETPARENT:Coord $$COORD TO (*-1 COMMA OR @CNP BARRIER @V OR S-BOUNDARY OR $$COOR
 	#$ Måanta Daen biejjien Manne jih Janne vuelkebe Afrikese, eejehtimmesne Daelie {tsåahka} lea 05.30, jih mijjien feeleme lea 06.00.
 
 	# A relative clause inbetween	
-SETPARENT:Coord $$COORD TO (*-1 COMMA OR @CNP BARRIER @V OR S-BOUNDARY OR $$COORD LINK *-1 @FS-N< LINK *-1 Rel LINK -1 $$COORD + <ctjHead> BARRIER COORD);
+SETPARENT:Coord $$COORD TO (*-1 COMMA OR @CNP BARRIER @V OR S-BOUNDARY OR $$COORD LINK *-1 @FS-N< LINK *-1 Rel LINK -1 $$COORD + <ctjHead>);
 	## Mænngan jïjtsh maanah åadtjoejigan, dellie lægan veele gïehtjedamme ahte maanah aaj galkin lïeredh ovmessie barkoem mij lea miehtjesne, jïh nimhtie aaj {maahtoem} mij daase govlesåvva.
 
 
