@@ -973,7 +973,7 @@ SET APP-BOUNDARY = REAL-CLB OR VFIN OR Inf OR (Actio Ess) OR ConNeg OR VGen OR S
 # A special barrier used with mapping of appositions.
 
 # This set contains FMAINV with @, which means that it functions for all kind of mainverbs after the verb-mapping rules
-SET SV-BOUNDARY = S-BOUNDARY OR Inf - FAUXV OR Sup OR FMAINV ;
+SET SV-BOUNDARY = S-BOUNDARY OR Inf - FAUXV OR Sup OR FMAINV OR (Adv Subqst);
  # VFIN-NOT-AUX ;
  # should be MAIN-V linked to VFIN-aux to the left. (cg-3)
 # This set is ment to use in rules for disambiguating due to verbs or verbsets. It contents @.
