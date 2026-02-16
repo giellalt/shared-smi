@@ -286,9 +286,9 @@ LIST EOS = (<<<) (</s>);
 
 LIST WORD = N A Adv V Pron CS CC Po Pr Interj Pcle Num ABBR ACR  \? ;
 
-LIST ALL-CITATION = "«" "“" "\"" "„" "‟" "'" "‹" "‘" "‚" "‛" "❛" "❝" "❮" "〝" "〟" "»" "“" "\"" "'" "›" "’" "❜" "❞" "❯" "〞" "＂" ; 
+LIST ALL-CITATION = "«" "“" "\"" "„" "‟" "'" "‹" "‘" "‚" "‛" "❛" "❝" "❮" "〝" "〟" "»" "“" "\"" "'" "›" "’" "❜" "❞" "❯" "〞" "＂" "”" ; 
 LIST LEFT-QUOT = "«" "“" "„"  "‟" "‹" "‘" "‚" "‛" "❛" "❝" "❮" "〝" "〟"; 
-LIST RIGHT-QUOT = "\"" "＂" "»" "“" ""»" ;
+LIST RIGHT-QUOT = "\"" "＂" "»" "“" ""»" "”" ;
 
 
 
@@ -983,7 +983,10 @@ SETPARENT:SetFS-NtoMV @FS-N< TO (*-1 CS OR Rel OR ADVL-COMP BARRIER VFIN LINK *-
 SETPARENT:SetPcleToWord @PCLE TO (1 WORD);
 	## Dagke båateme leah mijjem mirhkedh?
 SETPARENT:SetPcleToWord @PCLE TO (-1 WORD);
-	## Gávpoga poarttat eai goassege dahppojuvvo beaivet , ii ge idja šat leat .
+	## Gávpoga poarttat eai goassege dahppojuvvo beaivet , ii ge idja šat leat.
+SETPARENT:SetPcleToWord ("goh" @PCLE) TO (*-1 ConNeg OR <mv> LINK *-1 (V Neg));
+	## 
+
 SETPARENT:SetPcleToVfin ("amma" @PCLE) OR ("na" @PCLE) TO (*1 VFIN);
 SETPARENT:SetModToCC @>CC TO (*1 CC) ;
 	## - Gea, juhkki vel liema vai liegganeahppi sihke siskkáldasat ja olgguldasat.
