@@ -759,9 +759,17 @@ SET CRD = @CNP OR COMMA OR NEGFOC OR XGO OR ("/") OR ("-") OR DADE ;
 
 LIST ADV-AFTER-NUM = "geardde" ;
 
-LIST DUSSE = "áibbas" "badjel" "badjelaš" "birrasii" "birrasiid" "dušše" "earenoamážit" "erenoamážit" ("erenoamáš" Adv) "gitta" "goitge" "lagabui" "man" "measta" "meastui" "oalle" "oba" "oktiibuot" "oppa" "ovdalaš" "sullii" "unnimusat" "vuollel" ;
+LIST DUSSE-sme = "áibbas" "badjel" "badjelaš" "birrasii" "birrasiid" "dušše" "earenoamážit" "erenoamážit" ("erenoamáš" Adv) "gitta" "goitge" "lagabui" "man" "measta" "meastui" "oalle" "oba" "oktiibuot" "oppa" "ovdalaš" "sullii" "unnimusat" "vuollel" ;
 
-LIST GRADE-ADV =  "áibbas" "badjelmeare" "beare" ("duođaid" Adv) ("duođas" Adv) ("eambbo" Adv) ("eanet" Adv) "erenoamán" "erenoamáš" "hirbmat" "hui" "ila" "issoras" ("man" Adv) ("mealgat" Adv) ("mearkkašahtti" Adv) "measta" "menddo" "muhtun_muddui" "muhtun muddui" "nu" "oalle" "oba"  ("ollásit" Adv) ("oppa" Adv) "sakka" ("seammá" Adv) ("veaháš" Adv) ("uhccán" Adv) ("unnán" Adv) "vehá" "veháš" "veahá" "veaháš" "viehka"  "mearihis" ;
+LIST DUSSE-sma =  "mahte" "raakte" ;
+
+SET DUSSE = DUSSE-sme OR DUSSE-sma ;
+
+LIST GRADE-ADV-sme =  "áibbas" "badjelmeare" "beare" ("duođaid" Adv) ("duođas" Adv) ("eambbo" Adv) ("eanet" Adv) "erenoamán" "erenoamáš" "hirbmat" "hui" "ila" "issoras" ("man" Adv) ("mealgat" Adv) ("mearkkašahtti" Adv) "measta" "menddo" "muhtun_muddui" "muhtun muddui" "nu" "oalle" "oba"  ("ollásit" Adv) ("oppa" Adv) "sakka" ("seammá" Adv) ("veaháš" Adv) ("uhccán" Adv) ("unnán" Adv) "vehá" "veháš" "veahá" "veaháš" "viehka"  "mearihis" ;
+
+LIST GRADE-ADV-sma = "ajve" "barre" "eevre" ;
+
+SET GRADE-ADV = GRADE-ADV-sme OR GRADE-ADV-sma ;
  
 
 LIST BUOT = "buot" "gait" "gaitin" "gaitdivnnat" "visot" ;
