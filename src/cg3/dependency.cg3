@@ -1027,7 +1027,15 @@ SETPARENT @SPRED<OBJ TO (*-1 SPRED) ;
 SETPARENT @ADVL>SUBJ TO (*1 SUBJ) ;
 
 ### clause level
+
+
 SETPARENT:SetObjToLeftMv <OBJ TO (*-1 (<mv>) OR (Neg Foc/ge) BARRIER S-BOUNDARY OR @-FSUBJ>) ;
+
+SETPARENT:SetObjToLeftMvConjDrop (N Pl Nom @<OBJ) TO (-1 (N Pl Nom @<OBJ)) ;
+	## Gosse lea moerh tjoehpestamme jïh håålesjamme, dellie galka åeksieh doerkh tjåanghkan bïejedh.
+	
+SETPARENT:SetObjToLeftMvConjDrop (N Pl Acc @<OBJ) TO (-1 (N Pl Acc @<OBJ)) ;
+
 SETPARENT:SetObjToRightMv2 OBJ> TO (*1 S-BOUNDARY LINK *1 COMMA LINK *1 <mv> ) ;
 SETPARENT:SetObjToRightMv3 OBJ> TO (*1 @HNOUN BARRIER <mv> ) ;
 SETPARENT:SetObjToRightMv OBJ> TO (*1 (<mv>) BARRIER S-BOUNDARY OR @-FSUBJ>) ;
