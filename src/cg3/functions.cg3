@@ -983,7 +983,7 @@ SET APP-BOUNDARY = REAL-CLB OR VFIN OR Inf OR (Actio Ess) OR ConNeg OR VGen OR S
 # A special barrier used with mapping of appositions.
 
 # This set contains FMAINV with @, which means that it functions for all kind of mainverbs after the verb-mapping rules
-SET SV-BOUNDARY = S-BOUNDARY OR Inf - FAUXV OR Sup OR FMAINV OR (Adv Subqst);
+SET SV-BOUNDARY = S-BOUNDARY OR Inf - FAUXV OR Sup OR FMAINV  OR (Adv Subqst);
  # VFIN-NOT-AUX ;
  # should be MAIN-V linked to VFIN-aux to the left. (cg-3)
 # This set is ment to use in rules for disambiguating due to verbs or verbsets. It contents @.
@@ -1361,9 +1361,12 @@ MAP:n>Indef (@>Pron) TARGET (Pron Indef Attr) (*1 ("eará") BARRIER NP-BOUNDARY 
 MAP:n>Indef (@>N) TARGET Indef + Com  (1 N + Com) ;
 MAP:n>Indef (@>N) TARGET Indef + Nom  (1 N + Nom) (0 <sma>) ;
 
+#!! * __n>Refl__ ; if there is a noun to the right
+MAP:>n (@>N) TARGET $$CASE (0 Refl LINK 1 $$CASE + N)(0 <sma>)  ;
+	## Æjsa jïh Inger Anne buerkiestægan ahte gaalka sjeakodh jïh binhtedh, eevre guktie jïjtse sjåljosne.
 
 #!! * __>nNum__ (@>N) for numerals if; there is a noun to your right. You are not allowed to be (Sg Nom), (Sg Acc) or (Sem/Date)
-MAP:>nNum (@>N) TARGET Num + (Sg Nom) - Year_Date (0 <sma> LINK *1 N BARRIER NOT-A OR MEASUREADJS OR Num)  ;
+MAP:>nNum-sma (@>N) TARGET Num + (Sg Nom) - Year_Date (0 <sma> LINK *1 N BARRIER NOT-A OR MEASUREADJS OR Num)  ;
 MAP:>nNum (@>N) TARGET Num - (Sg Nom) - Year_Date OR ("moanat") OR ("máŋga") OR ("galle") (*1 N BARRIER NOT-A OR MEASUREADJS OR Num)(NOT 0 Loc OR Ill)   ;
 	#$ Juos mearriduvvo meahcceeatnamiid nuppástuvvan geavaheapmi golmma ja dušše golmma stivrralahtu doarjagiin ja olles uhcitlohku vuođđudallá oainnus sámi kultuvrra, boazodoalu, meahcásteami, ealáhusdoaimmaheami ja servodateallima destii mii lea árvvoštallojuvvon Sámedikki válddahusaid vuođul, de sáhttá uhcitlohku ovtta oli stivrračoahkkima áigge gáibidit ášši Sámedikki gieđahallamii.
 
@@ -2371,7 +2374,7 @@ MAP:V<advl-ela (@<ADVL-ela) TARGET Prop + Loc + Sem/Plc (-1 Prop LINK -1 Prop) ;
 MAP:V<advl-ine (@<ADVL) TARGET ("dii" Adv)(*-1 FMAINV - ELA-VERBS-sme BARRIER SV-BOUNDARY - (":"))(NEGATE -1 COMMA LINK *1 FMAINV BARRIER S-BOUNDARY)(0 (<sme>)) ; #asf
 
 
-MAP:V<advl-ine (@<ADVL-ine) TARGET ADVLCASEAdv OR Sem/Year  (0 Loc OR Adv OR Po LINK NOT 0 DOHKO) (*-1 FMAINV - ELA-VERBS-sme BARRIER SV-BOUNDARY - (":"))(NEGATE -1 COMMA LINK *1 FMAINV BARRIER S-BOUNDARY)(0 (<sme>)) ; #asf
+MAP:V<advl-ine (@<ADVL-ine) TARGET ADVLCASEAdv OR Sem/Year  (0 Loc OR Ine OR Adv OR Po LINK NOT 0 DOHKO) (*-1 FMAINV - ELA-VERBS-sme BARRIER SV-BOUNDARY - (":")); #(NEGATE -1 COMMA LINK *1 FMAINV BARRIER S-BOUNDARY)(0 (<sme>) OR (<sma>)) ; #asf
 
 
 #!! * __V<advl__ (@<ADVL) if; finite mainverb found to the left. Not if a comma is found immediately to the left and a finite mainverb is located somewhere to the right of this comma.
