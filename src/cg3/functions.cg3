@@ -761,7 +761,8 @@ LIST ADV-AFTER-NUM = "geardde" ;
 
 LIST DUSSE-sme = "áibbas" "badjel" "badjelaš" "birrasii" "birrasiid" "dušše" "earenoamážit" "erenoamážit" ("erenoamáš" Adv) "gitta" "goitge" "lagabui" "man" "measta" "meastui" "oalle" "oba" "oktiibuot" "oppa" "ovdalaš" "sullii" "unnimusat" "vuollel" ;
 
-LIST DUSSE-sma =  "mahte" "raakte" ;
+LIST DUSSE-sma =  "mahte" "raakte" "fagkan" "ååpsen" "barre" "ajve" "varki" "joekoen" "vaenie" "raakti" "sagki" "seamma" "isveligs" "measta" "aajmoen" "aaptsah" "aave" "alme" "faellie" "ålvoes" "alvoes" "alvas" "feerrh" "dan" "man" "van" "tjarke" "tjirke" "praare" "praade" "medtie" "læjhkan" "lïjhke" "bijjelen" "naa" "åvtelen" "unnemes" "jeenemes" "vuelelen" "vueleli" ;
+
 
 SET DUSSE = DUSSE-sme OR DUSSE-sma ;
 
