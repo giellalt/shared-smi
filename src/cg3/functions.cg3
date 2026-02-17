@@ -489,6 +489,16 @@ LIST @CNP = @CNP ;	#!! * @CNP : Local conjunction or subjunction.
 LIST @CMPND = @CMPND ;	#!! * @CMPND
 LIST @X = @X ;		#!! * @X : The function is unknown, e.g. because of that the word is unknown
 
+### elliptic tags - not in use in goldcorpora
+LIST @OBJ>SPRED = @OBJ>SPRED ;
+LIST @SUBJ<ADVL = @SUBJ<ADVL ;
+LIST @SUBJ<OBJ = @SUBJ<OBJ ;
+LIST @ADVL<OBJ = @ADVL<OBJ ;
+LIST @SPRED<OBJ = @SPRED<OBJ ;
+LIST @ADVL>SUBJ = @ADVL>SUBJ ;
+LIST @ADVL>SPRED = @ADVL>SPRED ;
+
+
 LIST ADVL = @ADVL @ADVL> @ADVL-ine> @ADVL-ela> @<ADVL-ine @<ADVL-ela @ADVL< @<ADVL @>ADVL @-F<ADVL @-F<ADVL-ela @-F<ADVL-ine ;
 SET SUBJ = @<SUBJ OR @SUBJ> OR @SUBJ ;
 SET SPRED = @<SPRED OR @SPRED> OR @SPRED ;
@@ -1944,6 +1954,8 @@ MAP:AdjSpredSg> (@SPRED>) TARGET (A Sg Nom) IF (*1 Ill OR Acc BARRIER NOT-ADV-PC
 #!! * __AdjSpredSg__ (@<SPRED) for South Sámi in the case of copula drop; A Sg Nom; if there is a subject to the left
 MAP:AdjSpredSg (@<SPRED) TARGET (A Sg Nom) IF (-1 Adv OR Pcle LINK -1 (N Sg Nom) LINK *-1 BOS OR COMMA OR (";") BARRIER NOT-NPMOD)(0 <sma>)(*1 EOS BARRIER NOT-ADV) ;
 	#$ Guelieh lea åejviedaeverem, tjoevtje dellie {joekoen}.
+MAP:AdjSpredSgSubqstAdv (@<SPRED) TARGET (A Sg Nom) IF (-1 (Adv Subqst) LINK -1 (N Sg))(0 <sma>)(1 EOS OR COMMA) ;
+	#$ Ij maehtieh jïjtsh daeverh laehpedh, jïh ij åadtjoeh miehtjesne mïnnedh dan tïjjen gosse {daerpies}, saemiej vuekiej mietie.
 
 MAP:spredPl> (@SPRED>) TARGET (Pl Nom) IF (1 (Pl Nom) OR PLPRON + Nom OR DUPRON + Nom LINK 1 COPULAS)  ;
 MAP:spred>Coor (@SPRED>) TARGET Nom - Rel IF (1 CC OR COMMA LINK *1 @SPRED> BARRIER NOT-NPMOD)(NEGATE 1 VFIN) ;
@@ -2226,6 +2238,9 @@ MAP:s-báidnit=<advl (@<ADVL-ela) TARGET N + Loc  ( 0 Sem/Lang)(-1 ("báidnit"))
 
 #!! * __s-boundary=advl>__ (@ADVL>) for ADVL that resemble s-boundaries. Mainverb to the right.
 MAP:s-boundary=advl> (<cs> @ADVL-ine>) TARGET Adv + Subqst (*1 FMAINV - ELA-VERBS-sme)(*-1 VFIN)(0 (<sme>)) ;
+
+MAP:s-boundary=advl>spred (<cs> @ADVL>SPRED) TARGET Adv + Subqst (*-1 VFIN OR FMAINV)(0 <sma>)(*1 @<SPRED BARRIER NOT-NPMOD LINK 1 COMMA OR EOS);
+	## Ij åadtjoeh miehtjesne mïnnedh dan tïjjen gosse daerpies.
 MAP:s-boundary=advl> (<cs> @ADVL>) TARGET Adv + Subqst (*-1 VFIN OR FMAINV)(0 <sma>) ;
 
 MAP:s-boundary=advl> (@ADVL-ine>) TARGET ADVLCASEAdv + S-BOUNDARY  (0 Loc OR Adv)(*1 FMAINV - ELA-VERBS-sme)(0 (<sme>)) ;

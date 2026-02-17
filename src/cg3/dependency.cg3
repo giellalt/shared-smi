@@ -667,9 +667,10 @@ SUBSTITUTE:utt (@FMV)(@FMVdic) TARGET (<vdic>) (*1 (":") BARRIER @V LINK 1 ALL-C
 SUBSTITUTE:utt (@FMV)(@FMVdic) TARGET (<vdic>) (0 VFIN LINK -1 @SUBJ> LINK *-1 COMMA OR ALL-CITATION BARRIER @V) ;
 	## «Manne dan aavosne juhkoe giesie lea,» tjidtjebe jeahta.
 	
-SUBSTITUTE:utt (@FMV)(@FMVdic) TARGET (<vdic>) (0 VFIN LINK -1 COMMA OR ALL-CITATION LINK 2 EOS) ;	
+SUBSTITUTE:utt (@FMV)(@FMVdic) TARGET (<vdic>) (0 VFIN LINK -1 COMMA OR ALL-CITATION LINK 2 EOS OR COMMA) ;	
 	## «Manne ien gaavhtan, mohte juktie daarpesjien dam», buerkiestægan.
 	## «Manne ien gaavhtan, mohte juktie daarpesjien dam» buerkiestægan.
+	## ”Jïh nov aaj”, tjïertestægan, ”iktesth tjoevere luhpiem gihtjedh.”
 	
 SUBSTITUTE:utt (@IMV)(@IMVdic) TARGET (<vdic>) (*1 (":") BARRIER @V LINK 1 ALL-CITATION) ;
 	## Ja lea dadjan: "Ale nohka mu nalde!"
@@ -1014,8 +1015,11 @@ LIST @SUBJ<OBJ = @SUBJ<OBJ ;
 LIST @ADVL<OBJ = @ADVL<OBJ ;
 LIST @SPRED<OBJ = @SPRED<OBJ ;
 LIST @ADVL>SUBJ = @ADVL>SUBJ ;
+LIST @ADVL>SPRED = @ADVL>SPRED ;
 
 SETPARENT @OBJ>SPRED TO (*1 SPRED) ;
+SETPARENT @ADVL>SPRED TO (*1 SPRED) ;
+	## Ij åadtjoeh miehtjesne mïnnedh dan tïjjen gosse daerpies.
 SETPARENT @SUBJ<ADVL TO (*-1 SUBJ) ;
 SETPARENT @SUBJ<OBJ TO (*-1 SUBJ) ;
 SETPARENT @ADVL<OBJ TO (*-1 ADVL) ;
