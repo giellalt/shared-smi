@@ -6,7 +6,7 @@
 # ==================================================================== #
 # ====================================================================
 
-#!!  Sámi language technology project 2003-2025, University of Tromsø #
+#!!  Sámi language technology project 2003-2026, University of Tromsø #
 
 #!! This file adds syntactic functions. It is common for all the Saami
 ##! languages, so far for sma, sme, smj, sje.
@@ -68,6 +68,9 @@ LIST Arab = Arab ;
 
 LIST COMMA = "," ;
 LIST ¶ = ¶;
+LIST ALL-CITATION = "«" "“" "\"" "„" "‟" "'" "‹" "‘" "‚" "‛" "❛" "❝" "❮" "〝" "〟" "»" "“" "\"" "'" "›" "’" "❜" "❞" "❯" "〞" "＂" "”" ; 
+LIST LEFT-QUOT = "«" "“" "„"  "‟" "‹" "‘" "‚" "‛" "❛" "❝" "❮" "〝" "〟"; 
+LIST RIGHT-QUOT = "\"" "＂" "»" "“" ""»" "”" ;
 
 #LIST V* = V* ;
 
@@ -2460,8 +2463,8 @@ MAP:<opredgohcodit (@<OPRED) TARGET Ess IF (-1 Acc LINK *-1 ("gohčodit") BARRIE
 MAP:advlEss> (@<ADVL) TARGET (Wthr Ess) OR TIME-N + Ess (*-1 FMAINV - ("gohčodit") BARRIER SV-BOUNDARY) ;
 	#$ Boazosápmelaččain ii leat bassin vejolaš fievrridit gálvvu gerresiiguin.
 
-MAP:Acc<advl (@<ADVL) TARGET TIME-N + Acc OR ("gaska" Acc) (*-1 FMAINV BARRIER SV-BOUNDARY)(NEGATE 1 (A Nom) OR Rel) ;
-MAP:Accadvl> (@ADVL>) TARGET TIME-N + Acc OR ("gaska" Acc) (*1 FMAINV BARRIER SV-BOUNDARY)(NEGATE 0 Acc LINK 1 FMAINV + TV LINK NEGATE *1 Acc BARRIER SV-BOUNDARY) ;
+MAP:Acc<advl (@<ADVL) TARGET TIME-N + Acc OR ("gaska" Acc) (*-1 FMAINV BARRIER SV-BOUNDARY OR RIGHT-QUOT)(NEGATE 1 (A Nom) OR Rel) ;
+MAP:Accadvl> (@ADVL>) TARGET TIME-N + Acc OR ("gaska" Acc) (*1 FMAINV BARRIER SV-BOUNDARY  OR RIGHT-QUOT)(NEGATE 0 Acc LINK 1 FMAINV + TV LINK NEGATE *1 Acc BARRIER SV-BOUNDARY) ;
 
 
 MAP:gitta>adv (@>ADVL) TARGET ("gitta" Adv)(NEGATE *-1 ("váldit") OR ("doallat") OR ("čatnat") OR ("bidjat") OR LEAT OR ("mannat") BARRIER SV-BOUNDARY)(*1 DOHKO OR DOPPE OR Loc OR Ill OR Sem/Time OR Po BARRIER NOT-NPMOD) ;
