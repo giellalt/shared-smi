@@ -766,8 +766,9 @@ SUBSTITUTE:SubV=FS-Naux (@FMV) (@FS-N<) TARGET V (*-1 ("gos") OR ("gosa") BARRIE
 SUBSTITUTE:SubVmain=FS-<ADVLaux (@FAUX)(@FS-<ADVL) TARGET V (*-1 ADVL-COMP OR CS BARRIER @V OR Rel OR @CVP OR (";")) (*-2 @FV BARRIER (":"));
 	## Sus šattai álo oaivvebávččas go galggai bargat rehkenastimiin.
 SUBSTITUTE:SubVmain=FS-<ADVLaux (@FAUX)(@FS-<ADVL) TARGET V (*-1 ADVL-COMP OR CS BARRIER @V OR Rel OR @CVP OR (";")) (*-2 @FMVdic)(NOT *1 @FV BARRIER S-BOUNDARY) ;
-SUBSTITUTE:SubVmain=FS-ADVL>aux (@FAUX)(@FS-ADVL>) TARGET V (*-1 ADVL-COMP OR CS BARRIER @V OR Rel OR @CVP OR (";"))(*1 @FV) ;
+SUBSTITUTE:SubVmain=FS-ADVL>aux (@FAUX)(@FS-ADVL>) TARGET V (*-1 ADVL-COMP OR CS BARRIER @V OR Rel OR @CVP OR (";"))(*1 @FV OR @FMVdic) ;
 	## Go galggai bargat rehkenastimiin sus šattai álo oaivvebávččas.
+	## ”Eevre goh skïemtjelasse domtoe, dohkoe geasadovvem, juktie raakte tjoeverem aelkedh vaedtsedh monnen jaevrien gåajkoe”, Inger Anne låasa.
 SUBSTITUTE:SubVmain=FS-ADVLaux (@FAUX) (@FS-<ADVL) TARGET V (*-1 CC BARRIER @V OR Rel OR @CVP OR @SUBJ> LINK NOT 0 MCL-CONJ LINK *-1 (@FS-<ADVL) BARRIER VFIN OR COMMA)(NEGATE *1 (@<SUBJ)) ;  # coordination
 SUBSTITUTE:SubVmain=FS-ADVLaux (@FAUX) (@FS-ADVL>) TARGET V (*-1 CC BARRIER @V OR Rel OR @CVP OR @SUBJ> LINK NOT 0 MCL-CONJ LINK *-1 (@FS-ADVL>) BARRIER VFIN OR COMMA)(NEGATE *1 (@<SUBJ)) ;  # coordination
 SUBSTITUTE (@FAUX) (@FS-<ADVL) TARGET V (0 (Neg Ind) LINK *-1 @FS-<ADVL BARRIER VFIN)(*1 @FMV OR @FAUX OR @FMVdic) ;
