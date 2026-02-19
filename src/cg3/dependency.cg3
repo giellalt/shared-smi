@@ -1197,6 +1197,10 @@ SETPARENT:Coord $$COORD TO (*-1 COMMA OR @CNP BARRIER @V OR S-BOUNDARY OR $$COOR
 	# three (nominal) coordinates
 SETPARENT:Coord $$COORD TO (*-1 COMMA OR @CNP BARRIER @V OR S-BOUNDARY OR $$COORD LINK *-1 $$COORD BARRIER COORD LINK *-1 COMMA OR @CNP BARRIER @V OR S-BOUNDARY LINK *-1 $$COORD + <ctjHead> BARRIER COORD);
 	## Isak Marc Hætta, Æjsa jïh altese gåmma Inger Anne lægan eadtjohke gosse miehtjien bïjre soptsesteminie.
+	
+	# four (nominal) coordinates
+SETPARENT:Coord $$COORD TO (*-1 COMMA OR @CNP BARRIER @V OR S-BOUNDARY OR $$COORD LINK *-1 $$COORD BARRIER COORD LINK *-1 COMMA OR @CNP BARRIER @V OR S-BOUNDARY LINK *-1 $$COORD BARRIER COORD LINK *-1 COMMA OR @CNP BARRIER @V OR S-BOUNDARY LINK *-1 $$COORD + <ctjHead> BARRIER COORD);
+	## Juktie daerpies hov vuejedh, ihke vïnhtse, viermieh, beapmoe jïh jïjjedimmiedaeverh tjoeverigan buektedh.
 
 # coordination of @>N
 SETPARENT:>NCoord @>N TO (*-1 COMMA OR CC BARRIER @CLAUSE LINK *-1C @>N + <ctjHead> BARRIER @CLAUSE);
