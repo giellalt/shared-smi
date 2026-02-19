@@ -1106,6 +1106,8 @@ SETPARENT @SPRED> TO (*1 @SUBJ> LINK NOT 0 Rel);
 SETPARENT @<SPRED TO (*-1 (<mv>) OR @HNOUN OR @SUBJ BARRIER @<SPRED);
 	## Mov mænngan båata dihte gie manneste veaksahkåbpoe.
 SETPARENT @SPRED> TO (*1 (<mv>) OR @HNOUN BARRIER Rel OR S-BOUNDARY);
+SETPARENT @SPRED> TO (*1 @SUBJ BARRIER Rel OR S-BOUNDARY OR COPULA);
+	## Juktie daerpies hov vuejedh, ihke vïnhtse, viermieh, beapmoe jïh jïjjedimmiedaeverh tjoeverigan buektedh.
 SETPARENT @-FSPRED> TO (*1 NONVFIN BARRIER Rel OR S-BOUNDARY);
 SETPARENT @-F<SPRED TO (*-1 NONVFIN LINK NOT 0 @MV) ;
 
