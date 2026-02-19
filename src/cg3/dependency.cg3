@@ -1045,7 +1045,7 @@ SETPARENT:Set-FObjToLeftMv F<OBJ TO (*-1 NONVFIN BARRIER S-BOUNDARY OR @-FSUBJ> 
 SETPARENT:Set-FObjToRightMv FOBJ> TO (*1 NONVFIN BARRIER S-BOUNDARY OR @-FSUBJ>) ;
 SETPARENT:Set-FObjToLeftMv @-F<OPRED TO (*-1 NONVFIN BARRIER S-BOUNDARY OR @-FSUBJ>) ;
 
-SETPARENT:SetObjToRightMv OBJ> TO (*1 (<mv>) BARRIER @-FSUBJ> OR @CVP) ; #tentative
+SETPARENT:SetObjToRightMv OBJ> TO (*1 (<mv>) OR Inf + SPRED BARRIER @-FSUBJ> OR @CVP) ; #tentative
 	#$ Lea registreren maid ja man ollu lea borran.
 
 
