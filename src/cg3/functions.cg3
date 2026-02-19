@@ -1911,7 +1911,7 @@ MAP:NumTime<spred (@<SPRED) TARGET (A Nom) IF (-1 TIME-N LINK -1 Num LINK *-1 CO
 	#$ Sápmelaččaid historjá álbmogin lea duháhiid jagiid boaris.
 
 #!! * __<spredSg__ (@<SPRED) for Sg Nom
-MAP:<spredSg (@<SPRED) TARGET (Sg Nom) IF (*-1 @CNP OR (Neg Foc/ge) BARRIER REAL-V - COPULAS OR S-BOUNDARY LINK *-1 @<SPRED BARRIER WORD) (NEGATE *1 COPULAS BARRIER NOT-ADV-PCLE LINK *1 Nom BARRIER NOT-NPMOD);
+MAP:<spredSg (@<SPRED) TARGET (Sg Nom) IF (*-1 @CNP OR (Neg Foc/ge) BARRIER REAL-V - COPULAS OR S-BOUNDARY OR ALL-CITATION LINK *-1 @<SPRED BARRIER WORD) (NEGATE *1 COPULAS BARRIER NOT-ADV-PCLE LINK *1 Nom BARRIER NOT-NPMOD);
 	#$ Son lea mu oabbá, ja 10 jagi boaris.
 	#$ Son oinnii buot dan mii lea ráhkistan ja gudnejahttin veara.
 	#$ Munnje lei dehálaš ahte áiggošin leat bahánihkkán.
@@ -2388,7 +2388,9 @@ MAP:V<advl-ela (@<ADVL-ela) TARGET Prop + Loc + Sem/Plc (-1 Prop LINK -1 Prop) ;
 MAP:V<advl-ine (@<ADVL) TARGET ("dii" Adv)(*-1 FMAINV - ELA-VERBS-sme BARRIER SV-BOUNDARY - (":"))(NEGATE -1 COMMA LINK *1 FMAINV BARRIER S-BOUNDARY)(0 (<sme>)) ; #asf
 
 
-MAP:V<advl-ine (@<ADVL-ine) TARGET ADVLCASEAdv OR Sem/Year  (0 Loc OR Ine OR Adv OR Po LINK NOT 0 DOHKO) (*-1 FMAINV - ELA-VERBS-sme BARRIER SV-BOUNDARY - (":"))(NEGATE -1 COMMA LINK *1 FMAINV BARRIER S-BOUNDARY)(0 (<sme>) OR (<sma>)) ; #asf
+MAP:V<advl-ine (@<ADVL-ine) TARGET ADVLCASEAdv OR Sem/Year  (0 Loc OR Ine OR Adv OR Po LINK NOT 0 DOHKO) (*-1 FMAINV - ELA-VERBS-sme BARRIER SV-BOUNDARY - (":"))(NEGATE -1 COMMA LINK *1 FMAINV BARRIER S-BOUNDARY)(0 (<sme>)) ; #asf
+
+MAP:V<advl-ine (@<ADVL-ine) TARGET ADVLCASEAdv OR Sem/Year  (0 Loc OR Ine) (*-1 FMAINV - ELA-VERBS-sme BARRIER SV-BOUNDARY - (":") OR FAUXV)(NEGATE -1 COMMA LINK *1 FMAINV BARRIER S-BOUNDARY)(0 (<sma>)) ;
 
 
 #!! * __V<advl__ (@<ADVL) if; finite mainverb found to the left. Not if a comma is found immediately to the left and a finite mainverb is located somewhere to the right of this comma.
@@ -2409,10 +2411,11 @@ MAP:advl>v (@ADVL-ela>) TARGET ADVLCASEAdv OR TIME-N + Gen OR Gen-Sem/Route  (0 
 
 
 #!! * __advl>v__ (@ADVL>) if; you are ADVL, time-noun or Sem/Route and there is a finite verb to the right in the clause, or if to your right is: de followed by a finite verb. OR: if you are a time-nound and to your right is: go or sentenceboundary followed by a finite verb
-MAP:advl>v (@ADVL>) TARGET ADVLCASEAdv OR TIME-N + Gen OR Gen-Sem/Route ((*1 FMAINV OR FAUXV BARRIER SV-BOUNDARY) OR (*1 ("de") BARRIER FMAINV LINK 1 FMAINV OR FAUXV) OR (*-1 BOS BARRIER NOT-NPMOD LINK *1 TIME-N + Gen BARRIER NOT-NPMOD LINK *1 ("go") OR S-BOUNDARY BARRIER FMAINV LINK *1 FMAINV OR FAUXV BARRIER SV-BOUNDARY)) ;
+MAP:advl>v (@ADVL>) TARGET ADVLCASEAdv OR TIME-N + Gen OR Gen-Sem/Route ((*1 FMAINV OR FAUXV BARRIER SV-BOUNDARY) OR (*1 ("de") BARRIER FMAINV LINK 1 FMAINV OR FAUXV) OR (*-1 BOS BARRIER NOT-NPMOD LINK *1 TIME-N + Gen BARRIER NOT-NPMOD LINK *1 ("go") OR S-BOUNDARY BARRIER FMAINV LINK *1 FMAINV OR FAUXV BARRIER SV-BOUNDARY))(NEGATE 0 $$ADVLCASE LINK -1 CC LINK -1 $$ADVLCASE) ;
 	#$ Maŋŋá jápmimis de aliduvvui Gonagas Olav bassin.
 	#$ Girkonjárggas fuomášin man ollu negatiiva oainnut dan áigge ledje sámiid vuostá.
 	#$ Báhkaid áigge, go boazu ruohttá čoahkkái, de sii lávejit muhtumin mannat alla báktegaskii ja dasa cakkadit dasságo nelgot ja oahpástuvvet olbmo oaidnit ja haksit.
+	#% Maanabaeleste joe dam lïerimen, v.g. dållesijjiem sööhpedh, jïh tsumhtsieh pluavan jallh {aavrose} vöörhkedh.
 
 #MAP:<advl (@<ADVL) TARGET ADVLCASEAdv (*-1 S-BOUNDARY LINK *-1 FMAINV BARRIER SV-BOUNDARY)(NEGATE *1 FMAINV BARRIER S-BOUNDARY);
 	#$ Guovdageainnu guovllut gal leat vel mu mielas sestojuvvon oalle bures dássážii, movt šat guhká.
@@ -2594,8 +2597,9 @@ MAP:TV<obj (@<OBJ) TARGET Acc - Rel - Interr (*-1 FMAINV + TV BARRIER SV-BOUNDAR
 
 
 #!! !sma object
-MAP:obj (@<OBJ) TARGET Nom + Pl + <sma> - Rel - Interr  (*-1 FMAINV + TV BARRIER SV-BOUNDARY)(NEGATE -1 COMMA LINK *2 TRANS-V + FMAINV BARRIER SV-BOUNDARY)(NEGATE 0 Num LINK 1 MEASR-N) ;
-MAP:obj (@OBJ>) TARGET Nom + Pl + <sma> (*1 FMAINV + TV BARRIER SV-BOUNDARY OR FAUXV) ;
+MAP:obj (@<OBJ) TARGET Nom + Pl + <sma> - Rel - Interr  (*-1 FMAINV + TV BARRIER SV-BOUNDARY OR CC)(NEGATE -1 COMMA LINK *2 TRANS-V + FMAINV BARRIER SV-BOUNDARY)(NEGATE 0 Num LINK 1 MEASR-N) ;
+MAP:obj (@OBJ>) TARGET Nom + Pl + <sma> (*1 FMAINV + TV OR (TV Inf) + SPRED BARRIER SV-BOUNDARY OR FAUXV) ;
+	## Darjomes gosse miehtjesne barka, hov lea stråmhpoeh tjoehpedidh, guktie stuerebe moerh buerebe sjidtieh, juktie dejstie dållenmoerijste tjoehpestibie, olles barre stromhpestahkh sjïdth.
 
 
 #!! * __<advlMeasr__ (@<ADVL) for (Num Acc); if finite IV-mainverb to the left, measure-noun to the right
@@ -2709,10 +2713,12 @@ MAP:Superlheadliner (@HNOUN) TARGET Superl (NEGATE 0 VFIN)(*-1 BOS BARRIER WORD)
 MAP:<subj (@<SUBJ) TARGET NP-HEAD-NOM - A OR DUPRON + Nom OR  Num + Nom  (*-1 FMAINV + VFIN OR FAUXV + VFIN BARRIER (":") OR S-BOUNDARY) ;
  
 #!! * __subj>ifV__ (@SUBJ>) for NP-HEAD-NOM, DUPRON or  Num + Nom  if; a finite mainverb is found to the right. This is a cleanup rule for subjects
-MAP:subj>ifV (@SUBJ>) TARGET NP-HEAD-NOM - A OR DUPRON + Nom OR  Num + Nom OR A + Sem/Hum + <sma> (*1 FMAINV + VFIN BARRIER (":"))(NEGATE *1 @SUBJ> +  Rel BARRIER FMAINV OR FAUXV LINK NEGATE *2 FMAINV BARRIER EOS) ;
+MAP:subj>ifV (@SUBJ>) TARGET NP-HEAD-NOM - A OR DUPRON + Nom OR  Num + Nom OR A + Sem/Hum + <sma> (*1 FMAINV + VFIN BARRIER (":")) (NEGATE *1 @SUBJ> +  Rel BARRIER FMAINV OR FAUXV LINK NEGATE *2 FMAINV BARRIER EOS) ;
 	#$ Lean ieš oaidnán dange.
 	#$ Mii Sámedikki nuoraidpolitihkalaš lávdegottis (SNPL) áigut čalmmustahttit árbevirolaš ja ođđaáigásaš sámi ealáhusaid.
 	#% Ávdugasat sii geat moraštit.
+
+MAP:subj>ifV (@SUBJ>) TARGET NP-HEAD-NOM - A OR DUPRON + Nom OR  Num + Nom OR A + Sem/Hum + <sma> (*1 FAUXV + VFIN BARRIER (":") LINK *1 FMAINV - VFIN BARRIER (":"))(NEGATE *1 @SUBJ> +  Rel BARRIER FMAINV OR FAUXV LINK NEGATE *2 FMAINV BARRIER EOS) ;
 	## Guktie aaj jïjnjebh Saepmesne, dah guaktah lægan jielemevåaromem jïh jearsoesvoetem miehtjeste åådtjeme.
 
 #!! * __hnoun>ifV__ (@SUBJ>) for NP-HEAD-NOM, DUPRON if. The counterpart of subj>ifV. You are HNOUN if there is a finite verb to your right, but NOT if there is a finite verb after a relative clause
