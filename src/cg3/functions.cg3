@@ -1960,9 +1960,10 @@ MAP:AdjSpredSg> (@SPRED>) TARGET (A Sg Nom) IF (*1 COPULAS + FMAINV BARRIER SV-B
 	#$ Divrras ii leat gal barggu ektui.
 	#% Dási ferte árvvoštallat daláš gáibádusaid ektui, ja internáhtat ledje buorebut go priváhta olbmuid luhtte orrut.
 	
-MAP:AdjSpredSgsma> (@SPRED>) TARGET (A Sg Nom) IF (*-1 BOS BARRIER NOT-ADV-PCLE)(*1 SUBJ LINK NEGATE *1 A OR @<SPRED BARRIER NOT-NPMOD)(0 <sma>);
+MAP:AdjSpredSgsma> (@SPRED>) TARGET (A Sg Nom) IF (*-1 BOS BARRIER NOT-ADV-PCLE - CS - CC - ALL-CITATION)(*1 SUBJ LINK NEGATE *1 A OR @<SPRED BARRIER NOT-NPMOD)(0 <sma>);
 	#$ Man aelhkie dellie vaalmerdidh.
-
+	#$ Juktie daerpies hov vuejedh, ihke vïnhtse, viermieh, beapmoe jïh jïjjedimmiedaeverh tjoeverigan buektedh.
+	
 MAP:AdjSpredSg> (@SPRED>) TARGET (A Sg Nom) IF (*1 Ill OR Acc BARRIER NOT-ADV-PCLE LINK *1 Inf)(*-1 BOS BARRIER NOT-ADV)(0 <sma>);
 	#$ Buerebe Læjsese guvvieh darjodh.
 	#$ Aelhkie badth åarjelsaemiengïelem lïeredh. 
