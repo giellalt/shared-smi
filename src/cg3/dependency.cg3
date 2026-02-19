@@ -983,8 +983,9 @@ SETPARENT:SetFS-NtoMV @FS-N< TO (*-1 CS OR Rel OR ADVL-COMP BARRIER VFIN LINK *-
 
 SETPARENT:SetPcleToWord @PCLE TO (1 WORD);
 	## Dagke båateme leah mijjem mirhkedh?
-SETPARENT:SetPcleToWord @PCLE TO (-1 WORD);
-	## Gávpoga poarttat eai goassege dahppojuvvo beaivet , ii ge idja šat leat.
+SETPARENT:SetPcleToWord @PCLE (NEGATE -1 CS) TO (-1 WORD);
+	#$ juktie raakte tjoeverem aelkedh vaedtsedh monnen jaevrien gåajkoe.
+	## Gávpoga poarttat eai goassege dahppojuvvo beaivet, ii ge idja šat leat.
 SETPARENT:SetPcleToWord ("goh" @PCLE) TO (*-1 ConNeg OR <mv> LINK *-1 (V Neg));
 	## 
 
