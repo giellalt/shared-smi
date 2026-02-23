@@ -754,7 +754,8 @@ SUBSTITUTE:SubV=FS-ADVL>mv (@FMV)(@FS-ADVL>) TARGET V (*-1 ADVL-COMP OR CS BARRI
     # the last condition makes sure there is a potential finite verb of the main clause to the left that can be modified
 	## Ja vaikko presideanta logai daid dárbbašlažžan ođđasit guorahallat, ii mieđihan son Sámedikki boastut bargan.
 SUBSTITUTE:SubV=FS-<ADVLmv (@FMV)(@FS-<ADVL) TARGET V (*-1 CC OR COMMA BARRIER @V OR Rel OR @CVP OR MCL-CONJ LINK NOT 0 MCL-CONJ LINK *-1 (@FS-<ADVL) BARRIER @V OR MCL-CONJ)(NEGATE *1 (@<SUBJ)) ;  # coordination, if there is no subject in the new clause
-SUBSTITUTE:SubV=FS-ADVL>mv (@FMV)(@FS-ADVL>) TARGET V (*-1 CC OR COMMA BARRIER @V OR Rel OR @CVP OR MCL-CONJ LINK NOT 0 MCL-CONJ LINK *-1 (@FS-ADVL>) BARRIER @V OR MCL-CONJ)(NEGATE *1 (@<SUBJ)) ;  # coordination, if there is no subject in the new clause
+SUBSTITUTE:SubV=FS-ADVL>mv (@FMV)(@FS-ADVL>) TARGET V (*-1 CC OR COMMA BARRIER @V OR Rel OR @CVP OR MCL-CONJ LINK NOT 0 MCL-CONJ LINK *-1 (@FS-ADVL>) BARRIER @V OR MCL-CONJ)(NEGATE *1 (@<SUBJ))(NEGATE -1 @SUBJ> OR @OBJ> OR @ADVL> LINK *-1 COMMA BARRIER (*) - @>N LINK *-1 (@FS-ADVL>) BARRIER @V OR MCL-CONJ LINK *-1 @CVP BARRIER @V OR MCL-CONJ);  # coordination, if there is no subject in the new clause
+	#$ Eevre goh skïemtjelasse domtoe, dohkoe geasadovvem, juktie raakte tjoeverem aelkedh vaedtsedh monnen jaevrien gåajkoe.
 
 # some relative clauses introduced by adverbs
 SUBSTITUTE:SubV=FS-Naux (@FAUX) (@FS-N<) TARGET V (*-1 ("gos") OR ("gosa") BARRIER VFIN OR COMMA LINK *-1 N OR Po or DOPPE OR DOHKO BARRIER NOT-COMMA) ;
@@ -860,6 +861,7 @@ SUBSTITUTE:faoSubV=iclp< (@P<) (@ICL-P<) TARGET Inf ; #faospecsynrules
 
 SECTION
 
+
 ### fao
 SETPARENT:faoIM @IM TO (*1 Inf) ; #faospectagrules
 
@@ -932,7 +934,6 @@ SETPARENT:SetAttrToLeftNum @Num< OR @APP-Num< TO (*-1 Num BARRIER @CLAUSE) ;
 
 #SETPARENT:SetFSSTAtoMV @FS-VFIN< TO (*-1 @FAUX OR @FMV BARRIER CC OR @FS-VFIN<) ; This one is moved.
 
-
 # If there is no antecedent, then the mainv is the parent:
 SETPARENT:SetFS-NtoMV @FS-N< TO (*-1 (<mv>) BARRIER CS OR ADVL-COMP) ; ##BARRIER?
 	## Ökonomihke tsiehkieh hov mieriedieh mejtie buektiehtibie daejtie ulmide illedh.
@@ -984,12 +985,14 @@ SETPARENT:SetFS-NtoMV @FS-N< TO (*-1 CS OR Rel OR ADVL-COMP BARRIER VFIN LINK *-
 
 SETPARENT:SetPcleToWord @PCLE TO (1 WORD);
 	## Dagke båateme leah mijjem mirhkedh?
+	
 SETPARENT:SetPcleToWord @PCLE (NEGATE -1 CS) TO (-1 WORD);
 	#$ juktie raakte tjoeverem aelkedh vaedtsedh monnen jaevrien gåajkoe.
 	## Gávpoga poarttat eai goassege dahppojuvvo beaivet, ii ge idja šat leat.
+
 SETPARENT:SetPcleToWord ("goh" @PCLE) TO (*-1 ConNeg OR <mv> LINK *-1 (V Neg));
 	## 
-
+	
 SETPARENT:SetPcleToVfin ("amma" @PCLE) OR ("na" @PCLE) TO (*1 VFIN);
 SETPARENT:SetModToCC @>CC TO (*1 CC) ;
 	## - Gea, juhkki vel liema vai liegganeahppi sihke siskkáldasat ja olgguldasat.
@@ -1122,7 +1125,8 @@ SETPARENT @<PPRED TO (*-1 SPRED OR OPRED) ;
 # @COMP-CS<
 SETPARENT:CNPToMvwhenComp-cs @CNP TO (*1 @COMP-CS< BARRIER @CLAUSE LINK *-1 @CNP LINK *-1 (<mv>)) ;
 SETPARENT:Comp-cs @COMP-CS< TO (*-1 CS) ;
-SETPARENT @ADVL>CS TO (1 CS) ;
+
+SETPARENT:AdvtoCS (@ADVL>CS) TO (1 CS) ;
 
 SETPARENT:toCS @>CS TO (*1 CS) ;
 
