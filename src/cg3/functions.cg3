@@ -2423,6 +2423,7 @@ MAP:advl>v (@ADVL>) TARGET ADVLCASEAdv OR TIME-N + Gen OR Gen-Sem/Route ((*1 FMA
 MAP:advl>cs (@ADVL>CS) TARGET Adv (*-1 BOC BARRIER NOT-ADV)(1 CS LINK *1 FMAINV) ;
 	#$ Danne go ..
 	#$ Nu guhká go ...
+	#$ Eevre goh skïemtjelasse domtoe, dohkoe geasadovvem, juktie raakte tjoeverem aelkedh vaedtsedh monnen jaevrien gåajkoe.
 
 #!! * __<advlPoPr__ (@<ADVL) for Po or Pr; if mainverb to the left.
 MAP:<advlPoPr (@<ADVL) TARGET Po OR Pr (*-1 FMAINV BARRIER SV-BOUNDARY) ;
