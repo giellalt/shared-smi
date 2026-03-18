@@ -764,8 +764,9 @@ SUBSTITUTE:SubV=FS-Naux (@FAUX) (@FS-N<) TARGET V (*-1 ("got") BARRIER VFIN OR C
 	## Ja dát lea dušše ovdamearkan, got lea Sámis geavvan.
 SUBSTITUTE:SubV=FS-Naux (@FMV) (@FS-N<) TARGET V (*-1 ("gos") OR ("gosa") BARRIER VFIN OR COMMA LINK *-1 N OR Po or DOPPE OR DOHKO BARRIER NOT-COMMA) ;
 
-SUBSTITUTE:SubVmain=FS-<ADVLaux (@FAUX)(@FS-<ADVL) TARGET V (*-1 ADVL-COMP OR CS BARRIER @V OR Rel OR @CVP OR (";")) (*-2 @FV BARRIER (":"));
+SUBSTITUTE:SubVmain=FS-<ADVLaux (@FAUX)(@FS-<ADVL) TARGET V (*-1 ADVL-COMP OR CS BARRIER @V OR Rel OR @CVP OR (";")) (*-2 @FV BARRIER (":") LINK NEGATE *-1 ADVL-COMP OR CS BARRIER @V OR Rel OR @CVP OR (";"));
 	## Sus šattai álo oaivvebávččas go galggai bargat rehkenastimiin.
+	#$ Gosse lea galhkeme göölemistie, jïh gosse jaevrie {lea} guelieh vadteme, dellie galka bueriesjugniedidh jïh gijhtedh.
 SUBSTITUTE:SubVmain=FS-<ADVLaux (@FAUX)(@FS-<ADVL) TARGET V (*-1 ADVL-COMP OR CS BARRIER @V OR Rel OR @CVP OR (";")) (*-2 @FMVdic)(NOT *1 @FV BARRIER S-BOUNDARY) ;
 SUBSTITUTE:SubVmain=FS-ADVL>aux (@FAUX)(@FS-ADVL>) TARGET V (*-1 ADVL-COMP OR CS BARRIER @V OR Rel OR @CVP OR (";"))(*1 @FV OR @FMVdic) ;
 	## Go galggai bargat rehkenastimiin sus šattai álo oaivvebávččas.
@@ -1268,7 +1269,7 @@ SETPARENT @FS-VFIN< TO (*-1 @FS-VFIN< BARRIER @MCLV OR Rel) ;
 
 # subclause to relative clause
 SETPARENT @FS-VFIN< TO (*-1 @FS-N< BARRIER @MV) ;
-	## Gávpoga váldogeainnu ja eanu gaskkas lea eallima muorra mii šaddada šattuid guoktenuppelot geardde ja addá šattuidis juohke mánus .
+	## Gávpoga váldogeainnu ja eanu gaskkas lea eallima muorra mii šaddada šattuid guoktenuppelot geardde ja addá šattuidis juohke mánus.
 
 SETPARENT @FS-VFIN< + Neg TO (1 ("ge") LINK *-1 GOSTEGE BARRIER CS OR CC LINK -1 Neg LINK *-1 Neg BARRIER VFIN) ; # not in use
 
@@ -1319,6 +1320,9 @@ SETPARENT:OBJsentenceToSentence @FS-OBJ> TO (*1 (<mv>) LINK NOT 0 IV);
 SETPARENT:ADVLsentenceToSentence @FS-ADVL> TO (*1 (<mv>));
     # the finite verb of a subclause should go to the main verb of the main clause to its right
 	## Go Liná lea boahtán ruoktot maŋŋel skuvlla, manai son njuolga Busi lusa.
+SETPARENT:ADVLsentenceToSentence @FS-ADVL> TO (*1 (<mv>) + @FS-IMV LINK *1 (<mv>) + @FS-IMV LINK *1 (<mv>));
+	## Gosse lea galhkeme göölemistie, jïh gosse jaevrie lea guelieh vadteme, dellie galka bueriesjugniedidh jïh gijhtedh.
+
 SETPARENT:ADVLsentenceToSentence @FS-<ADVL TO (*-1 (<mv>));
     # the finite verb of a subclause should go to the main verb of the main clause to its left
 
