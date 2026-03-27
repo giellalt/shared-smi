@@ -121,24 +121,24 @@ LEXICON NUM-PREFIXES   !!≈ !! __@CODE@__
    §§:§§     ARABIC ; ! §§24
   §% :§%     ARABIC ; ! § 24
  §§% :§§%    ARABIC ; ! §§ 24
-   %-:∑-     ARABIC ; ! -24
-   %‒:%‒     ARABIC ; ! -24 U+2012
-   %–:%–     ARABIC ; ! -24 U+2013
-   %—:%—     ARABIC ; ! -24 U+2014
-   %―:%―     ARABIC ; ! -24 U+2015
-   %+:%+     ARABIC ; ! <plus>24
- %-% :∑-%    ARABIC ; ! - 24
- %‒% :%‒%    ARABIC ; ! - 24 U+2012
- %–% :%–%    ARABIC ; ! - 24 U+2013
- %—% :%—%    ARABIC ; ! - 24 U+2014
- %―% :%―%    ARABIC ; ! - 24 U+2015
- %+% :%+%    ARABIC ; ! <plus> 24
-   %*:%*     ARABIC ; ! *24
-   %$:%$     ARABIC ; ! $24
-   %€:%€     ARABIC ; ! €24
-   %<:%[%<%] ARABIC ; ! <24
-   %>:%[%>%] ARABIC ; ! >24
-  s%.:s%.    ARABIC ; ! s.24
+    -:∑-     ARABIC ; ! -24
+    ‒:‒      ARABIC ; ! -24 U+2012
+    –:–      ARABIC ; ! -24 U+2013
+    —:—      ARABIC ; ! -24 U+2014
+    ―:―      ARABIC ; ! -24 U+2015
+    +:+      ARABIC ; ! <plus>24
+  -% :∑-%    ARABIC ; ! - 24
+  ‒% :‒%     ARABIC ; ! - 24 U+2012
+  –% :–%     ARABIC ; ! - 24 U+2013
+  —% :—%     ARABIC ; ! - 24 U+2014
+  ―% :―%     ARABIC ; ! - 24 U+2015
+  +% :+%     ARABIC ; ! <plus> 24
+    *:*      ARABIC ; ! *24
+    $:$      ARABIC ; ! $24
+    €:€      ARABIC ; ! €24
+   %<:[%<]   ARABIC ; ! <24
+   %>:[%>]   ARABIC ; ! >24
+   s.:s.     ARABIC ; ! s.24
              ARABICX ; ! 3x4+Num+Err/Missingspace (should be 3 x 4)
 
 LEXICON ARABICS
@@ -170,12 +170,12 @@ LEXICON REALARABICfirst !!≈ * __@CODE@__ to avoid 0 as first arabic, except fr
                   %0    REALDECARABICdec    ; ! 0,5 and 0-5 %
 
 LEXICON REALARABICpunct !!≈ * __@CODE@__ to get number after
-   %-:∑-     REALARABICfirst ; ! -24
-   %‒:%‒     REALARABICfirst ; ! -24 U+2012
-   %–:%–     REALARABICfirst ; ! -24 U+2013
-   %—:%—     REALARABICfirst ; ! -24 U+2014
-   %―:%―     REALARABICfirst ; ! -24 U+2015
-   %+:%+     REALARABICfirst ; ! <plus>24
+    -:∑-     REALARABICfirst ; ! -24
+    ‒:‒      REALARABICfirst ; ! -24 U+2012
+    –:–      REALARABICfirst ; ! -24 U+2013
+    —:—      REALARABICfirst ; ! -24 U+2014
+    ―:―      REALARABICfirst ; ! -24 U+2015
+    +:+      REALARABICfirst ; ! <plus>24
 
 LEXICON REALARABIC   !!≈ * __@CODE@__ 1-4 arabics
 < (1|2|3|4|5|6|7|8|9|%0) (1|2|3|4|5|6|7|8|9|%0) [1 "@P.number.one@"|2 "@P.number.two@"|3 "@P.number.three@"|4 "@P.number.four@"|5 "@P.number.five@"|6 "@P.number.six@"|7 "@P.number.seven@"|8 "@P.number.eight@"|9 "@P.number.nine@"|%0  "@P.number.ten@"]  > REALARABICDELIMITER ; ! hyph, %, casesuffix
@@ -192,12 +192,12 @@ LEXICON REALDECARABICsecond !!≈ * __@CODE@__ 19912,878 and 12000-13000
 
 
 LEXICON REALDECARABICdec  !!≈ * __@CODE@__ hyph and comma
-%,  REALARABICDECIM ;
+,  REALARABICDECIM ;
 !%,@P.ErrOrth.ON@:%.@P.ErrOrth.ON@  REALARABICDECIM ; ! 0.6 pro correct 0,6 Kommenterte denne ut, det trenges ekstra tagg og disambiguering hvis denne skal brukes, kombinert med begrensening for høyre side av skilletegn. Denne generer Err/Orth til tall som 20.005 . Både 20.005 og 20,005 kan være korrekt.
-%-:∑-  REALARABICSPAN ;
-%–:∑–  REALARABICSPAN ; ! en dash
- @P.Pmatch.Backtrack@%-@P.Pmatch.Backtrack@+Use/TTS:@P.Pmatch.Backtrack@∑-@P.Pmatch.Backtrack@ REALARABICSPAN ;
- @P.Pmatch.Backtrack@%–@P.Pmatch.Backtrack@+Use/TTS:@P.Pmatch.Backtrack@%–@P.Pmatch.Backtrack@ REALARABICSPAN ; ! en dash
+-:∑-  REALARABICSPAN ;
+–:∑–  REALARABICSPAN ; ! en dash
+ @P.Pmatch.Backtrack@-@P.Pmatch.Backtrack@+Use/TTS:@P.Pmatch.Backtrack@∑-@P.Pmatch.Backtrack@ REALARABICSPAN ;
+ @P.Pmatch.Backtrack@–@P.Pmatch.Backtrack@+Use/TTS:@P.Pmatch.Backtrack@–@P.Pmatch.Backtrack@  REALARABICSPAN ; ! en dash
 
 LEXICON REALARABICsecondpart   !!≈ * __@CODE@__ numbers like 199 878 and 199.878
                                !! allow 199,878 as special typo
@@ -258,16 +258,16 @@ LEXICON ARABICDATENUM1
 LEXICON ARABICDATEHYPH !!≈ * __@CODE@__
 !! This lexicon covers date range constructions: the first part of the range is pointing here,
 !! and then it continues after the hyphen to the second part.
- %.%-:%.∑- ARABICDATENUM ;
-   %-:∑-   ARABICDATENUM ;
- %.%–:%.%– ARABICDATENUM ; ! en dash
-   %–:%–   ARABICDATENUM ; ! en dash
+  .-:.∑- ARABICDATENUM ;
+   -:∑-   ARABICDATENUM ;
+  .–:.– ARABICDATENUM ; ! en dash
+   –:–   ARABICDATENUM ; ! en dash
 !! The following two lines cover the TTS use case, where we force the FST to split before and after the hyphen,
 !! to create separate analyses for each part, and with the hyphen as a separate token in between.
 !! This makes it much easier to convert the digits to text, and lay the ground for changing the case of the numbers
 !! in each part of the range.
- %.@P.Pmatch.Backtrack@%-@P.Pmatch.Backtrack@+Use/TTS:%.@P.Pmatch.Backtrack@∑-@P.Pmatch.Backtrack@ ARABICDATENUM ;
- %.@P.Pmatch.Backtrack@%–@P.Pmatch.Backtrack@+Use/TTS:%.@P.Pmatch.Backtrack@%–@P.Pmatch.Backtrack@ ARABICDATENUM ; ! en dash
+ .@P.Pmatch.Backtrack@-@P.Pmatch.Backtrack@+Use/TTS:.@P.Pmatch.Backtrack@∑-@P.Pmatch.Backtrack@ ARABICDATENUM ;
+ .@P.Pmatch.Backtrack@–@P.Pmatch.Backtrack@+Use/TTS:.@P.Pmatch.Backtrack@–@P.Pmatch.Backtrack@  ARABICDATENUM ; ! en dash
 
 LEXICON ARABICDATENUM !!≈ * __@CODE@__
  < [1|2|%0] [1|2|3|4|5|6|7|8|9|%0] %. [%0] [1|2|3|4|5|6|7|8|9] > ARABICDATENUM2 ; !29.09
@@ -284,7 +284,7 @@ LEXICON ARABICDATENUM !!≈ * __@CODE@__
 LEXICON ARABICDATENUM2 !!≈ * __@CODE@__
  < %. [1|2] [1|2|3|4|5|6|7|8|9|%0] [1|2|3|4|5|6|7|8|9|%0] [1|2|3|4|5|6|7|8|9|%0] > datetag       ;
  < %.                              [1|2|3|4|5|6|7|8|9|%0] [1|2|3|4|5|6|7|8|9|%0] > datetag       ;
-   %.:                                                                             datetag_w_dot_cont ;
+    .:                                                                             datetag_w_dot_cont ;
 
 LEXICON datetag_w_dot_cont !!≈ * __@CODE@__
  dateyearcase_nullsuff_w_dot_tag ;
@@ -320,8 +320,8 @@ LEXICON CLOCK-sep !!≈ * __@CODE@__ different separators for intervals, or one 
 !! to create separate analyses for each part, and with the hyphen as a separate token in between.
 !! This makes it much easier to convert the digits to text, and lay the ground for changing the case of the numbers
 !! in each part of the range.
- @P.Pmatch.Backtrack@%-@P.Pmatch.Backtrack@+Use/TTS:@P.Pmatch.Backtrack@∑-@P.Pmatch.Backtrack@ ARABICCLOCK2 ;
- @P.Pmatch.Backtrack@%–@P.Pmatch.Backtrack@+Use/TTS:@P.Pmatch.Backtrack@%–@P.Pmatch.Backtrack@ ARABICCLOCK2 ; ! en dash
+ @P.Pmatch.Backtrack@-@P.Pmatch.Backtrack@+Use/TTS:@P.Pmatch.Backtrack@∑-@P.Pmatch.Backtrack@ ARABICCLOCK2 ;
+ @P.Pmatch.Backtrack@–@P.Pmatch.Backtrack@+Use/TTS:@P.Pmatch.Backtrack@–@P.Pmatch.Backtrack@  ARABICCLOCK2 ; ! en dash
 
 
 LEXICON ARABICCLOCK2 !!≈ * __@CODE@__ is the second component of intervals, identical to ARABICCLOCK
@@ -363,9 +363,9 @@ LEXICON numyear !!≈ * __@CODE@__
 !! to create separate analyses for each part, and with the hyphen as a separate token in between.
 !! This makes it much easier to convert the digits to text, and lay the ground for changing the case of the numbers
 !! in each part of the range.
- @P.Pmatch.Backtrack@%/@P.Pmatch.Backtrack@+Use/TTS:@P.Pmatch.Backtrack@%/@P.Pmatch.Backtrack@ moreyear ;
- @P.Pmatch.Backtrack@%-@P.Pmatch.Backtrack@+Use/TTS:@P.Pmatch.Backtrack@∑-@P.Pmatch.Backtrack@ moreyear ;
- @P.Pmatch.Backtrack@%–@P.Pmatch.Backtrack@+Use/TTS:@P.Pmatch.Backtrack@%–@P.Pmatch.Backtrack@ moreyear ; ! en dash
+ @P.Pmatch.Backtrack@/@P.Pmatch.Backtrack@+Use/TTS:@P.Pmatch.Backtrack@/@P.Pmatch.Backtrack@  moreyear ;
+ @P.Pmatch.Backtrack@-@P.Pmatch.Backtrack@+Use/TTS:@P.Pmatch.Backtrack@∑-@P.Pmatch.Backtrack@ moreyear ;
+ @P.Pmatch.Backtrack@–@P.Pmatch.Backtrack@+Use/TTS:@P.Pmatch.Backtrack@–@P.Pmatch.Backtrack@  moreyear ; ! en dash
 
 
 LEXICON moreyear !!≈ * __@CODE@__
@@ -399,16 +399,16 @@ LEXICON ARABICORD !!≈ * __@CODE@__
 !  (                      ARABICLOOPphoneNum ;
 !  )                      ARABICLOOPphoneNum ;
 !  —                      ARABICLOOPphoneNum ;
-! %-:∑-                   ARABICLOOPphoneNum ;
+! -:∑-                   ARABICLOOPphoneNum ;
 ! %                       ARABICLOOPphoneNum ; ! Space as separator
 
 
 LEXICON REALARABICDELIMITER  !!≈ * __@CODE@__
                      ARABICDELIMITER ; ! 1-4 arabics to casesuffixses
-            %,       REALARABICDECIM ;
-            %-:∑-    REALARABICDECIM ;
-            %–       REALARABICDECIM ;
-            %-:∑-    REALARABIC      ; ! 1-2 multipart numbers
+             ,       REALARABICDECIM ;
+             -:∑-    REALARABICDECIM ;
+             –       REALARABICDECIM ;
+             -:∑-    REALARABIC      ; ! 1-2 multipart numbers
              –:–     REALARABIC      ; ! 1–2 multipart numbers, n-dash
              —:—     REALARABIC      ; ! 1—2 multipart numbers, m-dash
             ,-:,∑-   NUM-ARABICCASES ; ! 10,-
@@ -430,50 +430,50 @@ LEXICON ARABICXERRTAG
 
 LEXICON ARABICLOOP   !!≈ * __@CODE@__
                                                ARABIC          ;
-                                 %.%-:%.∑-     ARABIC          ; ! 1.-2 multipart numbers ! !
-                                 %.%–:%.%–     ARABIC          ; ! 1.–2 multipart numbers ! !
-                                 %.%—:%.%—     ARABIC          ; ! 1.—2 multipart numbers ! !
-                                 %.%-:%.% ∑-   ARABICORD       ; ! 1. -2. multipart numbers ! !
-                                 %.%-:%.%-%    ARABICORD       ; ! 1. - 2. multipart numbers ! !
-                                 %.%-:%.% ∑-%  ARABICORD       ; ! 1. - 2. multipart numbers ! !
-                                 %.%–:%.% %–%  ARABICORD       ; ! 1. – 2. multipart numbers ! !
-                                 %.%-:%.∑-     ARABICORD       ; ! 1.-2. multipart numbers ! !
-                                 %.%–:%.%–     ARABICORD       ; ! 1.–2. multipart numbers ! !
-                                 %.%—:%.%—     ARABICORD       ; ! 1.—2. multipart numbers ! !
-                                 %-% :∑-%      ARABIC          ; ! 1- 2 multipart numbers
-                                 %–% :%–%      ARABIC          ; ! 1– 2 multipart numbers
-                                 %—% :%—%      ARABIC          ; ! 1— 2 multipart numbers
-                                 % %-:% ∑-     ARABIC          ; ! 1 -2 multipart numbers
-                                 % %–:% %–     ARABIC          ; ! 1 –2 multipart numbers
-                                 % %—:% %—     ARABIC          ; ! 1 —2 multipart numbers
-  % %-% +Use/-PMatch+Use/-GC+Use/-TTS:% ∑-%    ARABIC          ; ! 1 - 2 multipart numbers
-                               % %–% :% %–%    ARABIC          ; ! 1 – 2 multipart numbers
-                               % %—% :% %—%    ARABIC          ; ! 1 — 2 multipart numbers
-                             % %-%-% :% ∑-∑-%  ARABIC          ; ! 1 -- 2 multipart numbers
-                             % %–%–% :% %–%–%  ARABIC          ; ! 1 –– 2 multipart numbers
-                             % %—%—% :% %—%—%  ARABIC          ; ! 1 —— 2 multipart numbers
-                                   %.:%.       ARABIC          ;
+                                   .-:.∑-      ARABIC          ; ! 1.-2 multipart numbers ! !
+                                   .–:.–       ARABIC          ; ! 1.–2 multipart numbers ! !
+                                   .—:.—       ARABIC          ; ! 1.—2 multipart numbers ! !
+                                   .-:.% ∑-    ARABICORD       ; ! 1. -2. multipart numbers ! !
+                                   .-:.-%      ARABICORD       ; ! 1. - 2. multipart numbers ! !
+                                   .-:.% ∑-%   ARABICORD       ; ! 1. - 2. multipart numbers ! !
+                                   .–:.% –%    ARABICORD       ; ! 1. – 2. multipart numbers ! !
+                                   .-:.∑-      ARABICORD       ; ! 1.-2. multipart numbers ! !
+                                   .–:.–       ARABICORD       ; ! 1.–2. multipart numbers ! !
+                                   .—:.—       ARABICORD       ; ! 1.—2. multipart numbers ! !
+                                  -% :∑-%      ARABIC          ; ! 1- 2 multipart numbers
+                                  –% :–%       ARABIC          ; ! 1– 2 multipart numbers
+                                  —% :—%       ARABIC          ; ! 1— 2 multipart numbers
+                                  % -:% ∑-     ARABIC          ; ! 1 -2 multipart numbers
+                                  % –:% –      ARABIC          ; ! 1 –2 multipart numbers
+                                  % —:% —      ARABIC          ; ! 1 —2 multipart numbers
+   % -% +Use/-PMatch+Use/-GC+Use/-TTS:% ∑-%    ARABIC          ; ! 1 - 2 multipart numbers
+                                % –% :% –%     ARABIC          ; ! 1 – 2 multipart numbers
+                                % —% :% —%     ARABIC          ; ! 1 — 2 multipart numbers
+                               % --% :% ∑-∑-%  ARABIC          ; ! 1 -- 2 multipart numbers
+                               % ––% :% ––%    ARABIC          ; ! 1 –– 2 multipart numbers
+                               % ——% :% ——%    ARABIC          ; ! 1 —— 2 multipart numbers
+                                    .:.        ARABIC          ;
                                    %::%:       ARABIC          ;
-!                                  %,:%,       ARABIC          ;
+!                                   ,:,        ARABIC          ;
                                      :         ARABIC          ; ! Allowing for "23 500" w/nbsp (init char = alt-space)
                                      :         ARABIC          ; ! Allowing for "23 500" w/nnbsp
 !                                  % :%        ARABIC          ; ! Allowing for "23 500". Lene: Denne er plagsom og bør forbedres. F.eks. 2017 30 vil vi ikke ha om ett tall.
-                                   %/:%/       ARABIC          ; ! 24/12
-                                 %/% :%/%      ARABIC          ; ! 24/ 12
-                                 % %/:% %/     ARABIC          ; ! 24 /12
+                                    /:/        ARABIC          ; ! 24/12
+                                  /% :/%       ARABIC          ; ! 24/ 12
+                                  % /:% /      ARABIC          ; ! 24 /12
                                     ':'        ARABIC          ;
 
                             +Num+Arab:         RNum            ; ! Num Cmp Noun, with hyphen
 
-!                       % %-+Err/Orth:% ∑-     ARABICDELIMITER ; ! 1 - multipart numbers - "1 -:s"?
-!                     % %-%-+Err/Orth:% ∑-∑-   ARABICDELIMITER ; ! 1 -- multipart numbers
+!                        % -+Err/Orth:% ∑-     ARABICDELIMITER ; ! 1 - multipart numbers - "1 -:s"?
+!                       % --+Err/Orth:% ∑-∑-   ARABICDELIMITER ; ! 1 -- multipart numbers
 !                                              ARABICDELIMITER ; ! list of number-case delimiters
                                                ID-ARABIC       ;
 
 
 LEXICON MARKDOT !!≈ * __@CODE@__
 ! This should create a new backtrack-point before the dot, but no sub-reading:
-   +Use/-PMatch:%. # ;
+   +Use/-PMatch:. # ;
 < "+Use/PMatch":0 "@P.Pmatch.Backtrack@" 0:%. > # ; ! This creates a split point
    +Use/PMatch+CLBfinal: # ; ! This creates an alternative end point for those
                              ! requiring a full stop, so that when the previous line
@@ -591,7 +591,7 @@ LEXICON ROM-ONE-TAG   !!≈ * __@CODE@__
 ! do the trick.
 
 LEXICON ROM-SPLIT   !!≈ * __@CODE@__
- %-+Use/Circ:∑- 2ROMAN ; ! II-VI, etc. !
+ -+Use/Circ:∑- 2ROMAN ; ! II-VI, etc. !
 
 
 ! Here goes loop 2.
