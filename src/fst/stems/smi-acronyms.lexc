@@ -128,7 +128,7 @@ LEXICON SCND   !!= * __@CODE@__ second part of loop
  Ä THRD ;
  Ö THRD ;
  Å THRD ;
- %-+Use/Circ+Use/SpellNoSugg:∑- IDNUMBER ;         ! N-9520 Kárášjohka
+ -+Use/Circ+Use/SpellNoSugg:∑- IDNUMBER ;         ! N-9520 Kárášjohka
  +Use/-Spell: IDNUMBER ;
 
 LEXICON THRD   !!= * __@CODE@__ third part of loop
@@ -170,7 +170,7 @@ LEXICON THRD   !!= * __@CODE@__ third part of loop
  Ä FRTH ;
  Ö FRTH ;
  Å FRTH ;
- %-+Use/Circ+Use/SpellNoSugg:∑- IDNUMBER ;           ! N-9520 Kárášjohka
+ -+Use/Circ+Use/SpellNoSugg:∑- IDNUMBER ;           ! N-9520 Kárášjohka
  +Use/-Spell: IDNUMBER ;
   DYN_ACRO_vow ;
 
@@ -213,7 +213,7 @@ LEXICON FRTH   !!= * __@CODE@__ fourth part of loop
  Ä DYN_ACRO_vow ;
  Ö DYN_ACRO_vow ;
  Å DYN_ACRO_vow ;
- %-+Use/Circ+Use/SpellNoSugg:∑- IDNUMBER ; 	           ! N-9520 Kárášjohka
+ -+Use/Circ+Use/SpellNoSugg:∑- IDNUMBER ; 	           ! N-9520 Kárášjohka
  +Use/-Spell: IDNUMBER ;
  DYN_ACRO_cons ;
 ! # ; !To prevent cases like :as, `as and as. But this gives tagless 3-letter ACR.
@@ -547,8 +547,8 @@ NOKUT+N+Prop+Sem/Org+ACR:NOKUT ACRO_LONDON ;
 
 ADHD+N+Sem/State-sick+ACR:ADHD ACRONOUN_cons ;
 ATSIC+ACR:ATSIC ACRO_LONDON ;
-°C+N+Sem/Measr+ACR:%°C UNIT ;
-°F+N+Sem/Measr+ABBR:%°F UNIT ;
+°C+N+Sem/Measr+ACR:°C UNIT ;
+°F+N+Sem/Measr+ABBR:°F UNIT ;
 CC+N+Sem/Measr+ACR:CC ACRONOUN_cons ;
 CD+v1+N+Sem/Obj-el+ACR:CD ACRONOUN_cons ;
 CD+v2+N+Sem/Obj-el+ACR:cd ACRONOUN_cons ;
@@ -1236,15 +1236,15 @@ LU2+N+Prop+Sem/Org+ACR:LU2 ACRO_cons ;
 K/S+N+Prop+Sem/Org+ACR:K/S ACRO_cons ;
 D/S+N+Prop+Sem/Org+ACR:D/S ACRO_cons ;
 S/S+N+Prop+Sem/Org+ACR:S/S ACRO_cons ;
-dČA/AciA+N+Prop+Sem/Org+ACR:dČA0%/AciA ACRO_vow ;
+dČA/AciA+N+Prop+Sem/Org+ACR:dČA0/AciA ACRO_vow ;
 O97S+N+Prop+Sem/Txt+ACR:O97S ACRO_cons ;
 O97+N+Prop+Sem/Txt+ACR:O97 ACRO_cons ;
-4/OPYC+N+Prop+Sem/Txt+ACR:4%/OPYC ACRO_cons ;
+4/OPYC+N+Prop+Sem/Txt+ACR:4/OPYC ACRO_cons ;
 Bb+N+Prop+Sem/Org+ACR:Bb ACRO_cons ;
-CSM_1+N+Prop+Sem/Org+ACR:CSM%_1 ACRO_cons ;
+CSM_1+N+Prop+Sem/Org+ACR:CSM_1 ACRO_cons ;
 Jk1+N+Prop+Sem/Tool-it+ACR:Jk1 ACRO_cons ;
-CO/19+N+Prop+Sem/Org+ACR:CO%/19 ACRO_cons ;
-CO/18+N+Prop+Sem/Org+ACR:CO%/18 ACRO_cons ;
+CO/19+N+Prop+Sem/Org+ACR:CO/19 ACRO_cons ;
+CO/18+N+Prop+Sem/Org+ACR:CO/18 ACRO_cons ;
 L1+N+Sem/Hum+ACR:L1 ACRONOUN_cons ;
 L2+N+Sem/Hum+ACR:L2 ACRONOUN_cons ;
 NRK1+N+Prop+Sem/Org_Prod-vis+ACR:NRK1 ACRO_cons ;
@@ -1317,9 +1317,9 @@ LEXICON smallacro-smi   !!= * __@CODE@__ contains acros with small letters
 dgp+N+Sem/Org+ACR:dgp ACRONOUN_cons ;
 BbNS+N+Prop+Sem/Txt+ACR:BbNS ACRO_cons ;
 DáM+N+Prop+Sem/Org+ACR:DáM ACRO_cons ;
-SUKP(b)+N+Prop+Sem/Org+ACR:SUKP%(b%) ACRO_cons ;
-8(j)+N+Prop+Sem/Org+ACR:8%(j%) ACRO_cons ;
-1%0(c)+N+Prop+Sem/Org+ACR:1%0%(c%) ACRO_vow ;
+SUKP(b)+N+Prop+Sem/Org+ACR:SUKP(b) ACRO_cons ;
+8(j)+N+Prop+Sem/Org+ACR:8(j) ACRO_cons ;
+1%0(c)+N+Prop+Sem/Org+ACR:1%0(c) ACRO_vow ;
 CCITT+N+Prop+Sem/Org+ACR:CCITT ACRO_cons ;
 samIT+N+Prop+Sem/Txt+ACR:samIT ACRO_cons ;
 oy+N+Prop+Sem/Org+ACR:oy ACRO_vow ;

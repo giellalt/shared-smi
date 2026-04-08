@@ -31,7 +31,7 @@ LEXICON ID-ARABIC
 LEXICON ARABICLOOPORD   !!≈ * __@CODE@__ ordinals
              +A+Arab+Ord+Attr:   MARKDOT            ; ! 16. as attr
 !           +A+Arab+Ord+Sg+Nom:   MARKDOT            ; ! 16. as pred
-! +Num+Arab+Sg+Nom#%.%<sent%>:%. #                  ; !for Apertium bz. 22
+! +Num+Arab+Sg+Nom#.%<sent%>:. #                  ; !for Apertium bz. 22
          +A+Arab+Ord+Use/Circ:   ARABICDELIMITERORD ;
 
 LEXICON ACASETAG   !!≈ * __@CODE@__  is for 1e+Num+Sg+Num:1e
@@ -98,12 +98,12 @@ LEXICON ROMNUMTAG   !!≈ * __@CODE@__
   +Num+Rom+Sg+Nom+Use/Circ:   #            ;
 !     +Num+Sg+Gen+Use/Circ:   #            ;
 !     +Num+Sg+Acc+Use/Circ:   #            ;
-!    +A+Rom+Ord+Attr+Use/Circ:%. #            ; ! !III. as ordinal.
-!    +Num+Rom+Sem/ID+Use/Circ:%.  #            ; ! ! Denne lager problemer for ii. og er vel egentlig ikke riktig?
+!    +A+Rom+Ord+Attr+Use/Circ:. #            ; ! !III. as ordinal.
+!    +Num+Rom+Sem/ID+Use/Circ:.  #            ; ! ! Denne lager problemer for ii. og er vel egentlig ikke riktig?
              +Num+Use/Circ:%: ROMNUMTAGOBL ;
     +Num+Use/Circ+Err/Orth:'  ROMNUMTAGOBL ;
     +Num+Use/Circ+Err/Orth:∑- ROMNUMTAGOBL ;
-    +Num+Use/Circ+Err/Orth:%´ ROMNUMTAGOBL ;
+    +Num+Use/Circ+Err/Orth:´ ROMNUMTAGOBL ;
 !                     +Num:   ROMNUMTAGOBL ;
 
 LEXICON yeartag
