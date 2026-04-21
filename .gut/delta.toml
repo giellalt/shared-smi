@@ -1,0 +1,13 @@
+# This template merge config file should be stored in
+# .gut/ of each consumer repo. It contains:
+# - template: url of template repo
+# - rev_id: automatically maintained
+# - template_sha: sha of last known version merged with this repo
+# - replacements: list of string replacements: placeholder -> real string
+template = "https://github.com/giellalt/template-shared-und"
+rev_id = 1
+template_sha = "8c1403762833692887f5d82ca2f9c261a85b4cfb"
+
+[replacements]
+__UND__ = "smi"
+__UNDEFINED__ = "Sámi"
