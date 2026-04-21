@@ -49,6 +49,5 @@ m4/lt~obsolete.m4
 Makefile
 
 build-aux
-
 giella-shared-smi.pc
 .DS_Store
