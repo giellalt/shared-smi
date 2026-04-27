@@ -147,8 +147,8 @@ intr+A+Sem/Cat:intr ab-dot-adj-itrab ;
 !ix+N:ix ab-nodot-noun-itrab ;
 journ+N+Sem/Txt:journ ab-dot-noun-itrab ;
 jr+N+Sem/Hum:jr ab-noun-itrab ; ! junior
-js+Adv+Err/Orth:js ab-nodot-adv-itrab ;
-js+Adv:js ab-dot-adv-itrab ;
+js.+Adv+Err/Orth:js ab-nodot-adv-itrab ;
+js.+Adv:js ab-dot-adv-itrab ;
 jv+Adv:jv ab-adv-itrab ;
 kan+N+Sem/Lang:kan ab-dot-noun-itrab ;
 kat+N+Sem/Lang:kat ab-dot-noun-itrab ;
@@ -343,8 +343,8 @@ anr+N+Sem/Sign:anr ab-noun-trnumab ;
 b.c+Adv:b.c ab-dot-adv-trnumab ; ! b.c. 18-22
 bc+Adv:bc ab-dot-adv-trnumab ; ! bc. 30-42
 bet+N:bet ab-dot-noun-trnumab ;
-bie+N+Sem/Cat:bie ab-dot-noun-trnumab ;
-bie+N+Err/Orth+Sem/Cat:bie ab-nodot-noun-trnumab ;
+bie.+N+Sem/Cat:bie ab-dot-noun-trnumab ;
+bie.+N+Err/Orth+Sem/Cat:bie ab-nodot-noun-trnumab ;
 bnr+N+Sem/Sign:bnr ab-noun-trnumab ;
 ds+N:ds ab-dot-noun-trnumab ;
 enr+N:enr ab-noun-trnumab ;
@@ -604,8 +604,8 @@ Ot.prop+N+Sem/Txt:Ot.prop ab-noun-trab ;
 St+N+Sem/Org:St ab-noun-trab ;
 Vik.pr+N:Vik.pr ab-dot-noun-trab ;
 adm+N:adm ab-noun-trab ; ! nob but used in all texts
-oadr+N+Sem/Plc+Err/Orth:adr ab-nodot-noun-trab ;
-adr+N+Sem/Plc:adr ab-dot-noun-trab ; ! adreassa LOWER-CASE-DOUBLET
+adr.+N+Sem/Plc+Err/Orth:adr ab-nodot-noun-trab ;
+adr.+N+Sem/Plc:adr ab-dot-noun-trab ; ! adreassa LOWER-CASE-DOUBLET
 aman+N+Sem/Hum:aman ab-noun-trab ;
 art+N+Sem/Txt:art ab-dot-noun-trab ; ! artihkkal, artium
 ass+N+Sem/Hum:ass9 ab-dot-noun-trab ; ! assisteanta, assortemeanta
@@ -670,10 +670,10 @@ e.g.+N:e.g  ab-dot-noun-trab  ;
 eksp.sj+N+Sem/Hum:eksp.sj ab-dot-noun-trab ;
 est.+N:est  ab-dot-noun-trab  ;
 et+Adv+Sem/Txt:et ab-nodot-adv ; !
-etc+Adv+Err/Orth:etc ab-nodot-adv-itrab ;
-etc+Adv:etc ab-dot-adv-itrab ;
-et% al+MWE+Adv+Err/Orth:et% al ab-nodot-adv-itrab ;
-et% al+MWE+Adv:et% al ab-dot-adv-itrab ;
+etc.+Adv+Err/Orth:etc ab-nodot-adv-itrab ;
+etc.+Adv:etc ab-dot-adv-itrab ;
+et% al.+MWE+Adv+Err/Orth:et% al ab-nodot-adv-itrab ;
+et% al.+MWE+Adv:et% al ab-dot-adv-itrab ;
 ev.lut.+N:ev.lut  ab-dot-noun-trab  ;
 ex+N:ex ab-noun-trab ;
 ex.fac+N:ex.fac ab-dot-noun-trab ;
@@ -946,6 +946,6 @@ z:Z ALPHABET-TAGS ;
 č:Č ALPHABET-TAGS ;
 
 LEXICON ALPHABET-TAGS ! For apertium
-alphabet+N+Sem/Sign: ab-dot-noun-trab ;
-alphabet+N+Sem/Sign+ABBR: RHyph ;
+alphabet+N+Sem/Sign+Use/MT: ab-dot-noun-trab ;
+alphabet+N+Sem/Sign+Use/MT+ABBR: RHyph ;
 
