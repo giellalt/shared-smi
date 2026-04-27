@@ -1436,7 +1436,7 @@ KoKS+N+Prop+Sem/Org+ACR:KoKS ACRO_cons ;
 IKA% Finnmark% IKS+MWE+N+Prop+Sem/Org+ACR:IKA% Finnmark% IKS ACRO_cons ;
 Infonuorra.no+N+Prop+Sem/Txt+Err/Lex+ACR:Infonuorra.no ACRO_vow ;
 risten.no+Use/-Spell+N+Prop+Sem/Txt+ACR:risten.no ACRO_vow ;
-risten.no+Err/Orth+N+Prop+Sem/Txt+ACR:Risten.no ACRO_vow ;
+risten.no+Use/-Spell+Err/Orth+N+Prop+Sem/Txt+ACR:Risten.no ACRO_vow ;
 samediggi.no+Use/-Spell+N+Prop+Sem/Txt+ACR:samediggi.no ACRO_vow ;
 LaMk+N+Prop+Sem/Org+ACR:LaMk ACRO_cons ;
 LaW+N+Prop+Sem/Org+ACR:LaW ACRO_cons ;
