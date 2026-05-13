@@ -1302,6 +1302,8 @@ Kabel% TV+N+Prop+Sem/Org_Prod-vis+ACR:Kabel% TV ACRO_cons ;
 H1N1+N+Prop+Sem/Org+ACR:H1N1 ACRO_cons ;
 N1a+N+Prop+Sem/Org+ACR:N1a ACRO_vow ;
 SARS-CoV-2+N+Prop+Sem/State-sick+ACR:SARS-CoV-2 ACRO_vow ;
+COVID-19+N+Sem/State-sick+ACR:COVID9-19 ACRONOUN_vow ;
+
 
 ! Here, we need a good regex for
 ! letter - number combination.
@@ -1469,9 +1471,7 @@ SkL+N+Prop+Sem/Org+ACR:SkL ACRO_cons ;
 PhD+N+Sem/Txt+ACR:PhD ACRONOUN_cons ;
 PhD+N+Sem/Txt+ACR:PHD ACRONOUN_cons ;
 TaM+N+Prop+Sem/Org+ACR:TaM ACRO_cons ;
-covid-19+N+Sem/State-sick+ACR:covid9-19 ACRONOUN_vow ; !
-
-
+covid-19+N+Sem/State-sick+ACR:covid9-19 ACRONOUN_vow ; 
 
 ! The following lot were taken from abbr
 ! since marked with -nodot-, they were not
