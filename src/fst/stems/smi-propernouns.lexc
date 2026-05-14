@@ -18503,7 +18503,7 @@ Lizard+OLang/UND:Lizard9 LONDON-plc ;
 Lizzie+OLang/UND:Lizzie SIJTE-fem ;
 Liège+OLang/UND:Liège ACCRA-plc ;
 Ljan+OLang/UND:Ljan9 BERN-sur ;
-Ljetoff+OLang/UND:Ljetoff BERN-sur :
+Ljetoff+OLang/UND:Ljetoff BERN-sur ;
 Ljono+OLang/UND:Ljono9 ACCRA-plc ;
 Ljubljana+OLang/UND:Ljub^ljana ACCRA-fem ;
 Ljung+OLang/UND:Ljung9 BERN-sur ;
@@ -23204,7 +23204,7 @@ Olsvik+OLang/NOB:Ols^vik BERN-plc ;
 Olsviken+OLang/NOB:Ols^viken9 LONDON-plc ;
 Olsztyn+OLang/HUN:Olsztyn9 BERN-plc ;
 Olsén+OLang/NOB:Olsén9 LONDON-sur ;
-Olsén-Ljetoff+OLang/UND:Olsén-Ljetoff BERN-sur :
+Olsén-Ljetoff+OLang/UND:Olsén-Ljetoff BERN-sur ;
 Olsøy+OLang/NOB:Ols^øy OY-plc ;
 Oltenia+OLang/NOB:Olteni ACCRA-A-plc ;
 Olthuis+OLang/UND:Olt^huis BERN-sur ;
