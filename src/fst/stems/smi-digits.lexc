@@ -25,7 +25,7 @@ LEXICON NUM-ARABICCASES
 +Num:   ARABICCASES ;
 
 LEXICON ID-ARABIC
-+Num+Arab+Sem/ID:   # ;
++Num+Arab+Sem/ID:   ENDLEX ;
 +Num+Arab+Sem/ID:%:  DIGITCASE ; ! This is the 1984:s case.
 
 LEXICON ARABICLOOPORD   !!≈ * __@CODE@__ ordinals

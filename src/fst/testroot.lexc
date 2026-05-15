@@ -5,14 +5,77 @@
 
 Multichar_Symbols
 
+!! alphabets
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+!! digits (0 is elsewhere since it is a special case)
+1 2 3 4 5 6 7 8 9
+½ ¹ ² ³ ¼ ¾
+!! extended alphabet for props
+ã ë ó Í ú ñ é è ê ð ç ô ù â î ý à ł û ò ō É Ç Ò Ó Þ Ü í ü
+ä Æ Ø Å Ä Ö Č Š Ž Ŧ Đ Ŋ Á ž á ŋ đ ŧ æ ø å ö č š ï Â Ô
+!! punctuations
+_ - ‒ – — ―
++ * × / ^ € § & ° #
+> [ ] ( ) . , ' ’ ´
+
+!! escapees
+%  %< %0 %: %% 
+
+!! weird white spaces and stuff
+ ּ  !!≈ @CODE@
+­       !!= @CODE@
+
+!! special symbols for analysis
+∑
 +Num
++Arab
++Rom
 +N
++Pl
 +Prop
++ACR
++ABBR
++Attr
++Cmp
+
++Sem/Year
 +Sem/Org
 +Sem/Plc
 +Sem/Sur
 +Sem/Fem
 +Sem/Mal
++Sem/Ani
++Sem/Obj
++Sem/Atr
++Sem/Edu
++Sem/Domain_Hum
++Sem/Group_Hum
++Sem/Edu_Hum
++Sem/Txt
++Sem/Dummytag
++Sem/Org_Prod
+
++Err/Orth
++Use/NG
++Use/GC
++Use/PMatch
+
+@P.Pmatch.Backtrack@
+@P.ErrOrth.ON@
+@R.ErrOrth.ON@
+@D.ErrOrth.ON@
+@C.ErrOrth@
+@P.number.eight@
+@P.number.five@
+@P.number.four@
+@P.number.nine@
+@P.number.one@
+@P.number.seven@
+@P.number.six@
+@P.number.three@
+@P.number.ten@
+@P.number.two@
 
 LEXICON Root
 
@@ -796,4 +859,10 @@ LEXICON flagK
 LEXICON yeartagpl
 
 +Num+Sem/Year+Pl:   #   ;
+
+
+LEXICON ENDLEX
+
+@R.ErrOrth.ON@+Err/Orth:@R.ErrOrth.ON@0    #   ;
+@D.ErrOrth.ON@:@D.ErrOrth.ON@    #   ;
 
