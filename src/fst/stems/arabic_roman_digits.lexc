@@ -117,8 +117,8 @@ LEXICON NUM-PREFIXES   !!≈ !! __@CODE@__
                        !!  symbols found in front of digits. Their continuation
                        !!  lexicons should probably be changed as we restructure
                        !!  the arabic numerals.
-    §:§      ARABIC ; ! §24
-   §§:§§     ARABIC ; ! §§24
+    §% @P.ErrOrth.ON@:§@P.ErrOrth.ON@      ARABIC ; ! §24
+   §§% @P.ErrOrth.ON@:§§@P.ErrOrth.ON@     ARABIC ; ! §§24
   §% :§%     ARABIC ; ! § 24
  §§% :§§%    ARABIC ; ! §§ 24
     -:∑-     ARABIC ; ! -24
