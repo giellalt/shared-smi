@@ -8788,6 +8788,7 @@ Gaunan+OLang/UND:Gaunan9 LONDON-plc ;
 Gaundal+OLang/NOB:Gaun^dal BERN-plc ;
 Gaunviken+OLang/NOB:Gaun^viken9 LONDON-plc ;
 Gaup+OLang/UND:Gaup9 BERN-sur ;
+Gaup-Juuso+OLang/FIN:Gaup-Juuso9 ACCRA-sur ;
 Gaup-Westerlund+OLang/NOB:Gaup9-Wester^lund9 BERN-sur ;
 Gaupen+OLang/UND:Gaupen9 LONDON-sur ;
 Gaupholm+OLang/NOB:Gaup^holm9 BERN-plc ;
@@ -24131,6 +24132,7 @@ Per-Erik+OLang/UND:Per-Erik LONDON-mal ;
 Per-Espen+OLang/NOB:Per-Espen9 LONDON-sur ;
 Per-Inge+OLang/UND:Per-Inge ACCRA-mal ;
 Per-Ivar+OLang/UND:Per-Ivar LONDON-mal ;
+Per-Olof+OLang/UND:Per-Olof LONDON-mal ;
 Perak+OLang/UND:Perak LONDON-plc ;
 Perduco+OLang/UND:Perduco9 ACCRA-org ;
 Perea+OLang/UND:Perea ACCRA-fem ;
@@ -31370,6 +31372,7 @@ Tapei+OLang/UND:Tape DUBAI-plc ;
 Tapia+OLang/UND:Tapi ACCRA-A-plc ;
 Tapio+OLang/UND:Tapio9 ACCRA-mal ;
 Tapiola+OLang/UND:Tapi^ol HANNOLA-sur ; ! ERVASTI elelr annen ODD?
+Tapiola-Länsman+OLang/SWE:Tapi^ola-Läns^man9 BERN-sur ; ! sma:BERN,sme:BERN, smj:?
 Tapola+OLang/FIN:Tapol HANNOLA-sur ; ! ERVASTI elelr annen ODD?
 Taponen+OLang/FIN:Tapo C-FI-NEN-sur ;
 Tappeluft+OLang/UND:Tappe^luft BERN-LOAN-plc ;
