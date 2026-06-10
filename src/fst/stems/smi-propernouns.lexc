@@ -27042,7 +27042,7 @@ Saario+OLang/UND:Saario9 ACCRA-sur ;
 Saariselkä+OLang/UND:Saari^selkä ACCRA-LOAN-plc ;
 Saaristo+OLang/FIN:Saaristo9 ACCRA-sur ;
 Saarivirta+OLang/FIN:Saari^virta ACCRA-sur ;
-Saarivuoma+OLang/FIN:Saari^vuoma ACCRA-LOAN-plc ;
+!Saarivuoma+OLang/FIN:Saari^vuoma ACCRA-LOAN-plc ; !Not longer a name in use
 Saarland+OLang/NOB:Saar^land9 BERN-plc ;
 Saarnaköngäs+OLang/FIN:Saarna^köngäs LONDON-plc ;
 Saarni+OLang/UND:Saarn PIPPI-sur ;
