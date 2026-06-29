@@ -674,7 +674,7 @@ nno+N+Sem/Dummytag+ACR:nno ACRONOUN_vow ;
 fin+N+Sem/Dummytag+ACR:fin ACRONOUN_cons ;
 fkv+N+Sem/Dummytag+ACR:fkv ACRONOUN_cons ;
 LGBTQ+N+Sem/Hum+ACR:LGBTQ ACRONOUN_vow ;
-LGBTQ%+N+Sem/Hum+ACR:LGBTQ%+ ACRONOUN_vow ;
+LGBTQ%++N+Sem/Hum+ACR:LGBTQ%+ ACRONOUN_vow ;
 
 
 !! Here is a list of lexicalised acronyms without semtags. 
