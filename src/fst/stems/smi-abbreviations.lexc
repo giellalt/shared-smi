@@ -514,6 +514,7 @@ pst+N:pst ab-noun-trnumab ;
 puh+N:puh9 ab-noun-trnumab ; ! Also used without dot
 r+Use/Circ+N+Sem/Sign:r ab-noun-trnumab ;
 ref+N:ref ab-dot-noun-trnumab ;
+ref+N+Err/Orth:ref ab-nodot-noun-trnumab ;
 reg.nr+N+Sem/Sign:reg.nr ab-noun-trnumab ;
 res.nr+N+Sem/Sign:res.nr ab-noun-trnumab ;
 rs+N:rs ab-nodot-noun-trnumab ;
