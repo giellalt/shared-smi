@@ -2555,7 +2555,7 @@ Autobianchi+OLang/UND:Autobianchi ACCRA-obj ;
 Autocar+OLang/UND:Autocar BERN-obj ;
 Autodesk+OLang/UND:Autodesk9 BERN-org ;
 Automatia+OLang/NOB:Automatia ACCRA-org ;
-Automobil-Forbund+OLang/NOB:Auto^mobil-Forbund9 BERN-org ;
+Norges% Automobil-Forbund+MWE+CmpNP/First+OLang/NOB:Norges% Auto^mobil-Forbund9 BERN-org ;
 Autosan+OLang/UND:Autosan BERN-obj ;
 Autozam+OLang/UND:Autozam9 BERN-obj ;
 Autti+OLang/UND:Autt PIPPI-plc ;
