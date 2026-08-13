@@ -60,9 +60,9 @@ LEXICON ARABICDELIMITERORD   !!≈ * __@CODE@__ ordinals
 
 LEXICON PROSENT !!≈ * __@CODE@__ % and case suffix
 !                    POSTPROSENT ; ! case suffix
- % %%+Use/-TTS+Err/MissingSpace:%%   POSTPROSENT ; ! 50%. It is wrong, but 75 % of us write "75%".
- % @P.Pmatch.Loc@%%+Use/TTS:@P.Pmatch.Loc@%%  POSTPROSENT ; ! 50%. It is wrong, but 75 % of us write "75%".
-         % %%+Use/-TTS:% %% POSTPROSENT ; ! the correct ones as well... 50 % etc.
+ % %%+Use/GC+Err/MissingSpace:%%   POSTPROSENT ; ! 50%. It is wrong, but 75 % of us write "75%".
+ % @P.Pmatch.Loc@%%+Use/-GC:@P.Pmatch.Loc@%%  POSTPROSENT ; ! 50%. It is wrong, but 75 % of us write "75%", and we don't care outside of the grammar checker
+!         % %%+Use/-TTS:% %% POSTPROSENT ; ! the correct ones as well... 50 % etc.
 
 LEXICON POSTPROSENT !!≈ * __@CODE@__ % and case suffix
 < "@R.ErrOrth.ON@" "+Err/Orth":0 "@C.ErrOrth@" > ARABICDELIMITER ;
