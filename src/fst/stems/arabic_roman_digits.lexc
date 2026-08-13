@@ -414,7 +414,8 @@ LEXICON REALARABICDELIMITER  !!≈ * __@CODE@__
             ,-:,∑-   NUM-ARABICCASES ; ! 10,-
    ,-+Err/Orth:.∑-   NUM-ARABICCASES ; ! 10.- It is wrong, but written.
  % %%+Use/GC+Err/MissingSpace:%%    ARABICDELIMITER ; ! 50%. It is wrong, but 75 % of us write "75%". Use this in non-TTS, it will flag the error
- % @P.Pmatch.Loc@%%+Use/-GC:@P.Pmatch.Loc@%%    ARABICDELIMITER ; ! 50%. It is wrong, but 75 % of us write "75%". Use this in TTS, it will split in two tokens
+ % %%+Use/GC:% %%    ARABICDELIMITER ; ! 50%. It is wrong, but 75 % of us write "75%". Use this in non-TTS, it will flag the error
+ @P.Pmatch.Backtrack@%%+Use/-GC:@P.Pmatch.Backtrack@%%    ARABICDELIMITER ; ! 50%. It is wrong, but 75 % of us write "75%". Use this in TTS, it will split in two tokens
 ! % %%+Use/-TTS:% %%  ARABICDELIMITER ; ! the correct ones as well... 50 % etc. In TTS, we treat 50 and % as two tokens = easier processing
 
 LEXICON ARABICX
