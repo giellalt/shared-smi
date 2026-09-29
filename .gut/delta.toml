@@ -1,6 +1,6 @@
 template = "https://github.com/giellalt/template-shared-und"
-rev_id = 6
-template_sha = "d9a20ae716ffcaccefe9f843a5d5884ead44fdb3"
+rev_id = 7
+template_sha = "d59b630749c159613906a81c82a6e12fab048e0e"
 
 [replacements]
 __UNDEFINED__ = "Sámi"
