@@ -61,6 +61,7 @@ LEXICON ARABICDELIMITERORD   !!≈ * __@CODE@__ ordinals
 LEXICON PROSENT !!≈ * __@CODE@__ % and case suffix
 !                    POSTPROSENT ; ! case suffix
  % %%+Use/GC+Err/MissingSpace:%%   POSTPROSENT ; ! 50%. It is wrong, but 75 % of us write "75%".
+ % %%+Use/GC:% %%   POSTPROSENT ; ! 50 %. For the GC generator, so that we can suggest the correct
  % @P.Pmatch.Loc@%%+Use/-GC:@P.Pmatch.Loc@%%  POSTPROSENT ; ! 50%. It is wrong, but 75 % of us write "75%", and we don't care outside of the grammar checker
 !         % %%+Use/-TTS:% %% POSTPROSENT ; ! the correct ones as well... 50 % etc.
 
