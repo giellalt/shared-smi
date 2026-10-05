@@ -398,6 +398,7 @@ ODBC+N+Prop+Sem/Org+ACR:ODBC ACRO_cons ;
 OECD+N+Prop+Sem/Org+ACR:OECD ACRO_cons ;
 PETA+N+Prop+Sem/Org+ACR:PETA ACRO_ACCRA ;
 PSV+N+Prop+Sem/Org+ACR:PSV ACRO_cons ;
+ROBEK+N+Prop+Sem/Org+ACR:ROBEK ACRO_LONDON ;
 SHD+N+Prop+Sem/Org+ACR:SHD ACRO_cons ;
 SQL+N+Prop+Sem/Org+ACR:SQL ACRO_cons ;
 SUKPb+N+Prop+Sem/Org+ACR:SUKPb ACRO_cons ;
@@ -594,9 +595,11 @@ KRIPOS+OLang/UND+N+Prop+Sem/Org+ACR:KRI^POS ACRO_LONDON ;     !  - propername sa
 NIFES+OLang/UND+N+Prop+Sem/Org+ACR:NIFES ACRO_LONDON ;        !  - propername says  čállinrávvagat
 NIFU-STEP+OLang/UND+N+Prop+Sem/Org+ACR:NIFU-STEP ACRO_BERN ;  !  - propername says  čállinrávvagat
 NIPIAA+OLang/UND+N+Prop+Sem/Org+ACR:NIPIAA ACRO_ACCRA ;       !  - propername says  čállinrávvagat
+NASAK+OLang/UND+N+Prop+Sem/Org+ACR:NASAK ACRO_ACCRA ;
 NOPEF+OLang/UND+N+Prop+Sem/Org+ACR:NOPEF ACRO_LONDON ;        !  - propername says  čállinrávvagat
 NOPUS+OLang/UND+N+Prop+Sem/Org+ACR:NOPUS ACRO_LONDON ;        !  - propername says  čállinrávvagat
 NORAD+OLang/UND+N+Prop+Sem/Org+ACR:NORAD ACRO_LONDON ;        !  - propername says  čállinrávvagat
+NORCE+OLang/UND+N+Prop+Sem/Org+ACR:NORCE ACRO_vow ;
 NORKLIMA+OLang/UND+N+Prop+Sem/Org+ACR:NOR^KLIMA ACRO_ACCRA ;  !  - propername says  čállinrávvagat
 NORSAR+OLang/UND+N+Prop+Sem/Org+ACR:NORSAR ACRO_BERN ;        !  - propername says  čállinrávvagat
 NORUT+OLang/UND+N+Prop+Sem/Org+ACR:NORUT ACRO_LONDON ;        !  - propername says  čállinrávvagat
