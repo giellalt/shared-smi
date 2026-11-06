@@ -847,6 +847,7 @@ GFDL-R+N+Prop+Sem/Org+ACR:GFDL-R ACRO_cons ;
 GGD+N+Prop+Sem/Org+ACR:GGD ACRO_cons ;
 GHVS+N+Prop+Sem/Org+ACR:GHVS ACRO_cons ;
 GII+N+Prop+Sem/Org+ACR:GII ACRO_vow ;
+GiellaLT+N+Prop+Sem/Org+ACR:GiellaLT ACRO_cons ;
 GJ+N+Prop+Sem/Org+ACR:GJ ACRO_cons ;
 GJSL+N+Prop+Sem/Org+ACR:GJSL ACRO_cons ;
 GJSS+N+Prop+Sem/Org+ACR:GJSS ACRO_cons ;
