@@ -934,7 +934,7 @@ Afasiförbundet+OLang/SWE:Afasiförbundet LONDON-org ;
 Affairs+OLang/UND:Affairs BERN-org ;
 Affonso+OLang/UND:Affonso9 ACCRA-plc ;
 Afghanistan+OLang/UND+Err/Orth:Afganistan9 BERN-plc ;
-Afghanistan+OLang/UND:Afghani^stan9 BERN-plc ;
+Afghanistan+OLang/UND:Af^ghani^stan9 BERN-plc ;
 Afrika+OLang/UND:Afrika ACCRA-LOAN-plc ;
 Afrodite+OLang/UND:Afrodite ACCRA-fem ;
 Afset+OLang/UND:Afset BERN-plc ;
@@ -8434,7 +8434,7 @@ Fromreide+OLang/UND:Fromreide ACCRA-plc ;
 Fronter+OLang/NOB:Fronter LONDON-obj ;
 Frost% 2+MWE+N+Prop+Sem/Obj+OLang/NOB:Frost% 2 acroconnector_vow ; !
 Frost+OLang/NOB:Frost9 BERN-sur ;
-Frosta+OLang/NOB:Fro^sta ACCRA-plc ;
+Frosta+OLang/NOB:Frosta ACCRA-plc ;
 Frostad+OLang/NOB:Fro^stad9 BERN-plc ;
 Frostadheia+OLang/NOB:Fro^stad^he^i ACCRA-A-plc ;
 Frostating+OLang/NOB:Frostating9 LONDON-org ;
