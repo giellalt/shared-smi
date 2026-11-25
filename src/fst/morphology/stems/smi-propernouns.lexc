@@ -35708,6 +35708,11 @@ Yssen+OLang/NOB:Yssen9 LONDON-sur ;
 Yssen-Valla+OLang/UND:Yssen9-Valla ACCRA-sur ;
 Ystad+OLang/NOB:Y^stad9 BERN-plc ;
 Ystehede+OLang/UND:Yste^hede ACCRA-plc ;
+Yuki+OLang/UND:Yuki ACCRA-mal ;
+KonMari+OLang/UND:KonMari ACCRA-fem ;
+KonMari+OLang/UND+Err/Orth:Konmari ACCRA-fem ;
+Hirakata+OLang/UND:Hirakata ACCRA-plc ;
+Kioto+OLang/UND:Kioto ACCRA-plc ;
 Ytreberg+OLang/NOB:Ytre^berg9 BERN-sur ;
 Ytrehaug+OLang/NOB:Ytre^haug9 BERN-sur ; !or mal?
 Ytrehauge+OLang/UND:Ytre^hauge ACCRA-sur ; !or mal?
